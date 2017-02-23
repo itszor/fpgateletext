@@ -1,0 +1,375 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/10.1/ISE/bin/lin/unwrapped/trce -ise /home/jules/code/tube/tube.ise
+-intstyle ise -v 3 -s 5 -xml bursttest bursttest.ncd -o bursttest.twr
+bursttest.pcf -ucf bbc2.ucf
+
+Design file:              bursttest.ncd
+Physical constraint file: bursttest.pcf
+Device,package,speed:     xc2s200,fg256,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_system_clk = PERIOD TIMEGRP "system_clk" 20 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0" TS_system_clk         HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_1 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_1"         TS_system_clk HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_1 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_1"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_0 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_0"         TS_system_clk HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_0 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_0"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_2 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_2"         TS_system_clk HIGH 50%;
+
+ 10202 paths analyzed, 949 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  18.242ns.
+--------------------------------------------------------------------------------
+Slack:                  1.758ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sdram_addr_23 (FF)
+  Destination:          sdramburst1/command_13 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.225ns (Levels of Logic = 8)
+  Clock Path Skew:      -0.017ns (0.040 - 0.057)
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sdram_addr_23 to sdramburst1/command_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R20C26.S1.XQ     Tcko                  1.292   sdram_addr<23>
+                                                       sdram_addr_23
+    CLB_R24C32.S1.G2     net (fanout=22)       2.696   sdram_addr<23>
+    CLB_R24C32.S1.Y      Tilo                  0.653   sdramburst1/_COND_8<2>
+                                                       sdramburst1/mux511
+    CLB_R23C34.S0.G2     net (fanout=1)        1.347   sdramburst1/_COND_8<2>
+    CLB_R23C34.S0.COUT   Topcyg                1.396   sdramburst1/Mcompar_state_cmp_eq0016_cy<1>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_lut<1>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<1>
+    CLB_R22C34.S0.CIN    net (fanout=1)        0.000   sdramburst1/Mcompar_state_cmp_eq0016_cy<1>
+    CLB_R22C34.S0.COUT   Tbyp                  0.096   sdramburst1/Mcompar_state_cmp_eq0016_cy<3>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<2>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<3>
+    CLB_R21C34.S0.CIN    net (fanout=1)        0.000   sdramburst1/Mcompar_state_cmp_eq0016_cy<3>
+    CLB_R21C34.S0.COUT   Tbyp                  0.096   sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<4>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+    CLB_R20C34.S0.CIN    net (fanout=1)        0.000   sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+    CLB_R20C34.S0.XB     Tcinxb                0.046   sdramburst1/command_mux0000<5>10
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<6>
+    CLB_R23C25.S1.F2     net (fanout=5)        2.818   sdramburst1/Mcompar_state_cmp_eq0016_cy<6>
+    CLB_R23C25.S1.X      Tilo                  0.653   sdramburst1/state_and0000
+                                                       sdramburst1/state_and00001
+    CLB_R23C25.S1.G4     net (fanout=3)        0.222   sdramburst1/state_and0000
+    CLB_R23C25.S1.Y      Tilo                  0.653   sdramburst1/state_and0000
+                                                       sdramburst1/command_mux0000<5>111
+    CLB_R20C34.S0.G4     net (fanout=7)        2.037   sdramburst1/N23
+    CLB_R20C34.S0.Y      Tilo                  0.653   sdramburst1/command_mux0000<5>10
+                                                       sdramburst1/command_mux0000<5>10
+    CLB_R23C19.S1.SR     net (fanout=1)        2.784   sdramburst1/command_mux0000<5>10
+    CLB_R23C19.S1.CLK    Tsrck                 0.783   sdramburst1/command<13>
+                                                       sdramburst1/command_13
+    -------------------------------------------------  ---------------------------
+    Total                                     18.225ns (6.321ns logic, 11.904ns route)
+                                                       (34.7% logic, 65.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.940ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sdram_addr_23 (FF)
+  Destination:          sdramburst1/command_13 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      18.043ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.017ns (0.040 - 0.057)
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sdram_addr_23 to sdramburst1/command_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R20C26.S1.XQ     Tcko                  1.292   sdram_addr<23>
+                                                       sdram_addr_23
+    CLB_R24C35.S1.G2     net (fanout=22)       2.584   sdram_addr<23>
+    CLB_R24C35.S1.Y      Tilo                  0.653   sdramburst1/_COND_11<9>
+                                                       sdramburst1/mux1211
+    CLB_R21C34.S0.F3     net (fanout=1)        1.378   sdramburst1/_COND_8<9>
+    CLB_R21C34.S0.COUT   Topcyf                1.487   sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_lut<4>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<4>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+    CLB_R20C34.S0.CIN    net (fanout=1)        0.000   sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+    CLB_R20C34.S0.XB     Tcinxb                0.046   sdramburst1/command_mux0000<5>10
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<6>
+    CLB_R23C25.S1.F2     net (fanout=5)        2.818   sdramburst1/Mcompar_state_cmp_eq0016_cy<6>
+    CLB_R23C25.S1.X      Tilo                  0.653   sdramburst1/state_and0000
+                                                       sdramburst1/state_and00001
+    CLB_R23C25.S1.G4     net (fanout=3)        0.222   sdramburst1/state_and0000
+    CLB_R23C25.S1.Y      Tilo                  0.653   sdramburst1/state_and0000
+                                                       sdramburst1/command_mux0000<5>111
+    CLB_R20C34.S0.G4     net (fanout=7)        2.037   sdramburst1/N23
+    CLB_R20C34.S0.Y      Tilo                  0.653   sdramburst1/command_mux0000<5>10
+                                                       sdramburst1/command_mux0000<5>10
+    CLB_R23C19.S1.SR     net (fanout=1)        2.784   sdramburst1/command_mux0000<5>10
+    CLB_R23C19.S1.CLK    Tsrck                 0.783   sdramburst1/command<13>
+                                                       sdramburst1/command_13
+    -------------------------------------------------  ---------------------------
+    Total                                     18.043ns (6.220ns logic, 11.823ns route)
+                                                       (34.5% logic, 65.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.100ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sdram_addr_23 (FF)
+  Destination:          sdramburst1/command_13 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      17.883ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.017ns (0.040 - 0.057)
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sdram_addr_23 to sdramburst1/command_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R20C26.S1.XQ     Tcko                  1.292   sdram_addr<23>
+                                                       sdram_addr_23
+    CLB_R22C35.S0.G1     net (fanout=22)       2.726   sdram_addr<23>
+    CLB_R22C35.S0.Y      Tilo                  0.653   sdramburst1/_COND_11<11>
+                                                       sdramburst1/mux2112
+    CLB_R21C34.S0.G1     net (fanout=1)        1.167   sdramburst1/_COND_8<11>
+    CLB_R21C34.S0.COUT   Topcyg                1.396   sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_lut<5>
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+    CLB_R20C34.S0.CIN    net (fanout=1)        0.000   sdramburst1/Mcompar_state_cmp_eq0016_cy<5>
+    CLB_R20C34.S0.XB     Tcinxb                0.046   sdramburst1/command_mux0000<5>10
+                                                       sdramburst1/Mcompar_state_cmp_eq0016_cy<6>
+    CLB_R23C25.S1.F2     net (fanout=5)        2.818   sdramburst1/Mcompar_state_cmp_eq0016_cy<6>
+    CLB_R23C25.S1.X      Tilo                  0.653   sdramburst1/state_and0000
+                                                       sdramburst1/state_and00001
+    CLB_R23C25.S1.G4     net (fanout=3)        0.222   sdramburst1/state_and0000
+    CLB_R23C25.S1.Y      Tilo                  0.653   sdramburst1/state_and0000
+                                                       sdramburst1/command_mux0000<5>111
+    CLB_R20C34.S0.G4     net (fanout=7)        2.037   sdramburst1/N23
+    CLB_R20C34.S0.Y      Tilo                  0.653   sdramburst1/command_mux0000<5>10
+                                                       sdramburst1/command_mux0000<5>10
+    CLB_R23C19.S1.SR     net (fanout=1)        2.784   sdramburst1/command_mux0000<5>10
+    CLB_R23C19.S1.CLK    Tsrck                 0.783   sdramburst1/command<13>
+                                                       sdramburst1/command_13
+    -------------------------------------------------  ---------------------------
+    Total                                     17.883ns (6.129ns logic, 11.754ns route)
+                                                       (34.3% logic, 65.7% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_2 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_2"         TS_system_clk * 1.5 HIGH 50%;
+
+ 58777 paths analyzed, 1141 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  26.184ns.
+--------------------------------------------------------------------------------
+Slack:                  2.230ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sync_reset_9 (FF)
+  Destination:          vga1/htimer_8 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.672ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.098ns (0.055 - 0.153)
+  Source Clock:         clk1x rising at 20.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sync_reset_9 to vga1/htimer_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R13C32.S0.XQ     Tcko                  1.292   sync_reset_9
+                                                       sync_reset_9
+    CLB_R23C16.S1.SR     net (fanout=15)       5.597   sync_reset_9
+    CLB_R23C16.S1.CLK    Tsrck                 0.783   vga1/htimer<9>
+                                                       vga1/htimer_8
+    -------------------------------------------------  ---------------------------
+    Total                                      7.672ns (2.075ns logic, 5.597ns route)
+                                                       (27.0% logic, 73.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.230ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sync_reset_9 (FF)
+  Destination:          vga1/htimer_9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.672ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.098ns (0.055 - 0.153)
+  Source Clock:         clk1x rising at 20.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sync_reset_9 to vga1/htimer_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R13C32.S0.XQ     Tcko                  1.292   sync_reset_9
+                                                       sync_reset_9
+    CLB_R23C16.S1.SR     net (fanout=15)       5.597   sync_reset_9
+    CLB_R23C16.S1.CLK    Tsrck                 0.783   vga1/htimer<9>
+                                                       vga1/htimer_9
+    -------------------------------------------------  ---------------------------
+    Total                                      7.672ns (2.075ns logic, 5.597ns route)
+                                                       (27.0% logic, 73.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.325ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sync_reset_1 (FF)
+  Destination:          vga1/Mshreg_char_hpos_2_2.CE (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      7.675ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk1x rising at 20.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sync_reset_1 to vga1/Mshreg_char_hpos_2_2.CE
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R22C20.S1.XQ     Tcko                  1.292   sync_reset1
+                                                       sync_reset_1
+    CLB_R22C21.S0.F2     net (fanout=1)        0.696   sync_reset1
+    CLB_R22C21.S0.X      Tilo                  0.653   N235
+                                                       vga1/char_out_0_or0000_SW0
+    CLB_R22C21.S0.G4     net (fanout=2)        0.221   N235
+    CLB_R22C21.S0.Y      Tilo                  0.653   N235
+                                                       vga1/char_hpos_1_not00011
+    CLB_R18C29.S1.SR     net (fanout=4)        3.253   vga1/char_hpos_1_not0001
+    CLB_R18C29.S1.CLK    Tws                   0.907   vga1/char_hpos_2<2>
+                                                       vga1/Mshreg_char_hpos_2_2.CE
+    -------------------------------------------------  ---------------------------
+    Total                                      7.675ns (3.505ns logic, 4.170ns route)
+                                                       (45.7% logic, 54.3% route)
+
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_system_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_system_clk                  |     20.000ns|          N/A|     18.242ns|            0|            0|            0|        68979|
+| TS_sdramburst1_int_clk0       |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv      |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_1     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_1    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_0     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_0    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_2     |     20.000ns|     18.242ns|          N/A|            0|            0|        10202|            0|
+| TS_sdramburst1_int_clkdv_2    |     30.000ns|     26.184ns|          N/A|            0|            0|        58777|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock system_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+system_clk     |   26.184|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 68979 paths, 0 nets, and 7341 connections
+
+Design statistics:
+   Minimum period:  26.184ns{1}   (Maximum frequency:  38.191MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Feb 20 16:51:02 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 82 MB
+
+
+

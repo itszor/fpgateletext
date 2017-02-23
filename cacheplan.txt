@@ -1,0 +1,31 @@
+256 x 16
+512 x 8
+4096 x 1
+
+lookup
+======
+
+16-byte cache line -> 32 lines per RAM block
+8 RAM blocks -> 4k of cache, indexable by 8 bits
+
+address $001053
+
+1-way set-associative (I think), so:
+
+pick address[4:11] (or other bits) -> $05
+
+We already know bits [4:11] of this address. The low bits must be zero, so only 12 bits remain.
+
+We can do three-way set associative lookups like this, using a 48-bit 256-way index (made from 3 16-bit block RAMs):
+
+index[5] :=
+
+  AABBCC KKKKK[sd]
+  
+Look up lines AA and BB. KKKKKd are then looked up in the same array, and if either matches the correct address then use the correspondingly-indexed cache line.
+
+'d' is a dirty bit, marked 1 when the line is written.
+
+If neither AA, BB nor CC match, replace whichever is oldest (according to stamp 's') with NN, a rotating eviction pointer. Write back the corresponding line NN to RAM if it is dirty. Read the proper line in, and replace KKKKKd with the new address, marking it as clean.
+
+We have only two ports, so might need to just use AA & BB, not CC too.

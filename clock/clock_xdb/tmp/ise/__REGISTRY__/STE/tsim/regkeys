@@ -1,0 +1,6 @@
+CommandLine
+/opt/xilinx/10.1/ISE/bin/lin/unwrapped/tsim -ise /home/jules/code/tube/clock/clock.ise -intstyle ise clock clock.nga
+s
+FormatString
+tsim <design[.vm6]> [--intstyle ise|xflow|silent] [<outfile>] 
+s

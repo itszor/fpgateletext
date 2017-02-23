@@ -1,0 +1,87 @@
+	*= $0
+
+hello
+	.(
+	ldx #255
+	txs
+
+	lda #221
+	sta $fef0
+
+	; function set; 8 bit, etc.
+	lda #32+16+8
+	sta $fef2
+	jsr wait
+
+	; display on, cursor on
+	lda #14
+	sta $fef2
+	jsr wait
+
+	; entry mode set
+	lda #6
+	sta $fef2
+	jsr wait
+
+	; clear+home
+	lda #1
+	sta $fef2
+	jsr wait
+
+	lda #0
+	sta line
+
+do_lines
+	ldx line
+	cpx #4
+	beq done
+	lda lines,x
+	ora #128
+	sta $fef2
+	jsr wait
+	inc line
+
+	ldx #0
+loop
+	lda hellow,x
+	cmp #0
+	beq done
+	sta $fef3
+	jsr wait
+	inx
+	jmp loop
+done
+	jmp do_lines
+
+	lda #5
+	sta $fef0
+
+	lda $fef2
+	sta $fef0
+
+stop
+	jmp stop
+	.)
+
+wait
+	bit $fef2
+	bmi wait
+	rts
+
+hellow
+	.asc "Hello world!!", 0
+
+line
+	.byte 0
+
+lines
+	.byte $00
+	.byte $40
+	.byte $10
+	.byte $50
+	
+	.dsb $fffc - *, 0
+reset
+	.word hello
+	.word 0
+	.word 0

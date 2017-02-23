@@ -1,0 +1,158 @@
+Obsolete bits:
+==============
+
+hcpu_address[0]	proto66
+hcpu_address[1]	proto67
+hcpu_address[2]	proto68
+hcpu_clk	proto69
+hcpu_data[0]	proto70
+hcpu_data[1]	proto71
+hcpu_data[2]	proto72
+hcpu_data[3]	proto73
+hcpu_data[4]	proto74
+hcpu_data[5]	proto75
+hcpu_data[6]	proto76
+hcpu_data[7]	proto77
+hcpu_ncs	proto78
+hcpu_nirq	proto79
+hcpu_nrst	proto80			B9
+hcpu_read	proto81
+
+
+
+pcpu_address[0]		proto81		A9*	9
+pcpu_address[1]		proto82		A8*	10
+pcpu_address[2] 	proto83		C8*	11
+pcpu_address[3]		proto1		A7	12
+pcpu_address[4]		proto3		B7	13
+pcpu_address[5]		proto5		A6*	14
+pcpu_address[6] 	proto6		D7	15
+pcpu_address[7]		proto7		B6	16
+pcpu_address[8]		proto8		E7	17
+pcpu_address[9] 	proto9		C6	18
+pcpu_address[10]	proto10		A5	19
+pcpu_address[11]	proto12		B5	20
+pcpu_address[12]	proto13		D6	22
+pcpu_address[13]	proto14		A4	23
+pcpu_address[14]	proto18		B4	24
+pcpu_address[15]	proto19		E6	25
+pcpu_address[16]	proto38		T9	\
+pcpu_address[17]	proto39		R9	 \
+pcpu_address[18]	proto40		P9        |
+pcpu_address[19]	proto41		N9        |__ to 373
+pcpu_address[20]	proto42		T10       |
+pcpu_address[21]	proto44		P10*      |
+pcpu_address[22]	proto45		T11*	 /
+pcpu_address[23]	proto46		T12*	/
+pcpu_clk[0]		proto20		A3	37  (via 74HCT14)
+pcpu_clk[1] (negated)	proto4		C7*         (to 373 & 74HC245)
+pcpu_rclk               clkc		C9***	37
+pcpu_data[7]		proto23		P5	26  \
+pcpu_data[6]		proto24		T4	27   \
+pcpu_data[5]		proto25		R5	28    |
+pcpu_data[4]		proto26		P6	29    |__ via 74HC245 (B port)
+pcpu_data[3]		proto27		M7	30    |
+pcpu_data[2]		proto28		R6	31    |
+pcpu_data[1]		proto29		N7	32   /
+pcpu_data[0]		proto31		T6	33  /
+pcpu_emulmode		proto32		P7	35
+pcpu_rdy		proto36		P8*	2  (via 74HCT14)
+pcpu_nirq		proto34		T14*	4  (via 74HCT14)
+pcpu_nnmi		proto33		R7*	6  (via 74HCT14)
+pcpu_nrst		proto35 	T7*	40 (via 74HCT14)
+pcpu_read		proto37		T8	34
+button_nrst		-----		E3
+lcd_cs			proto47		R12*
+
+
+W65C816S (CPU)
+==============
+
+			+-- --+
+	       VPB   1 -|  U  |- 40  RESB
+	       RDY   2 -|     |- 39  VDA
+	     ABORT   3 -|     |- 38  MX
+	      IRQB   4 -|     |- 37  PHI2
+	       MLB   5 -|     |- 36  BE
+	      NMIB   6 -|     |- 35  E
+	       VPA   7 -|     |- 34  RWB    proto37  T8
+	       VDD   8 -|     |- 33  D0
+	        A0   9 -|  6  |- 32  D1
+		A1  10 -|  5  |- 31  D2
+		A2  11 -|  8  |- 30  D3
+		A3  12 -|  1  |- 29  D4
+		A4  13 -|  6  |- 28  D5
+		A5  14 -|     |- 27  D6
+		A6  15 -|     |- 26  D7
+		A7  16 -|     |- 25  A15
+		A8  17 -|     |- 24  A14
+		A9  18 -|     |- 23  A13
+	       A10  19 -|     |- 22  A12
+	       A11  20 -|     |- 21  VSS
+			+-----+
+
+74HCT14 (hex inverting Schmitt trigger)
+=======================================
+
+			+-- --+
+proto20 A3	1A   1 -|  U  |- 14  Vcc
+cpu#37		1Y   2 -|     |- 13  6A   proto36 P8 (nrdy)
+proto5 A6	2A   3 -|  7  |- 12  6Y   pcpu_nrdy cpu#2
+74HC245 #19	2Y   4 -|  4  |- 11  5A   proto34 T14 (nmi)
+proto35 T7	3A   5 -|  1  |- 10  5Y   pcpu_nmi cpu#6
+cpu#40		3Y   6 -|  4  |- 9   4A   proto33 R7 (irq)
+		GND  7 -|     |- 8   4Y   pcpu_irq cpu#4
+			+-----+
+
+74HC245 (octal bus transceiver)  [DB]
+===============================
+
+        		+-- --+
+cpu#34 (r/wb)	DIR  1 -|  U  |- 20  Vcc
+proto23 P5	A0   2 -|     |- 19  !OE  74HCT14 #4
+proto24 T4	A1   3 -|  7  |- 18  B0   cpu#33
+proto25 R5	A2   4 -|  4  |- 17  B1   cpu#32
+proto26 P6	A3   5 -|  2  |- 16  B2   cpu#31
+proto27 M7	A4   6 -|  4  |- 15  B3   cpu#30
+proto28 R6	A5   7 -|  5  |- 14  B4   cpu#29
+proto29 N7	A6   8 -|     |- 13  B5   cpu#28
+proto31 T6	A7   9 -|     |- 12  B6   cpu#27
+		GND 10 -|     |- 11  B7   cpu#26
+        		+-----+
+
+SN74LS373 (octal D-type transparent latch)  [AB]
+==========================================
+
+			+-- --+
+	GND	!0C  1 -|  U  |- 20  Vcc
+proto38 T9	 1Q  2 -|     |- 19  8Q   proto45 T11
+	cpu#33	 1D  3 -|  7  |- 18  8D   cpu#26
+	cpu#32	 2D  4 -|  4  |- 17  7D   cpu#27
+proto39 R9	 2Q  5 -|  3  |- 16  7Q   proto44 P10
+proto40 P9	 3Q  6 -|  7  |- 15  6Q   proto43 R10
+	cpu#31	 3D  7 -|  3  |- 14  6D   cpu#28
+	cpu#30	 4D  8 -|     |- 13  5D   cpu#29
+proto41 N9	 4Q  9 -|     |- 12  5Q   proto42 T10
+		GND 10 -|     |- 11  C    74HCT14 #4
+			+-----+
+
+
+LCD MODULE
+==========
+
+ 1 :: VSS    (0v)
+ 2 :: VDD    (+5v)
+ 3 :: V0     (LCD drive)
+ 4 :: RS     (Register select, H->data input, L->instruction input) cpu#9
+ 5 :: R/!W   (H->data read: module->MPU, L->data write: MPU->module) DB#1 
+ 6 :: E      (Enable)  T12
+ 7 :: DB0    (data bus)   DB#2
+ 8 :: DB1     "           DB#3
+ 9 :: DB2     "           DB#4
+10 :: DB3     "           DB#5
+11 :: DB4     "           DB#6
+12 :: DB5     "           DB#7
+13 :: DB6     "           DB#8
+14 :: DB7     "           DB#9
+15 :: LED(+)		n/c
+16 :: LED(-)		n/c

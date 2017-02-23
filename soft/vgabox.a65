@@ -1,0 +1,168 @@
+	*= $0
+
+#define ACC8 .( : .as : sep #$20 : .)
+#define ACC16 .( : .al : rep #$20 : .)
+#define IDX8 .( : .xs : sep #$10 : .)
+#define IDX16 .( : .xl : rep #$10 : .)
+
+orig	.byte 0,0,0
+
+	;.dsb $2000 - *, 0
+
+hello
+	lda #221
+	sta $fef0
+
+	; enter native mode
+	clc
+	xce
+	
+	; 8k stack (woo!)
+	IDX16
+	ldx #$1fff
+	txs
+	
+	jsr clear
+	
+	; top row
+	ACC8
+	stz orig
+	ACC16
+	lda #$f000
+	stz orig+1
+	jsr hline
+	
+	; bottow row
+	ACC8
+	stz orig
+	ACC16
+	lda #$f95b
+	sta orig+1
+	jsr hline
+	
+	; middle row #1
+	ACC8
+	stz orig
+	ACC16
+	lda #$f4ab
+	sta orig+1
+	jsr hline
+	
+	; middle row #2
+	ACC8
+	stz orig
+	ACC16
+	lda #$f4b0
+	sta orig+1
+	jsr hline
+	
+	; left row
+	ACC8
+	stz orig
+	ACC16
+	lda #$f000
+	stz orig+1
+	jsr vline
+	
+	; right row
+	ACC8
+	lda #$fe
+	sta orig
+	ACC16
+	lda #$f004
+	sta orig+1
+	jsr vline
+	
+	; centre column #1
+	ACC8
+	lda #$7e
+	sta orig
+	ACC16
+	lda #$f002
+	sta orig+1
+	jsr vline
+
+	; centre column #2
+	ACC8
+	lda #$80
+	sta orig
+	ACC16
+	lda #$f002
+	sta orig+1
+	jsr vline
+	
+	jmp stop
+
+hline	.(
+	ACC16
+	IDX16
+	lda #$ffff
+	ldy #0
+loop
+	sta [orig],y
+
+	iny
+	iny
+	cpy #1280
+	bne loop
+	rts
+	.)
+
+vline	.(
+	ACC16
+	IDX16
+	ldy #0
+loop
+	ACC16
+	lda #$ffff
+	sta [orig]
+
+	lda orig
+	clc
+	adc #1280
+	sta orig
+	.(
+	bcc noinc
+	ACC8
+	inc orig+2
+noinc	.)
+
+	iny
+	cpy #480
+	bne loop
+	rts
+	.)
+
+clear	.(
+	ACC16
+	IDX16
+	lda #0
+	ldx #0
+loop
+	sta $f00000,x
+	sta $f10000,x
+	sta $f20000,x
+	sta $f30000,x
+	sta $f40000,x
+	sta $f50000,x
+	sta $f60000,x
+	sta $f70000,x
+	sta $f80000,x
+	sta $f90000,x
+	sta $fa0000,x
+	inx
+	inx
+	cpx #0
+	bne loop
+	rts
+	.)
+
+stop
+	; stp
+	jmp stop
+
+	.dsb $fffc - *, 0
+reset
+	.word hello
+	.word 0
+	.word 0

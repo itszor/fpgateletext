@@ -1,0 +1,126 @@
+	*= $0
+
+	nop
+	nop
+	nop
+repeat
+	.(
+	ldx #5
+	stx $0
+	asl $0
+	ldx #255
+	txs
+
+	lda #70
+	sta ctr
+loop
+	lda ctr
+	and #15
+	tax
+	lda tab,x
+	jsr upsidedown
+	sta $fef0
+	jsr pause
+	inc ctr
+	jmp loop
+	.)
+
+ctr	.byte 0
+
+timer	.word 0
+
+tab2
+	.byte 185
+	.byte 5
+	.byte 241
+	.byte 221
+	.byte 0
+	.byte 0
+	.byte 0
+	.byte 0
+	.byte 185
+	.byte 5
+	.byte 241
+	.byte 221
+	.byte 0
+	.byte 0
+	.byte 0
+	.byte 0
+
+inverse
+	.byte 16
+	.byte 0
+	.byte 64
+	.byte 128
+	.byte 1
+	.byte 32
+	.byte 4
+	.byte 8
+
+mychar	.byte 0
+
+upsidedown
+	.(
+	sta mychar
+	ldx #0
+	lda #0
+loop
+	lsr mychar
+	bcc nobit
+	ora inverse,x
+nobit
+	inx
+	cpx #8
+	bne loop
+	rts
+	.)
+
+tab
+	.byte 221
+	.byte 5
+	.byte 236
+	.byte 173
+	.byte 53
+	.byte 185
+	.byte 249
+	.byte 13
+	.byte 253
+	.byte 189
+	.byte 125
+	.byte 241
+	.byte 216
+	.byte 229
+	.byte 248
+	.byte 120
+
+; A deliberately-rubbish timing loop
+pause
+	.(
+	lda #0
+	sta timer+1
+loop
+	lda #0
+	sta timer
+lo_loop
+	nop
+	nop
+	nop
+	nop
+	inc timer
+	lda timer
+	cmp #0
+	bne lo_loop
+	
+	inc timer+1
+	lda timer+1
+	cmp #0
+	bne loop
+
+	rts
+	.)
+	
+	.dsb $fffc - *, 0
+reset
+	.word repeat
+	.word 0
+	.word 0

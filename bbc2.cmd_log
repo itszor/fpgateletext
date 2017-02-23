@@ -1,0 +1,548 @@
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+xst -ise "/home/jules/code/tube/tube.ise" -intstyle ise -ifn "/home/jules/code/tube/bbc2.xst" -ofn "/home/jules/code/tube/bbc2.syr"
+ngdbuild -ise "/home/jules/code/tube/tube.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc2s200-fg256-5 "bbc2.ngc" bbc2.ngd
+map -ise "/home/jules/code/tube/tube.ise" -intstyle ise -p xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bbc2_map.ncd bbc2.ngd bbc2.pcf
+par -ise "/home/jules/code/tube/tube.ise" -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf
+trce -ise "/home/jules/code/tube/tube.ise" -intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+bitgen -ise "/home/jules/code/tube/tube.ise" -intstyle ise -f bbc2.ut bbc2.ncd

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xc9500xl" device="XC9572XL" pkg="VQ64" spg="-10"/><pin dir="input" nm="pp_d&lt;2&gt;" no="24"/><pin dir="input" nm="fpga_done" no="63"/><pin dir="input" nm="pp_d&lt;0&gt;" no="31"/><pin dir="input" nm="pp_d&lt;3&gt;" no="23"/><pin dir="input" nm="pp_d&lt;4&gt;" no="22"/><pin dir="input" nm="pp_d&lt;5&gt;" no="20"/><pin dir="input" nm="flash_ce_n" no="1"/><pin dir="input" nm="master_clk" no="17"/><pin dir="input" nm="pp_d&lt;1&gt;" no="25"/><pin dir="input" nm="pp_d&lt;6&gt;" no="19"/><pin dir="input" nm="pp_d&lt;7&gt;" no="18"/><pin dir="input" nm="fpga_pp_s&lt;3&gt;" no="64"/><pin dir="input" nm="fpga_pp_s&lt;4&gt;" no="50"/><pin dir="input" nm="fpga_pp_s&lt;5&gt;" no="49"/><pin dir="output" nm="fpga_d&lt;4&gt;" no="8" sr="fast"/><pin dir="output" nm="fpga_d&lt;5&gt;" no="9" sr="fast"/><pin dir="output" nm="fpga_d&lt;6&gt;" no="10" sr="fast"/><pin dir="output" nm="fpga_d&lt;7&gt;" no="11" sr="fast"/><pin dir="output" nm="fpga_d&lt;1&gt;" no="5" sr="fast"/><pin dir="output" nm="clka" no="60" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;0&gt;" no="40" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;1&gt;" no="39" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;2&gt;" no="38" sr="fast"/><pin dir="output" nm="fpga_d&lt;0&gt;" no="4" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;3&gt;" no="36" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;4&gt;" no="35" sr="fast"/><pin dir="output" nm="fpga_d&lt;2&gt;" no="6" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;5&gt;" no="34" sr="fast"/><pin dir="output" nm="fpga_d&lt;3&gt;" no="7" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;6&gt;" no="33" sr="fast"/><pin dir="output" nm="fpga_pp_d&lt;7&gt;" no="32" sr="fast"/><pin dir="output" nm="pp_s&lt;3&gt;" no="27" sr="fast"/><pin dir="output" nm="pp_s&lt;4&gt;" no="16" sr="fast"/><pin dir="output" nm="pp_s&lt;5&gt;" no="15" sr="fast"/><pin dir="output" nm="fpga_wr_n" no="56" sr="fast"/><pin dir="output" nm="fpga_prog_n" no="62" sr="fast"/><pin dir="output" nm="fpga_cs_n" no="52" sr="fast"/><pin dir="output" nm="clkb" no="57" sr="fast"/><pin dir="output" nm="fpga_cclk" no="59" sr="fast"/><pin dir="output" nm="fpga_tck" no="58" sr="fast"/></ibis>

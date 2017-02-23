@@ -1,0 +1,37 @@
+xst -ise "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.ise" -intstyle ise -ifn "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.xst" -ofn "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.syr"
+ngdbuild -ise "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "dwnldpar.ngc" dwnldpar.ngd
+cpldfit -ise "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.ise" -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper dwnldpar.ngd
+XSLTProcess -ise "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.ise" dwnldpar_build.xml
+tsim -ise "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.ise" -intstyle ise dwnldpar dwnldpar.nga
+taengine -ise "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.ise" -intstyle ise -f dwnldpar -w --format html1 -l /home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar_html/tim/timing_report.htm
+hprep6 -ise "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.ise" -s IEEE1149 -n dwnldpar -i dwnldpar
+xst -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -ifn "/home/jules/code/tube/dwnldpar/dwnldpar.xst" -ofn "/home/jules/code/tube/dwnldpar/dwnldpar.syr"
+ngdbuild -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "dwnldpar.ngc" dwnldpar.ngd
+cpldfit -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper dwnldpar.ngd
+XSLTProcess -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" dwnldpar_build.xml
+tsim -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise dwnldpar dwnldpar.nga
+taengine -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -f dwnldpar -w --format html1 -l /home/jules/code/tube/dwnldpar/dwnldpar_html/tim/timing_report.htm
+hprep6 -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -s IEEE1149 -n dwnldpar -i dwnldpar
+xst -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -ifn "/home/jules/code/tube/dwnldpar/dwnldpar.xst" -ofn "/home/jules/code/tube/dwnldpar/dwnldpar.syr"
+ngdbuild -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "dwnldpar.ngc" dwnldpar.ngd
+cpldfit -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper dwnldpar.ngd
+XSLTProcess -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" dwnldpar_build.xml
+tsim -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise dwnldpar dwnldpar.nga
+taengine -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -f dwnldpar -w --format html1 -l /home/jules/code/tube/dwnldpar/dwnldpar_html/tim/timing_report.htm
+hprep6 -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -s IEEE1149 -n dwnldpar -i dwnldpar
+hprep6 -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -s IEEE1532 -n dwnldpar -i dwnldpar
+xst -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -ifn "/home/jules/code/tube/dwnldpar/dwnldpar.xst" -ofn "/home/jules/code/tube/dwnldpar/dwnldpar.syr"
+ngdbuild -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "dwnldpar.ngc" dwnldpar.ngd
+cpldfit -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper dwnldpar.ngd
+XSLTProcess -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" dwnldpar_build.xml
+tsim -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise dwnldpar dwnldpar.nga
+taengine -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -f dwnldpar -w --format html1 -l /home/jules/code/tube/dwnldpar/dwnldpar_html/tim/timing_report.htm
+hprep6 -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -s IEEE1532 -n dwnldpar -i dwnldpar
+xst -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -ifn "/home/jules/code/tube/dwnldpar/dwnldpar.xst" -ofn "/home/jules/code/tube/dwnldpar/dwnldpar.syr"
+ngdbuild -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "dwnldpar.ngc" dwnldpar.ngd
+cpldfit -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper dwnldpar.ngd
+XSLTProcess -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" dwnldpar_build.xml
+tsim -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise dwnldpar dwnldpar.nga
+taengine -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -intstyle ise -f dwnldpar -w --format html1 -l /home/jules/code/tube/dwnldpar/dwnldpar_html/tim/timing_report.htm
+hprep6 -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -s IEEE1532 -n dwnldpar -i dwnldpar
+hprep6 -ise "/home/jules/code/tube/dwnldpar/dwnldpar.ise" -s IEEE1149 -n dwnldpar -i dwnldpar

@@ -1,0 +1,127 @@
+#:C39    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 K.31
+#Current Working Directory:
+#:D   /home/jules/code/tube
+#Host Name:
+#:H   octopus
+#Date/Time:
+#:T   Wed Dec 31 18:42:18 2014
+#------------------------------
+	#Reading bursttest.ncd...
+	#Loading device for application Rf_Device from file 'v200.nph' in environment /opt/xilinx/10.1/ISE.
+	#   "bursttest" is an NCD, version 3.2, device xc2s200, package fg256, speed -5
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select comp 'N200'
+	#comp "N200",  site "CLB_R14C13.S0",  type = SLICE
+	#4
+unselect -all
+	#5
+select comp 'N200'
+	#comp "N200",  site "CLB_R14C13.S0",  type = SLICE
+	#6
+unselect -all
+	#7
+select comp 'N200'
+	#comp "N200",  site "CLB_R14C13.S0",  type = SLICE
+	#8
+post block
+	#9
+unselect -all
+	#10
+select comp 'vga1/foreground_and0002'
+	#comp "vga1/foreground_and0002",  site "CLB_R15C14.S1",  type = SLICE
+	#11
+unselect -all
+	#12
+select comp 'vga1/foreground_and0002'
+	#comp "vga1/foreground_and0002",  site "CLB_R15C14.S1",  type = SLICE
+	#13
+unselect -all
+	#14
+select comp 'vga1/foreground_and0002'
+	#comp "vga1/foreground_and0002",  site "CLB_R15C14.S1",  type = SLICE
+	#15
+post block
+	#16
+unselect -all
+	#17
+unselect -all
+	#18
+select comp 'vga1/Mmux_glyph_bits_mux0000_11_f53'
+	#comp "vga1/Mmux_glyph_bits_mux0000_11_f53",  site "CLB_R23C11.S1",  type = SLICE
+	#19
+unselect -all
+	#20
+select comp 'vga1/Mmux_glyph_bits_mux0000_11_f533'
+	#comp "vga1/Mmux_glyph_bits_mux0000_11_f533",  site "CLB_R23C11.S0",  type = SLICE
+	#21
+unselect -all
+	#22
+select comp 'vga1/Mmux_glyph_bits_mux0000_11_f533'
+	#comp "vga1/Mmux_glyph_bits_mux0000_11_f533",  site "CLB_R23C11.S0",  type = SLICE
+	#23
+unselect -all
+	#24
+select comp 'vga1/Mmux_glyph_bits_mux0000_11_f533'
+	#comp "vga1/Mmux_glyph_bits_mux0000_11_f533",  site "CLB_R23C11.S0",  type = SLICE
+	#25
+post block
+	#26
+unselect -all
+	#27
+select comp 'vga1/Mrom__varindex000482'
+	#comp "vga1/Mrom__varindex000482",  site "CLB_R24C11.S0",  type = SLICE
+	#28
+unselect -all
+	#29
+select comp 'vga1/Mrom__varindex000482'
+	#comp "vga1/Mrom__varindex000482",  site "CLB_R24C11.S0",  type = SLICE
+	#30
+unselect -all
+	#31
+select pin 'CLB_R24C11.S0.F4'
+	#site.pin = CLB_R24C11.S0.F4, comp.pin = vga1/Mrom__varindex000482.F1, delay = Building the delay mediator...
+	#    2.172ns on net "vga1/Mrom__varindex00031_insulate1_vga1/current_char<3>_1"
+	#32
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#33
+unselect -all
+	#34
+unselect -all
+	#35
+unselect -all
+	#36
+select comp 'vga1/Mrom__varindex000482'
+	#comp "vga1/Mrom__varindex000482",  site "CLB_R24C11.S0",  type = SLICE
+	#37
+unselect -all
+	#38
+select comp 'vga1/Mrom__varindex000482'
+	#comp "vga1/Mrom__varindex000482",  site "CLB_R24C11.S0",  type = SLICE
+	#39
+unselect -all
+	#40
+select comp 'vga1/Mrom__varindex000482'
+	#comp "vga1/Mrom__varindex000482",  site "CLB_R24C11.S0",  type = SLICE
+	#41
+post block
+	#42
+unselect -all
+	#43
+unselect -all
+	#44
+unselect -all
+	#45
+select comp 'vga1/Result<6>'
+	#comp "vga1/Result<6>",  site "CLB_R2C17.S0",  type = SLICE

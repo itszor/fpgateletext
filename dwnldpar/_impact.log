@@ -1,0 +1,594 @@
+iMPACT Version: 10.1
+
+iMPACT log file Started on Sat Jan 17 15:54:29 2015
+
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+// *** BATCH CMD : addDevice -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.jed"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : addDevice -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.jed"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : Program -p 1 -e -v 
+
+
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Verifying device...done.
+'1': Verification completed successfully.
+'1': Putting device in ISP mode...done.
+'1': Programming completed successfully.
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Verify -p 1 
+
+
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Verifying device...done.
+'1': Verification completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : FunctionTest -p 1 
+
+
+'1': Putting device in ISP mode...done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl_vq64.bsd...
+'1':Applying Function test vectors....
+INFO:iMPACT:431 - '1':No vectors present.
+INFO:iMPACT:432 - '1':Functional test terminated
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Program -p 1 -e -v 
+
+
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Verifying device...done.
+'1': Verification completed successfully.
+'1': Putting device in ISP mode...done.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+PROGRESS_START - Starting Operation.
+Setting Target Device to Mode:BS, Device position 0.
+// *** BATCH CMD : assignFile -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.jed"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Program -p 1 -e -v 
+
+
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Verifying device...done.
+'1': Verification completed successfully.
+'1': Putting device in ISP mode...done.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : assignFile -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.isc"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.isc' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl_1532.bsd...
+INFO:iMPACT:501 - '1': Added Device XC9572XL successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Program -p 1 -e -v 
+
+
+'1': Performing Action : PROGRAM...
+INFO:iMPACT:1045 - '1': Performing  procedure: PROC_VERIFY_IDCODE...
+INFO:iMPACT:1045 - '1': Performing  flow: FLOW_VERIFY_IDCODE...
+INFO:iMPACT:1045 - '1': Performing  procedure: PROC_ENABLE...
+INFO:iMPACT:1045 - '1': Performing  flow: FLOW_ENABLE...
+INFO:iMPACT:1045 - '1': Performing  procedure: PROC_ERASE...
+INFO:iMPACT:1045 - '1': Performing  flow: FLOW_ERASE...
+INFO:iMPACT:1045 - '1': Performing  procedure: PROC_BLANK_CHECK...
+INFO:iMPACT:1045 - '1': Performing  flow: FLOW_BLANK_CHECK...
+INFO:iMPACT:1045 - '1': Performing  procedure: PROC_PROGRAM...
+INFO:iMPACT:1045 - '1': Performing  flow: FLOW_PROGRAM_ARRAY...
+INFO:iMPACT:1045 - '1': Performing  procedure: PROC_VERIFY...
+INFO:iMPACT:1045 - '1': Performing  flow: FLOW_VERIFY_ARRAY...
+INFO:iMPACT:1045 - '1': Performing  procedure: PROC_DISABLE...
+INFO:iMPACT:1045 - '1': Performing  flow: FLOW_DISABLE...
+PROGRESS_START - Starting Operation.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : assignFile -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Warning: Frequency is not supported yet, and the information is ignored.
+Warning: Frequency is not supported yet, and the information is ignored.
+Warning: Frequency is not supported yet, and the information is ignored.
+Warning: Frequency is not supported yet, and the information is ignored.
+Warning: Frequency is not supported yet, and the information is ignored.
+Warning: Frequency is not supported yet, and the information is ignored.
+INFO:iMPACT:501 - '1': Added Device BoundaryScanFile successfully.
+----------------------------------------------------------------------
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : assignFile -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.jed"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Reusing 78050001 key.
+Reusing FC050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 79050001 key.
+Reusing FD050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7A050001 key.
+Reusing FE050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7B050001 key.
+Reusing FF050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A0050001 key.
+Reusing 24050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A1050001 key.
+Reusing 25050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A2050001 key.
+Reusing 26050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A3050001 key.
+Reusing 27050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : saveProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+// *** BATCH CMD : saveProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+Preference Table
+Name                 Setting             
+StartupClock         AUTO_CORRECTION     
+AutoSignature        FALSE               
+KeepSVF              FALSE               
+ConcurrentMode       FALSE               
+UseHighz             FALSE               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           FALSE               
+SpiByteSwap          AUTO_CORRECTION     
+// *** BATCH CMD : loadProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Active mode is BS
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+Reusing 78050001 key.
+Reusing FC050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 79050001 key.
+Reusing FD050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7A050001 key.
+Reusing FE050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7B050001 key.
+Reusing FF050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A0050001 key.
+Reusing 24050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A1050001 key.
+Reusing 25050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A2050001 key.
+Reusing 26050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A3050001 key.
+Reusing 27050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Cable autodetection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : loadProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Active mode is BS
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : assignFile -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.jed"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Program -p 1 -e -v 
+
+
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Verifying device...done.
+'1': Verification completed successfully.
+'1': Putting device in ISP mode...done.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : assignFile -p 1 -file"/home/jules/code/tube/dwnldpar/dwnldpar.jed"
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : BlankCheck -p 1 
+
+
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Performing blank check on device ...
+'1': Device is blank.
+'1': Blank check completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Program -p 1 -e -v 
+
+
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Verifying device...done.
+'1': Verification completed successfully.
+'1': Putting device in ISP mode...done.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : saveProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+// *** BATCH CMD : saveProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : loadProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+'1': Loading file '/home/jules/code/tube/dwnldpar/dwnldpar.jed' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx/10.1/ISE/xc9500xl/data/xc9572xl.bsd...
+INFO:iMPACT:501 - '1': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Active mode is BS
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Reusing 78050001 key.
+Reusing FC050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 79050001 key.
+Reusing FD050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7A050001 key.
+Reusing FE050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7B050001 key.
+Reusing FF050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A0050001 key.
+Reusing 24050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A1050001 key.
+Reusing 25050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A2050001 key.
+Reusing 26050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A3050001 key.
+Reusing 27050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Reusing 78050001 key.
+Reusing FC050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 79050001 key.
+Reusing FD050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7A050001 key.
+Reusing FE050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing 7B050001 key.
+Reusing FF050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A0050001 key.
+Reusing 24050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A1050001 key.
+Reusing 25050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A2050001 key.
+Reusing 26050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+Reusing A3050001 key.
+Reusing 27050001 key.
+ OS platform = x86_64.
+ Cable operation is not supported when running the 32-bit version of the
+ application on a 64-bit platform.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Erase -p 1 
+
+
+'1': Erasing device...
+'1': Erasure completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : setCable -port svf -file"/home/jules/code/tube/dwnldpar/dwnldpar.svf"
+Reusing 64050001 key.
+Reusing E8050001 key.
+// *** BATCH CMD : Program -p 1 -e -v 
+
+
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Putting device in ISP mode...done.
+'1': Putting device in ISP mode...done.
+'1': Verifying device...done.
+'1': Verification completed successfully.
+'1': Putting device in ISP mode...done.
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+PROGRESS_START - Starting Operation.
+// *** BATCH CMD : saveProjectFile -file"/home/jules/code/tube/dwnldpar/dwnldpar.ipf"
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs

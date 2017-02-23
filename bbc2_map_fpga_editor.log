@@ -1,0 +1,20 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 K.31
+#Current Working Directory:
+#:D   /home/jules/code/tube
+#Host Name:
+#:H   octopus
+#Date/Time:
+#:T   Mon Jan  5 17:49:32 2015
+#------------------------------
+	#Reading bbc2_map.ncd...
+	#Loading device for application Rf_Device from file 'v200.nph' in environment /opt/xilinx/10.1/ISE.
+	#   "bbc2" is an NCD, version 3.2, device xc2s200, package fg256, speed -5
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all

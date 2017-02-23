@@ -1,0 +1,59 @@
+	*= $200
+
+filltest
+	.(
+	lda #0
+	sta $72
+	sta $74
+	sta $75
+
+again
+	lda #<$7c00
+	sta $70
+	sta $72
+	lda #>$7800
+	sta $71
+	lda #>$7c00
+	sta $73
+
+	lda $72
+	clc
+	adc $74
+	sta $72
+	lda $73
+	adc $75
+	sta $73
+
+	lda #'*'
+	ldy #0
+	sta ($72),y
+
+	ldy #0
+loop
+	lda ($70),y
+	sta ($72),y
+	iny
+	bne loop
+	inc $73
+	inc $71
+	lda $71
+	cmp #$80
+	bne loop
+
+
+	;lda $74
+	;sec
+	;sbc #1
+	;sta $74
+	;lda $75
+	;sbc #0
+	;sta $75
+
+	jmp again
+
+	.)
+	
+	.dsb $3fc - *, 0
+reset
+	.word filltest
+	.word 0

@@ -1,0 +1,199 @@
+Release 10.1 ngdbuild K.31 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/10.1/ISE/bin/lin/unwrapped/ngdbuild -ise
+/home/jules/code/tube/tube.ise -intstyle ise -dd _ngo -nt timestamp -i -p
+xc2s200-fg256-5 bursttest.ngc bursttest.ngd
+
+Reading NGO file "/home/jules/code/tube/bursttest.ngc" ...
+Reading in constraint information from 'bursttest.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:137 - Constraint <NET "sdram_sclkfb" TNM_NET =
+   sdram_sclkfb;> [bursttest.ucf(35)]: No appropriate instances for the TNM
+   constraint are driven by "sdram_sclkfb".
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_sdram_sclkfb = PERIOD
+   "sdram_sclkfb" 20 ns HIGH 50%;> [bursttest.ucf(37)]: Unable to find an active
+   'TNM' or 'TimeGrp' constraint named 'sdram_sclkfb'.
+
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_0 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_0 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_0 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_0 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_0 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_0 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_0 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_0 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_0 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_0 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_0 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_0 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_0 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_0 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_0 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_0 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_0 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_0 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_0 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_0 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_0 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_0 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_0 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_0 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clk0_1 =
+   PERIOD "sdramburst1_int_cl...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clk0_1 = PERIOD "sdramburst1_int_cl...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+WARNING:NgdBuild:1011 - The constraint <TIMESPEC TS_sdramburst1_int_clkdv_1 =
+   PERIOD "sdramburst1_int_c...> is overridden by the constraint <TIMESPEC
+   TS_sdramburst1_int_clkdv_1 = PERIOD "sdramburst1_int_c...>.
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  54
+
+Total memory usage is 73796 kilobytes
+
+Writing NGD file "bursttest.ngd" ...
+
+Writing NGDBUILD log file "bursttest.bld"...

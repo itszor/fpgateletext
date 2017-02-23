@@ -1,0 +1,72 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 K.31
+#Current Working Directory:
+#:D   /home/jules/code/tube
+#Host Name:
+#:H   octopus
+#Date/Time:
+#:T   Sat Jan  3 14:31:06 2015
+#------------------------------
+	#Reading bbc2.ncd...
+	#Loading device for application Rf_Device from file 'v200.nph' in environment /opt/xilinx/10.1/ISE.
+	#   "bbc2" is an NCD, version 3.2, device xc2s200, package fg256, speed -5
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select comp 'vga1/hold_graphics'
+	#comp "vga1/hold_graphics",  site "CLB_R12C16.S1",  type = SLICE
+	#4
+unselect -all
+	#5
+select site 'CLB_R12C16.S0'
+	#site "CLB_R12C16.S0",  type = SLICE
+	#6
+unselect -all
+	#7
+select comp 'vga1/hold_graphics'
+	#comp "vga1/hold_graphics",  site "CLB_R12C16.S1",  type = SLICE
+	#8
+unselect -all
+	#9
+select comp 'cpu1/BAH<4>'
+	#comp "cpu1/BAH<4>",  site "CLB_R12C39.S0",  type = SLICE
+	#10
+unselect -all
+	#11
+select comp 'cpu1/BAH<4>'
+	#comp "cpu1/BAH<4>",  site "CLB_R12C39.S0",  type = SLICE
+	#12
+unselect -all
+	#13
+select comp 'cpu1/BAH<4>'
+	#comp "cpu1/BAH<4>",  site "CLB_R12C39.S0",  type = SLICE
+	#14
+post block
+	#15
+unselect -all
+	#16
+select comp 'cpu1/IR<4>'
+	#comp "cpu1/IR<4>",  site "CLB_R17C40.S0",  type = SLICE
+	#17
+unselect -all
+	#18
+select comp 'cpu_address<7>'
+	#comp "cpu_address<7>",  site "CLB_R17C40.S1",  type = SLICE
+	#19
+unselect -all
+	#20
+select comp 'cpu1/IR<4>'
+	#comp "cpu1/IR<4>",  site "CLB_R17C40.S0",  type = SLICE
+	#21
+unselect -all
+	#22
+select comp 'cpu1/IR<4>'
+	#comp "cpu1/IR<4>",  site "CLB_R17C40.S0",  type = SLICE
+	#23
+post block

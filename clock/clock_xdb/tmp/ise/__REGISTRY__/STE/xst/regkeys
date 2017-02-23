@@ -1,0 +1,6 @@
+CommandLine
+/opt/xilinx/10.1/ISE/bin/lin/unwrapped/xst -ise /home/jules/code/tube/clock/clock.ise -intstyle ise -ifn /home/jules/code/tube/clock/clock.xst -ofn /home/jules/code/tube/clock/clock.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

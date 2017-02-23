@@ -1,0 +1,16 @@
+Pin Freeze File:  version K.31
+
+9572XL64 XC9572XL-10-VQ64
+master_clock S:PIN17
+fpga_clock_a S:PIN60
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+
+PARTITION FB2_2 fpga_clock_a_OBUF$BUF0
+
+
+
+

@@ -1,0 +1,70 @@
+Pin Freeze File:  version K.31
+
+9572XL64 XC9572XL-10-VQ64
+master_clk S:PIN17
+flash_ce_n S:PIN1
+pp_d<0> S:PIN31
+fpga_done S:PIN63
+fpga_pp_s<3> S:PIN64
+fpga_pp_s<4> S:PIN50
+fpga_pp_s<5> S:PIN49
+pp_d<1> S:PIN25
+pp_d<2> S:PIN24
+pp_d<3> S:PIN23
+pp_d<4> S:PIN22
+pp_d<5> S:PIN20
+pp_d<6> S:PIN19
+pp_d<7> S:PIN18
+fpga_pp_d<0> S:PIN40
+clka S:PIN60
+clkb S:PIN57
+fpga_d<4> S:PIN8
+fpga_d<5> S:PIN9
+fpga_d<6> S:PIN10
+fpga_d<7> S:PIN11
+fpga_cclk S:PIN59
+fpga_d<1> S:PIN5
+fpga_pp_d<1> S:PIN39
+fpga_wr_n S:PIN56
+fpga_tck S:PIN58
+fpga_prog_n S:PIN62
+fpga_cs_n S:PIN52
+fpga_pp_d<2> S:PIN38
+fpga_d<0> S:PIN4
+fpga_pp_d<3> S:PIN36
+fpga_pp_d<4> S:PIN35
+fpga_d<2> S:PIN6
+fpga_pp_d<5> S:PIN34
+fpga_d<3> S:PIN7
+fpga_pp_d<6> S:PIN33
+fpga_pp_d<7> S:PIN32
+pp_s<3> S:PIN27
+pp_s<4> S:PIN16
+pp_s<5> S:PIN15
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 config_data<0>
+PARTITION FB1_5 config_data<1> config_data<2>
+PARTITION FB1_8 config_data<3> pp_s_2
+PARTITION FB1_11 pp_s_1
+
+PARTITION FB2_2 clk_divider<1> fpga_tck_OBUF$BUF0 fpga_cclk_OBUF$BUF0
+PARTITION FB2_6 fpga_tck_OBUF$BUF1
+PARTITION FB2_12 pp_d_2_IBUF$BUF1
+PARTITION FB2_14 fpga_d_1_mux0000 pp_d_4_IBUF$BUF1
+PARTITION FB2_17 pp_d_5_IBUF$BUF1
+
+PARTITION FB3_4 pp_d_7_IBUF$BUF0
+PARTITION FB3_6 pp_d_5_IBUF$BUF0
+PARTITION FB3_9 pp_s_0 fpga_pp_d_1_OBUFE pp_d_6_IBUF$BUF0 cclk
+		
+PARTITION FB3_14 pp_d_4_IBUF$BUF0 pp_d_3_IBUF$BUF0
+PARTITION FB3_17 pp_d_2_IBUF$BUF0
+
+PARTITION FB4_12 fpga_tck_OBUF$BUF2
+PARTITION FB4_15 fpga_tck_OBUF
+PARTITION FB4_17 clkb_OBUF$BUF0 clk_divider<0>
+

@@ -1,0 +1,151 @@
+	*= $0
+
+	; ZP variables
+
+lineptr
+	.word 0
+
+	.dsb $200 - *, 0
+
+hello
+	.(
+	ldx #255
+	txs
+
+	lda #221
+	sta $fef0
+
+	; function set; 8 bit, etc.
+	lda #32+16+8+4
+	jsr lcdinst
+
+	; display on, cursor on
+	lda #14
+	jsr lcdinst
+
+	; entry mode set
+	lda #6
+	jsr lcdinst
+
+	; define chars
+	jsr definechars
+
+	; clear+home
+	lda #1
+	jsr lcdinst
+
+	lda #<message
+	sta lineptr
+	lda #>message
+	sta lineptr+1
+
+	stz line
+
+do_lines
+	ldx line
+	cpx #4
+	beq nomorelines
+	lda lines,x
+	ora #128
+	jsr lcdinst
+	inc line
+
+	.(
+	ldy #0
+loop
+	lda (lineptr),y
+	jsr lcddata
+	iny
+	cpy #16
+	bne loop
+	.)
+	
+	.(
+	lda lineptr
+	clc
+	adc #16
+	sta lineptr
+	bcc done
+	inc lineptr+1
+done
+	.)
+	
+	bra do_lines
+nomorelines
+
+	lda #5
+	sta $fef0
+
+	lda $fef2
+	sta $fef0
+
+stop
+	stp
+	jmp stop
+	.)
+
+definechars
+	.(
+	lda #64
+	jsr lcdinst
+	ldx #0
+loop
+	lda bgmchars,x
+	jsr lcddata
+	inx
+	cpx #7*8
+	bne loop
+	rts
+	.)
+
+lcdinst
+	sta $fef2
+	nop
+	jmp waitforlcd
+
+lcddata
+	sta $fef3
+	nop
+	jmp waitforlcd
+
+waitforlcd
+	bit $fef2
+	bmi waitforlcd
+	rts
+
+message
+	.asc "  ",3," ",4," ",5," ",5," ",6,"     "
+	.asc "  ",2,168,"-",170,"-",164,"======  "
+	.asc "  ",1,"| | |ASSIVE  "
+	.asc "  ",0,"|   |======  "
+
+line
+	.byte 0
+
+lines
+	.byte $00
+	.byte $40
+	.byte $10
+	.byte $50
+
+bgmchars
+	; BR
+	.byte $0b,$14,$1f,$00,$0a,$15,$1f,$00
+	; IS
+	.byte $16,$15,$09,$00,$11,$1f,$11,$00
+	; TO
+	.byte $0f,$11,$1e,$00,$10,$1f,$10,$00
+	; L
+	.byte $00,$00,$00,$00,$01,$01,$1f,$00
+	; G
+	.byte $07,$0f,$18,$1b,$1b,$1e,$1c,$00
+	; E
+	.byte $07,$0f,$18,$1e,$18,$1f,$1e,$00
+	; K
+	.byte $1b,$1f,$18,$1c,$1e,$1b,$1b,$00
+
+	.dsb $fffc - *, 0
+reset
+	.word hello
+	.word 0
+	.word 0

@@ -1,0 +1,6 @@
+CommandLine
+/opt/xilinx/10.1/ISE/bin/lin/unwrapped/reportgen -ise /home/jules/code/tube/tube.ise -intstyle ise -delay -o bbc2 bbc2.ncd
+s
+FormatString
+reportgen [-intstyle ise|xflow|silent] [-delay] [-clock_regions] [-unrouted_nets] [--dirt] [-pad [-padfmt pad|csv|text|all] [-padcolsort <displaystr>]] [-o <outfile>] <infile[.ncd]> [<constraintsfile[.pcf]>]
+s

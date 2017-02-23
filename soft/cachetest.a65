@@ -1,0 +1,44 @@
+	*= $0
+
+	nop
+	nop
+	nop
+	nop
+repeat
+	;lda #100
+	;sta $1000
+	;inc
+	;sta $1010
+	;inc
+	;sta $1020
+	;inc
+	;sta $1030
+
+	;lda #13
+	lda $1000
+	sta $0
+	;lda #13
+	lda $1001
+	sta $1
+	;lda $1002
+	sta $2
+	;lda $1003
+	sta $3
+
+	;lda #5
+	;sta $1002
+
+	;lda $1002
+	;sta $2
+
+stop
+	jmp stop
+
+	.dsb $1000 - *, 0
+	.byte 1,2,3,4
+	
+	.dsb $fffc - *, 0
+reset
+	.word repeat
+	.word 0
+	.word 0

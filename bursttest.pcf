@@ -1,0 +1,1111 @@
+//! **************************************************************************
+// Written by: Map K.31 on Mon Feb 20 16:50:50 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sdram_sclkfb" LOCATE = SITE "N8" LEVEL 1;
+COMP "flash_byte" LOCATE = SITE "J15" LEVEL 1;
+COMP "flash_ce" LOCATE = SITE "M15" LEVEL 1;
+COMP "flash_oe" LOCATE = SITE "L14" LEVEL 1;
+COMP "flash_we" LOCATE = SITE "D12" LEVEL 1;
+COMP "pcpu_clk<0>" LOCATE = SITE "A3" LEVEL 1;
+COMP "pcpu_clk<1>" LOCATE = SITE "C7" LEVEL 1;
+COMP "sdram_ba<0>" LOCATE = SITE "K2" LEVEL 1;
+COMP "sdram_ba<1>" LOCATE = SITE "L2" LEVEL 1;
+COMP "sdram_cke" LOCATE = SITE "L1" LEVEL 1;
+COMP "sdram_saddr<10>" LOCATE = SITE "L3" LEVEL 1;
+COMP "sdram_saddr<11>" LOCATE = SITE "M3" LEVEL 1;
+COMP "sdram_saddr<12>" LOCATE = SITE "M2" LEVEL 1;
+COMP "vga_blue<0>" LOCATE = SITE "H4" LEVEL 1;
+COMP "vga_blue<1>" LOCATE = SITE "K3" LEVEL 1;
+COMP "vga_blue<2>" LOCATE = SITE "L5" LEVEL 1;
+COMP "system_clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "pcpu_irq" LOCATE = SITE "T14" LEVEL 1;
+COMP "pcpu_nmi" LOCATE = SITE "R7" LEVEL 1;
+COMP "pcpu_rst" LOCATE = SITE "T7" LEVEL 1;
+COMP "lcd_cs" LOCATE = SITE "R12" LEVEL 1;
+COMP "flash_reset" LOCATE = SITE "A14" LEVEL 1;
+COMP "vga_hsync" LOCATE = SITE "K4" LEVEL 1;
+COMP "pcpu_address<10>" LOCATE = SITE "A5" LEVEL 1;
+COMP "pcpu_address<11>" LOCATE = SITE "B5" LEVEL 1;
+COMP "pcpu_address<20>" LOCATE = SITE "T10" LEVEL 1;
+COMP "pcpu_address<12>" LOCATE = SITE "D6" LEVEL 1;
+COMP "pcpu_address<21>" LOCATE = SITE "P10" LEVEL 1;
+COMP "pcpu_address<13>" LOCATE = SITE "A4" LEVEL 1;
+COMP "pcpu_address<22>" LOCATE = SITE "T11" LEVEL 1;
+COMP "pcpu_address<14>" LOCATE = SITE "B4" LEVEL 1;
+COMP "pcpu_address<23>" LOCATE = SITE "T12" LEVEL 1;
+COMP "pcpu_address<15>" LOCATE = SITE "E6" LEVEL 1;
+COMP "sdram_saddr<0>" LOCATE = SITE "L4" LEVEL 1;
+COMP "pcpu_address<16>" LOCATE = SITE "T9" LEVEL 1;
+COMP "sdram_saddr<1>" LOCATE = SITE "N1" LEVEL 1;
+COMP "pcpu_address<17>" LOCATE = SITE "R9" LEVEL 1;
+COMP "sdram_saddr<2>" LOCATE = SITE "N2" LEVEL 1;
+COMP "pcpu_address<18>" LOCATE = SITE "P9" LEVEL 1;
+COMP "sdram_saddr<3>" LOCATE = SITE "M4" LEVEL 1;
+COMP "pcpu_address<19>" LOCATE = SITE "N9" LEVEL 1;
+COMP "sdram_saddr<4>" LOCATE = SITE "T5" LEVEL 1;
+COMP "sdram_saddr<5>" LOCATE = SITE "N6" LEVEL 1;
+COMP "button_nrst" LOCATE = SITE "E3" LEVEL 1;
+COMP "sdram_saddr<6>" LOCATE = SITE "M6" LEVEL 1;
+COMP "sdram_saddr<7>" LOCATE = SITE "T3" LEVEL 1;
+COMP "sdram_saddr<8>" LOCATE = SITE "N5" LEVEL 1;
+COMP "sdram_saddr<9>" LOCATE = SITE "P1" LEVEL 1;
+COMP "sdram_cas_n" LOCATE = SITE "H3" LEVEL 1;
+COMP "vga_green<0>" LOCATE = SITE "H2" LEVEL 1;
+COMP "vga_green<1>" LOCATE = SITE "K5" LEVEL 1;
+COMP "vga_green<2>" LOCATE = SITE "R1" LEVEL 1;
+COMP "vga_red<0>" LOCATE = SITE "J1" LEVEL 1;
+COMP "vga_red<1>" LOCATE = SITE "M1" LEVEL 1;
+COMP "vga_vsync" LOCATE = SITE "K1" LEVEL 1;
+COMP "vga_red<2>" LOCATE = SITE "T2" LEVEL 1;
+COMP "pcpu_data<0>" LOCATE = SITE "T6" LEVEL 1;
+COMP "pcpu_data<1>" LOCATE = SITE "N7" LEVEL 1;
+COMP "sdram_sdata<10>" LOCATE = SITE "E2" LEVEL 1;
+COMP "pcpu_data<2>" LOCATE = SITE "R6" LEVEL 1;
+COMP "sdram_sdata<11>" LOCATE = SITE "E4" LEVEL 1;
+COMP "pcpu_data<3>" LOCATE = SITE "M7" LEVEL 1;
+COMP "sdram_sdata<12>" LOCATE = SITE "B1" LEVEL 1;
+COMP "pcpu_data<4>" LOCATE = SITE "P6" LEVEL 1;
+COMP "sdram_sdata<13>" LOCATE = SITE "A2" LEVEL 1;
+COMP "pcpu_data<5>" LOCATE = SITE "R5" LEVEL 1;
+COMP "sdram_sdata<14>" LOCATE = SITE "D5" LEVEL 1;
+COMP "pcpu_data<6>" LOCATE = SITE "T4" LEVEL 1;
+COMP "sdram_sdata<15>" LOCATE = SITE "C5" LEVEL 1;
+COMP "pcpu_data<7>" LOCATE = SITE "P5" LEVEL 1;
+COMP "pcpu_address<0>" LOCATE = SITE "A9" LEVEL 1;
+COMP "pcpu_address<1>" LOCATE = SITE "A8" LEVEL 1;
+COMP "pcpu_address<2>" LOCATE = SITE "C8" LEVEL 1;
+COMP "pcpu_address<3>" LOCATE = SITE "A7" LEVEL 1;
+COMP "pcpu_address<4>" LOCATE = SITE "B7" LEVEL 1;
+COMP "pcpu_address<5>" LOCATE = SITE "A6" LEVEL 1;
+COMP "pcpu_address<6>" LOCATE = SITE "D7" LEVEL 1;
+COMP "pcpu_address<7>" LOCATE = SITE "B6" LEVEL 1;
+COMP "pcpu_address<8>" LOCATE = SITE "E7" LEVEL 1;
+COMP "pcpu_address<9>" LOCATE = SITE "C6" LEVEL 1;
+COMP "sdram_cs_n" LOCATE = SITE "J3" LEVEL 1;
+COMP "sdram_dqmh" LOCATE = SITE "H1" LEVEL 1;
+COMP "sdram_dqml" LOCATE = SITE "G2" LEVEL 1;
+COMP "sdram_sdata<0>" LOCATE = SITE "C2" LEVEL 1;
+COMP "sdram_sdata<1>" LOCATE = SITE "C1" LEVEL 1;
+COMP "sdram_sdata<2>" LOCATE = SITE "F5" LEVEL 1;
+COMP "sdram_sdata<3>" LOCATE = SITE "D1" LEVEL 1;
+COMP "sdram_sdata<4>" LOCATE = SITE "F3" LEVEL 1;
+COMP "sdram_sdata<5>" LOCATE = SITE "F2" LEVEL 1;
+COMP "sdram_sdata<6>" LOCATE = SITE "F1" LEVEL 1;
+COMP "pcpu_read" LOCATE = SITE "T8" LEVEL 1;
+COMP "sdram_sdata<7>" LOCATE = SITE "G3" LEVEL 1;
+COMP "sdram_sdata<8>" LOCATE = SITE "G4" LEVEL 1;
+COMP "sdram_sdata<9>" LOCATE = SITE "G5" LEVEL 1;
+COMP "flash_address<10>" LOCATE = SITE "C16" LEVEL 1;
+COMP "flash_address<11>" LOCATE = SITE "E14" LEVEL 1;
+COMP "flash_address<20>" LOCATE = SITE "P11" LEVEL 1;
+COMP "flash_address<12>" LOCATE = SITE "D16" LEVEL 1;
+COMP "flash_address<13>" LOCATE = SITE "F13" LEVEL 1;
+COMP "flash_address<14>" LOCATE = SITE "E15" LEVEL 1;
+COMP "flash_address<15>" LOCATE = SITE "G12" LEVEL 1;
+COMP "flash_address<16>" LOCATE = SITE "G13" LEVEL 1;
+COMP "flash_address<17>" LOCATE = SITE "H16" LEVEL 1;
+COMP "flash_address<18>" LOCATE = SITE "A13" LEVEL 1;
+COMP "flash_address<19>" LOCATE = SITE "M10" LEVEL 1;
+COMP "sdram_sclk" LOCATE = SITE "J4" LEVEL 1;
+COMP "flash_data<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "flash_address<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "flash_data<1>" LOCATE = SITE "E16" LEVEL 1;
+COMP "flash_address<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "flash_data<2>" LOCATE = SITE "F15" LEVEL 1;
+COMP "flash_address<2>" LOCATE = SITE "C10" LEVEL 1;
+COMP "sdram_ras_n" LOCATE = SITE "J2" LEVEL 1;
+COMP "pcpu_nrdy" LOCATE = SITE "P8" LEVEL 1;
+COMP "flash_data<3>" LOCATE = SITE "G16" LEVEL 1;
+COMP "flash_address<3>" LOCATE = SITE "D10" LEVEL 1;
+COMP "flash_data<4>" LOCATE = SITE "J16" LEVEL 1;
+COMP "flash_address<4>" LOCATE = SITE "A11" LEVEL 1;
+COMP "flash_data<5>" LOCATE = SITE "M16" LEVEL 1;
+COMP "flash_address<5>" LOCATE = SITE "B11" LEVEL 1;
+COMP "sdram_we_n" LOCATE = SITE "G1" LEVEL 1;
+COMP "flash_data<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "flash_address<6>" LOCATE = SITE "C11" LEVEL 1;
+COMP "flash_data<7>" LOCATE = SITE "N14" LEVEL 1;
+COMP "flash_address<7>" LOCATE = SITE "A12" LEVEL 1;
+COMP "flash_address<8>" LOCATE = SITE "B12" LEVEL 1;
+COMP "flash_address<9>" LOCATE = SITE "E13" LEVEL 1;
+COMP "sdramburst1/intclk_buf" LOCATE = SITE "GCLKBUF3" LEVEL 1;
+COMP "sdramburst1/clk_intdll" LOCATE = SITE "DLL3" LEVEL 1;
+COMP "sdramburst1/clk_extdll" LOCATE = SITE "DLL2" LEVEL 1;
+COMP "sdramburst1/intclk_dv_buf" LOCATE = SITE "GCLKBUF2" LEVEL 1;
+PIN cache.A_pins<25> = BEL "cache.A" PINNAME "31";
+PIN cache.B_pins<25> = BEL "cache.B" PINNAME "31";
+TIMEGRP sdramburst1_int_clk0 = BEL "sync_reset" BEL "sdram_wr" BEL "sdram_rd"
+        BEL "sdram_addr_4" BEL "sdram_addr_5" BEL "sdram_addr_6" BEL
+        "sdram_addr_7" BEL "sdram_addr_8" BEL "sdram_addr_9" BEL
+        "sdram_addr_10" BEL "sdram_addr_11" BEL "sdram_addr_12" BEL
+        "sdram_addr_13" BEL "sdram_addr_14" BEL "sdram_addr_15" BEL
+        "sdram_addr_16" BEL "sdram_addr_17" BEL "sdram_addr_18" BEL
+        "sdram_addr_19" BEL "sdram_addr_20" BEL "sdram_addr_21" BEL
+        "sdram_addr_22" BEL "sdram_addr_23" BEL "pcpu_clk_0" BEL "pcpu_clk_1"
+        BEL "invalid_cache_line" BEL "wait_for_spill" BEL "wait_for_fill" BEL
+        "read_buf_dirty_30" BEL "wait_for_cache" BEL "read_buf_dirty_31" BEL
+        "read_buf_dirty_29" BEL "read_buf_dirty_28" BEL "read_buf_dirty_25"
+        BEL "read_buf_dirty_27" BEL "read_buf_dirty_26" BEL
+        "read_buf_dirty_22" BEL "read_buf_dirty_24" BEL "read_buf_dirty_23"
+        BEL "read_buf_dirty_19" BEL "read_buf_dirty_21" BEL
+        "read_buf_dirty_20" BEL "read_buf_dirty_16" BEL "read_buf_dirty_18"
+        BEL "read_buf_dirty_17" BEL "read_buf_dirty_13" BEL
+        "read_buf_dirty_15" BEL "read_buf_dirty_14" BEL "read_buf_dirty_10"
+        BEL "read_buf_dirty_12" BEL "read_buf_dirty_11" BEL "read_buf_dirty_7"
+        BEL "read_buf_dirty_9" BEL "read_buf_dirty_8" BEL "read_buf_dirty_6"
+        BEL "read_buf_dirty_5" BEL "read_buf_dirty_2" BEL "read_buf_dirty_4"
+        BEL "read_buf_dirty_3" BEL "cacheline_valid_31" BEL "read_buf_dirty_1"
+        BEL "read_buf_dirty_0" BEL "cacheline_valid_28" BEL
+        "cacheline_valid_30" BEL "cacheline_valid_29" BEL "cacheline_valid_25"
+        BEL "cacheline_valid_27" BEL "cacheline_valid_26" BEL
+        "cacheline_valid_22" BEL "cacheline_valid_24" BEL "cacheline_valid_23"
+        BEL "cacheline_valid_19" BEL "cacheline_valid_21" BEL
+        "cacheline_valid_20" BEL "cacheline_valid_16" BEL "cacheline_valid_18"
+        BEL "cacheline_valid_17" BEL "cacheline_valid_15" BEL
+        "cacheline_valid_14" BEL "cacheline_valid_11" BEL "cacheline_valid_13"
+        BEL "cacheline_valid_12" BEL "cacheline_valid_8" BEL
+        "cacheline_valid_10" BEL "cacheline_valid_9" BEL "cacheline_valid_5"
+        BEL "cacheline_valid_7" BEL "cacheline_valid_6" BEL
+        "cacheline_valid_4" BEL "cacheline_valid_3" BEL "cacheline_valid_0"
+        BEL "cacheline_valid_2" BEL "cacheline_valid_1" BEL
+        "cache_line_addr_0" BEL "cache_line_addr_1" BEL "cache_line_addr_2"
+        BEL "cache_line_addr_3" BEL "cache_line_addr_4" BEL
+        "cache_line_addr_5" BEL "cache_line_addr_6" BEL "cache_line_addr_7"
+        BEL "cache_line_addr_8" BEL "cache_line_addr_9" BEL
+        "cache_line_addr_10" BEL "cache_line_addr_11" BEL "cache_line_addr_12"
+        BEL "cache_line_addr_13" BEL "cache_line_addr_14" BEL
+        "address_looker_0" BEL "address_looker_1" BEL "address_looker_2" BEL
+        "address_looker_3" BEL "char_val_0" BEL "char_val_2" BEL "char_val_3"
+        BEL "char_val_4" BEL "char_val_5" BEL "char_val_6" BEL "char_val_7"
+        BEL "clockphase_0" BEL "clockphase_1" BEL "clockphase_2" BEL
+        "clockphase_3" BEL "reset_for_longer_0" BEL "reset_for_longer_1" BEL
+        "reset_for_longer_2" BEL "reset_for_longer_3" BEL "reset_for_longer_4"
+        BEL "reset_for_longer_5" BEL "sdramburst1/burst_offset_2" BEL
+        "sdramburst1/burst_offset_1" BEL "sdramburst1/burst_offset_0" BEL
+        "sdramburst1/refreshctr_10" BEL "sdramburst1/refreshctr_9" BEL
+        "sdramburst1/refreshctr_8" BEL "sdramburst1/refreshctr_7" BEL
+        "sdramburst1/refreshctr_6" BEL "sdramburst1/refreshctr_5" BEL
+        "sdramburst1/refreshctr_4" BEL "sdramburst1/refreshctr_3" BEL
+        "sdramburst1/refreshctr_2" BEL "sdramburst1/refreshctr_1" BEL
+        "sdramburst1/refreshctr_0" BEL "sdramburst1/sDOutEn" BEL
+        "sdramburst1/rampipe_sdouten_10" BEL "sdramburst1/rampipe_sdouten_2"
+        BEL "sdramburst1/rampipe_sdouten_1" BEL
+        "sdramburst1/rampipe_sdouten_0" BEL "sdramburst1/ready" BEL
+        "sdramburst1/active_row_for_bank_0_12" BEL
+        "sdramburst1/active_row_for_bank_0_11" BEL
+        "sdramburst1/active_row_for_bank_0_10" BEL
+        "sdramburst1/active_row_for_bank_0_9" BEL
+        "sdramburst1/active_row_for_bank_0_8" BEL
+        "sdramburst1/active_row_for_bank_0_7" BEL
+        "sdramburst1/active_row_for_bank_0_6" BEL
+        "sdramburst1/active_row_for_bank_0_5" BEL
+        "sdramburst1/active_row_for_bank_0_4" BEL
+        "sdramburst1/active_row_for_bank_0_3" BEL
+        "sdramburst1/active_row_for_bank_0_2" BEL
+        "sdramburst1/active_row_for_bank_0_1" BEL
+        "sdramburst1/active_row_for_bank_0_0" BEL
+        "sdramburst1/bank_row_active_0" BEL
+        "sdramburst1/active_row_for_bank_1_12" BEL
+        "sdramburst1/active_row_for_bank_1_11" BEL
+        "sdramburst1/active_row_for_bank_1_10" BEL
+        "sdramburst1/active_row_for_bank_1_9" BEL
+        "sdramburst1/active_row_for_bank_1_8" BEL
+        "sdramburst1/active_row_for_bank_1_7" BEL
+        "sdramburst1/active_row_for_bank_1_6" BEL
+        "sdramburst1/active_row_for_bank_1_5" BEL
+        "sdramburst1/active_row_for_bank_1_4" BEL
+        "sdramburst1/active_row_for_bank_1_3" BEL
+        "sdramburst1/active_row_for_bank_1_2" BEL
+        "sdramburst1/active_row_for_bank_1_1" BEL
+        "sdramburst1/active_row_for_bank_1_0" BEL
+        "sdramburst1/bank_row_active_1" BEL
+        "sdramburst1/rampipe_burstctr_bits_3" BEL "sdramburst1/address_b_23"
+        BEL "sdramburst1/address_b_22" BEL "sdramburst1/address_b_21" BEL
+        "sdramburst1/address_b_20" BEL "sdramburst1/address_b_19" BEL
+        "sdramburst1/address_b_18" BEL "sdramburst1/address_b_17" BEL
+        "sdramburst1/address_b_16" BEL "sdramburst1/address_b_15" BEL
+        "sdramburst1/address_b_14" BEL "sdramburst1/address_b_13" BEL
+        "sdramburst1/address_b_12" BEL "sdramburst1/address_b_11" BEL
+        "sdramburst1/address_b_10" BEL "sdramburst1/address_b_9" BEL
+        "sdramburst1/address_b_8" BEL "sdramburst1/address_b_7" BEL
+        "sdramburst1/address_b_6" BEL "sdramburst1/address_b_5" BEL
+        "sdramburst1/address_b_4" BEL "sdramburst1/command_8" BEL
+        "sdramburst1/command_7" BEL "sdramburst1/command_6" BEL
+        "sdramburst1/read_requested" BEL "sdramburst1/delay_8" BEL
+        "sdramburst1/delay_2" BEL "sdramburst1/next_state_3" BEL
+        "sdramburst1/next_state_2" BEL "sdramburst1/next_state_1" BEL
+        "sdramburst1/state_3" BEL "sdramburst1/state_2" BEL
+        "sdramburst1/state_1" BEL "sdramburst1/command_17" BEL
+        "sdramburst1/command_16" BEL "sdramburst1/command_15" BEL
+        "sdramburst1/command_13" BEL "sdramburst1/command_12" BEL
+        "sdramburst1/command_5" BEL "sdramburst1/command_4" BEL
+        "sdramburst1/command_3" BEL "sdramburst1/rampipe_inhibit_write_2" BEL
+        "sdramburst1/rampipe_inhibit_write_1" BEL
+        "sdramburst1/rampipe_inhibit_write_0" BEL
+        "sdramburst1/rampipe_sdouten_9" BEL "sdramburst1/rampipe_sdouten_8"
+        BEL "sdramburst1/rampipe_sdouten_7" BEL
+        "sdramburst1/rampipe_sdouten_6" BEL "sdramburst1/rampipe_sdouten_5"
+        BEL "sdramburst1/rampipe_sdouten_4" BEL
+        "sdramburst1/rampipe_sdouten_3" BEL "sdramburst1/delay_9" BEL
+        "sdramburst1/delay_7" BEL "sdramburst1/delay_6" BEL
+        "sdramburst1/delay_5" BEL "sdramburst1/delay_4" BEL
+        "sdramburst1/delay_3" BEL "sdramburst1/delay_1" BEL
+        "sdramburst1/delay_0" BEL "sdramburst1/next_state_0" BEL
+        "sdramburst1/state_4" BEL "sdramburst1/state_0" BEL
+        "sdramburst1/command_1" BEL "sdramburst1/command_0" BEL "sync_reset_1"
+        BEL "sync_reset_2" BEL "sync_reset_3" BEL "sync_reset_4" BEL
+        "sync_reset_5" BEL "sync_reset_6" BEL "sync_reset_7" BEL
+        "sync_reset_8" BEL "sync_reset_9" BEL "sync_reset_10" BEL
+        "sync_reset_11" BEL "sync_reset_12" BEL "sync_reset_13" BEL
+        "sdramburst1/state_0_1" BEL "sdramburst1/state_4_1" BEL
+        "sdramburst1/address_b_23_1" BEL "sync_reset_14" BEL "ram0.A" BEL
+        "ram1.A" PIN "cache.A_pins<25>" PIN "cache.B_pins<25>" BEL
+        "Mram_cached_address10.F" BEL "Mram_cached_address10.G" BEL
+        "Mram_cached_address11.F" BEL "Mram_cached_address11.G" BEL
+        "Mram_cached_address12.F" BEL "Mram_cached_address12.G" BEL
+        "Mram_cached_address13.F" BEL "Mram_cached_address13.G" BEL
+        "Mram_cached_address14.F" BEL "Mram_cached_address14.G" BEL
+        "Mram_cached_address15.F" BEL "Mram_cached_address15.G" BEL
+        "Mram_cached_address1.F" BEL "Mram_cached_address1.G" BEL
+        "Mram_cached_address2.F" BEL "Mram_cached_address2.G" BEL
+        "Mram_cached_address3.F" BEL "Mram_cached_address3.G" BEL
+        "Mram_cached_address4.F" BEL "Mram_cached_address4.G" BEL
+        "Mram_cached_address5.F" BEL "Mram_cached_address5.G" BEL
+        "Mram_cached_address6.F" BEL "Mram_cached_address6.G" BEL
+        "Mram_cached_address7.F" BEL "Mram_cached_address7.G" BEL
+        "Mram_cached_address8.F" BEL "Mram_cached_address8.G" BEL
+        "Mram_cached_address9.F" BEL "Mram_cached_address9.G";
+TIMEGRP sdramburst1_int_clk0_1 = BEL "sync_reset" BEL "sdram_wr" BEL
+        "sdram_rd" BEL "sdram_addr_4" BEL "sdram_addr_5" BEL "sdram_addr_6"
+        BEL "sdram_addr_7" BEL "sdram_addr_8" BEL "sdram_addr_9" BEL
+        "sdram_addr_10" BEL "sdram_addr_11" BEL "sdram_addr_12" BEL
+        "sdram_addr_13" BEL "sdram_addr_14" BEL "sdram_addr_15" BEL
+        "sdram_addr_16" BEL "sdram_addr_17" BEL "sdram_addr_18" BEL
+        "sdram_addr_19" BEL "sdram_addr_20" BEL "sdram_addr_21" BEL
+        "sdram_addr_22" BEL "sdram_addr_23" BEL "pcpu_clk_0" BEL "pcpu_clk_1"
+        BEL "invalid_cache_line" BEL "wait_for_spill" BEL "wait_for_fill" BEL
+        "read_buf_dirty_30" BEL "wait_for_cache" BEL "read_buf_dirty_31" BEL
+        "read_buf_dirty_29" BEL "read_buf_dirty_28" BEL "read_buf_dirty_25"
+        BEL "read_buf_dirty_27" BEL "read_buf_dirty_26" BEL
+        "read_buf_dirty_22" BEL "read_buf_dirty_24" BEL "read_buf_dirty_23"
+        BEL "read_buf_dirty_19" BEL "read_buf_dirty_21" BEL
+        "read_buf_dirty_20" BEL "read_buf_dirty_16" BEL "read_buf_dirty_18"
+        BEL "read_buf_dirty_17" BEL "read_buf_dirty_13" BEL
+        "read_buf_dirty_15" BEL "read_buf_dirty_14" BEL "read_buf_dirty_10"
+        BEL "read_buf_dirty_12" BEL "read_buf_dirty_11" BEL "read_buf_dirty_7"
+        BEL "read_buf_dirty_9" BEL "read_buf_dirty_8" BEL "read_buf_dirty_6"
+        BEL "read_buf_dirty_5" BEL "read_buf_dirty_2" BEL "read_buf_dirty_4"
+        BEL "read_buf_dirty_3" BEL "cacheline_valid_31" BEL "read_buf_dirty_1"
+        BEL "read_buf_dirty_0" BEL "cacheline_valid_28" BEL
+        "cacheline_valid_30" BEL "cacheline_valid_29" BEL "cacheline_valid_25"
+        BEL "cacheline_valid_27" BEL "cacheline_valid_26" BEL
+        "cacheline_valid_22" BEL "cacheline_valid_24" BEL "cacheline_valid_23"
+        BEL "cacheline_valid_19" BEL "cacheline_valid_21" BEL
+        "cacheline_valid_20" BEL "cacheline_valid_16" BEL "cacheline_valid_18"
+        BEL "cacheline_valid_17" BEL "cacheline_valid_15" BEL
+        "cacheline_valid_14" BEL "cacheline_valid_11" BEL "cacheline_valid_13"
+        BEL "cacheline_valid_12" BEL "cacheline_valid_8" BEL
+        "cacheline_valid_10" BEL "cacheline_valid_9" BEL "cacheline_valid_5"
+        BEL "cacheline_valid_7" BEL "cacheline_valid_6" BEL
+        "cacheline_valid_4" BEL "cacheline_valid_3" BEL "cacheline_valid_0"
+        BEL "cacheline_valid_2" BEL "cacheline_valid_1" BEL
+        "cache_line_addr_0" BEL "cache_line_addr_1" BEL "cache_line_addr_2"
+        BEL "cache_line_addr_3" BEL "cache_line_addr_4" BEL
+        "cache_line_addr_5" BEL "cache_line_addr_6" BEL "cache_line_addr_7"
+        BEL "cache_line_addr_8" BEL "cache_line_addr_9" BEL
+        "cache_line_addr_10" BEL "cache_line_addr_11" BEL "cache_line_addr_12"
+        BEL "cache_line_addr_13" BEL "cache_line_addr_14" BEL
+        "address_looker_0" BEL "address_looker_1" BEL "address_looker_2" BEL
+        "address_looker_3" BEL "char_val_0" BEL "char_val_2" BEL "char_val_3"
+        BEL "char_val_4" BEL "char_val_5" BEL "char_val_6" BEL "char_val_7"
+        BEL "clockphase_0" BEL "clockphase_1" BEL "clockphase_2" BEL
+        "clockphase_3" BEL "reset_for_longer_0" BEL "reset_for_longer_1" BEL
+        "reset_for_longer_2" BEL "reset_for_longer_3" BEL "reset_for_longer_4"
+        BEL "reset_for_longer_5" BEL "sdramburst1/burst_offset_2" BEL
+        "sdramburst1/burst_offset_1" BEL "sdramburst1/burst_offset_0" BEL
+        "sdramburst1/refreshctr_10" BEL "sdramburst1/refreshctr_9" BEL
+        "sdramburst1/refreshctr_8" BEL "sdramburst1/refreshctr_7" BEL
+        "sdramburst1/refreshctr_6" BEL "sdramburst1/refreshctr_5" BEL
+        "sdramburst1/refreshctr_4" BEL "sdramburst1/refreshctr_3" BEL
+        "sdramburst1/refreshctr_2" BEL "sdramburst1/refreshctr_1" BEL
+        "sdramburst1/refreshctr_0" BEL "sdramburst1/sDOutEn" BEL
+        "sdramburst1/rampipe_sdouten_10" BEL "sdramburst1/rampipe_sdouten_2"
+        BEL "sdramburst1/rampipe_sdouten_1" BEL
+        "sdramburst1/rampipe_sdouten_0" BEL "sdramburst1/ready" BEL
+        "sdramburst1/active_row_for_bank_0_12" BEL
+        "sdramburst1/active_row_for_bank_0_11" BEL
+        "sdramburst1/active_row_for_bank_0_10" BEL
+        "sdramburst1/active_row_for_bank_0_9" BEL
+        "sdramburst1/active_row_for_bank_0_8" BEL
+        "sdramburst1/active_row_for_bank_0_7" BEL
+        "sdramburst1/active_row_for_bank_0_6" BEL
+        "sdramburst1/active_row_for_bank_0_5" BEL
+        "sdramburst1/active_row_for_bank_0_4" BEL
+        "sdramburst1/active_row_for_bank_0_3" BEL
+        "sdramburst1/active_row_for_bank_0_2" BEL
+        "sdramburst1/active_row_for_bank_0_1" BEL
+        "sdramburst1/active_row_for_bank_0_0" BEL
+        "sdramburst1/bank_row_active_0" BEL
+        "sdramburst1/active_row_for_bank_1_12" BEL
+        "sdramburst1/active_row_for_bank_1_11" BEL
+        "sdramburst1/active_row_for_bank_1_10" BEL
+        "sdramburst1/active_row_for_bank_1_9" BEL
+        "sdramburst1/active_row_for_bank_1_8" BEL
+        "sdramburst1/active_row_for_bank_1_7" BEL
+        "sdramburst1/active_row_for_bank_1_6" BEL
+        "sdramburst1/active_row_for_bank_1_5" BEL
+        "sdramburst1/active_row_for_bank_1_4" BEL
+        "sdramburst1/active_row_for_bank_1_3" BEL
+        "sdramburst1/active_row_for_bank_1_2" BEL
+        "sdramburst1/active_row_for_bank_1_1" BEL
+        "sdramburst1/active_row_for_bank_1_0" BEL
+        "sdramburst1/bank_row_active_1" BEL
+        "sdramburst1/rampipe_burstctr_bits_3" BEL "sdramburst1/address_b_23"
+        BEL "sdramburst1/address_b_22" BEL "sdramburst1/address_b_21" BEL
+        "sdramburst1/address_b_20" BEL "sdramburst1/address_b_19" BEL
+        "sdramburst1/address_b_18" BEL "sdramburst1/address_b_17" BEL
+        "sdramburst1/address_b_16" BEL "sdramburst1/address_b_15" BEL
+        "sdramburst1/address_b_14" BEL "sdramburst1/address_b_13" BEL
+        "sdramburst1/address_b_12" BEL "sdramburst1/address_b_11" BEL
+        "sdramburst1/address_b_10" BEL "sdramburst1/address_b_9" BEL
+        "sdramburst1/address_b_8" BEL "sdramburst1/address_b_7" BEL
+        "sdramburst1/address_b_6" BEL "sdramburst1/address_b_5" BEL
+        "sdramburst1/address_b_4" BEL "sdramburst1/command_8" BEL
+        "sdramburst1/command_7" BEL "sdramburst1/command_6" BEL
+        "sdramburst1/read_requested" BEL "sdramburst1/delay_8" BEL
+        "sdramburst1/delay_2" BEL "sdramburst1/next_state_3" BEL
+        "sdramburst1/next_state_2" BEL "sdramburst1/next_state_1" BEL
+        "sdramburst1/state_3" BEL "sdramburst1/state_2" BEL
+        "sdramburst1/state_1" BEL "sdramburst1/command_17" BEL
+        "sdramburst1/command_16" BEL "sdramburst1/command_15" BEL
+        "sdramburst1/command_13" BEL "sdramburst1/command_12" BEL
+        "sdramburst1/command_5" BEL "sdramburst1/command_4" BEL
+        "sdramburst1/command_3" BEL "sdramburst1/rampipe_inhibit_write_2" BEL
+        "sdramburst1/rampipe_inhibit_write_1" BEL
+        "sdramburst1/rampipe_inhibit_write_0" BEL
+        "sdramburst1/rampipe_sdouten_9" BEL "sdramburst1/rampipe_sdouten_8"
+        BEL "sdramburst1/rampipe_sdouten_7" BEL
+        "sdramburst1/rampipe_sdouten_6" BEL "sdramburst1/rampipe_sdouten_5"
+        BEL "sdramburst1/rampipe_sdouten_4" BEL
+        "sdramburst1/rampipe_sdouten_3" BEL "sdramburst1/delay_9" BEL
+        "sdramburst1/delay_7" BEL "sdramburst1/delay_6" BEL
+        "sdramburst1/delay_5" BEL "sdramburst1/delay_4" BEL
+        "sdramburst1/delay_3" BEL "sdramburst1/delay_1" BEL
+        "sdramburst1/delay_0" BEL "sdramburst1/next_state_0" BEL
+        "sdramburst1/state_4" BEL "sdramburst1/state_0" BEL
+        "sdramburst1/command_1" BEL "sdramburst1/command_0" BEL "sync_reset_1"
+        BEL "sync_reset_2" BEL "sync_reset_3" BEL "sync_reset_4" BEL
+        "sync_reset_5" BEL "sync_reset_6" BEL "sync_reset_7" BEL
+        "sync_reset_8" BEL "sync_reset_9" BEL "sync_reset_10" BEL
+        "sync_reset_11" BEL "sync_reset_12" BEL "sync_reset_13" BEL
+        "sdramburst1/state_0_1" BEL "sdramburst1/state_4_1" BEL
+        "sdramburst1/address_b_23_1" BEL "sync_reset_14" BEL "ram0.A" BEL
+        "ram1.A" PIN "cache.A_pins<25>" PIN "cache.B_pins<25>" BEL
+        "Mram_cached_address10.F" BEL "Mram_cached_address10.G" BEL
+        "Mram_cached_address11.F" BEL "Mram_cached_address11.G" BEL
+        "Mram_cached_address12.F" BEL "Mram_cached_address12.G" BEL
+        "Mram_cached_address13.F" BEL "Mram_cached_address13.G" BEL
+        "Mram_cached_address14.F" BEL "Mram_cached_address14.G" BEL
+        "Mram_cached_address15.F" BEL "Mram_cached_address15.G" BEL
+        "Mram_cached_address1.F" BEL "Mram_cached_address1.G" BEL
+        "Mram_cached_address2.F" BEL "Mram_cached_address2.G" BEL
+        "Mram_cached_address3.F" BEL "Mram_cached_address3.G" BEL
+        "Mram_cached_address4.F" BEL "Mram_cached_address4.G" BEL
+        "Mram_cached_address5.F" BEL "Mram_cached_address5.G" BEL
+        "Mram_cached_address6.F" BEL "Mram_cached_address6.G" BEL
+        "Mram_cached_address7.F" BEL "Mram_cached_address7.G" BEL
+        "Mram_cached_address8.F" BEL "Mram_cached_address8.G" BEL
+        "Mram_cached_address9.F" BEL "Mram_cached_address9.G";
+TIMEGRP sdramburst1_int_clk0_0 = BEL "sync_reset" BEL "sdram_wr" BEL
+        "sdram_rd" BEL "sdram_addr_4" BEL "sdram_addr_5" BEL "sdram_addr_6"
+        BEL "sdram_addr_7" BEL "sdram_addr_8" BEL "sdram_addr_9" BEL
+        "sdram_addr_10" BEL "sdram_addr_11" BEL "sdram_addr_12" BEL
+        "sdram_addr_13" BEL "sdram_addr_14" BEL "sdram_addr_15" BEL
+        "sdram_addr_16" BEL "sdram_addr_17" BEL "sdram_addr_18" BEL
+        "sdram_addr_19" BEL "sdram_addr_20" BEL "sdram_addr_21" BEL
+        "sdram_addr_22" BEL "sdram_addr_23" BEL "pcpu_clk_0" BEL "pcpu_clk_1"
+        BEL "invalid_cache_line" BEL "wait_for_spill" BEL "wait_for_fill" BEL
+        "read_buf_dirty_30" BEL "wait_for_cache" BEL "read_buf_dirty_31" BEL
+        "read_buf_dirty_29" BEL "read_buf_dirty_28" BEL "read_buf_dirty_25"
+        BEL "read_buf_dirty_27" BEL "read_buf_dirty_26" BEL
+        "read_buf_dirty_22" BEL "read_buf_dirty_24" BEL "read_buf_dirty_23"
+        BEL "read_buf_dirty_19" BEL "read_buf_dirty_21" BEL
+        "read_buf_dirty_20" BEL "read_buf_dirty_16" BEL "read_buf_dirty_18"
+        BEL "read_buf_dirty_17" BEL "read_buf_dirty_13" BEL
+        "read_buf_dirty_15" BEL "read_buf_dirty_14" BEL "read_buf_dirty_10"
+        BEL "read_buf_dirty_12" BEL "read_buf_dirty_11" BEL "read_buf_dirty_7"
+        BEL "read_buf_dirty_9" BEL "read_buf_dirty_8" BEL "read_buf_dirty_6"
+        BEL "read_buf_dirty_5" BEL "read_buf_dirty_2" BEL "read_buf_dirty_4"
+        BEL "read_buf_dirty_3" BEL "cacheline_valid_31" BEL "read_buf_dirty_1"
+        BEL "read_buf_dirty_0" BEL "cacheline_valid_28" BEL
+        "cacheline_valid_30" BEL "cacheline_valid_29" BEL "cacheline_valid_25"
+        BEL "cacheline_valid_27" BEL "cacheline_valid_26" BEL
+        "cacheline_valid_22" BEL "cacheline_valid_24" BEL "cacheline_valid_23"
+        BEL "cacheline_valid_19" BEL "cacheline_valid_21" BEL
+        "cacheline_valid_20" BEL "cacheline_valid_16" BEL "cacheline_valid_18"
+        BEL "cacheline_valid_17" BEL "cacheline_valid_15" BEL
+        "cacheline_valid_14" BEL "cacheline_valid_11" BEL "cacheline_valid_13"
+        BEL "cacheline_valid_12" BEL "cacheline_valid_8" BEL
+        "cacheline_valid_10" BEL "cacheline_valid_9" BEL "cacheline_valid_5"
+        BEL "cacheline_valid_7" BEL "cacheline_valid_6" BEL
+        "cacheline_valid_4" BEL "cacheline_valid_3" BEL "cacheline_valid_0"
+        BEL "cacheline_valid_2" BEL "cacheline_valid_1" BEL
+        "cache_line_addr_0" BEL "cache_line_addr_1" BEL "cache_line_addr_2"
+        BEL "cache_line_addr_3" BEL "cache_line_addr_4" BEL
+        "cache_line_addr_5" BEL "cache_line_addr_6" BEL "cache_line_addr_7"
+        BEL "cache_line_addr_8" BEL "cache_line_addr_9" BEL
+        "cache_line_addr_10" BEL "cache_line_addr_11" BEL "cache_line_addr_12"
+        BEL "cache_line_addr_13" BEL "cache_line_addr_14" BEL
+        "address_looker_0" BEL "address_looker_1" BEL "address_looker_2" BEL
+        "address_looker_3" BEL "char_val_0" BEL "char_val_2" BEL "char_val_3"
+        BEL "char_val_4" BEL "char_val_5" BEL "char_val_6" BEL "char_val_7"
+        BEL "clockphase_0" BEL "clockphase_1" BEL "clockphase_2" BEL
+        "clockphase_3" BEL "reset_for_longer_0" BEL "reset_for_longer_1" BEL
+        "reset_for_longer_2" BEL "reset_for_longer_3" BEL "reset_for_longer_4"
+        BEL "reset_for_longer_5" BEL "sdramburst1/burst_offset_2" BEL
+        "sdramburst1/burst_offset_1" BEL "sdramburst1/burst_offset_0" BEL
+        "sdramburst1/refreshctr_10" BEL "sdramburst1/refreshctr_9" BEL
+        "sdramburst1/refreshctr_8" BEL "sdramburst1/refreshctr_7" BEL
+        "sdramburst1/refreshctr_6" BEL "sdramburst1/refreshctr_5" BEL
+        "sdramburst1/refreshctr_4" BEL "sdramburst1/refreshctr_3" BEL
+        "sdramburst1/refreshctr_2" BEL "sdramburst1/refreshctr_1" BEL
+        "sdramburst1/refreshctr_0" BEL "sdramburst1/sDOutEn" BEL
+        "sdramburst1/rampipe_sdouten_10" BEL "sdramburst1/rampipe_sdouten_2"
+        BEL "sdramburst1/rampipe_sdouten_1" BEL
+        "sdramburst1/rampipe_sdouten_0" BEL "sdramburst1/ready" BEL
+        "sdramburst1/active_row_for_bank_0_12" BEL
+        "sdramburst1/active_row_for_bank_0_11" BEL
+        "sdramburst1/active_row_for_bank_0_10" BEL
+        "sdramburst1/active_row_for_bank_0_9" BEL
+        "sdramburst1/active_row_for_bank_0_8" BEL
+        "sdramburst1/active_row_for_bank_0_7" BEL
+        "sdramburst1/active_row_for_bank_0_6" BEL
+        "sdramburst1/active_row_for_bank_0_5" BEL
+        "sdramburst1/active_row_for_bank_0_4" BEL
+        "sdramburst1/active_row_for_bank_0_3" BEL
+        "sdramburst1/active_row_for_bank_0_2" BEL
+        "sdramburst1/active_row_for_bank_0_1" BEL
+        "sdramburst1/active_row_for_bank_0_0" BEL
+        "sdramburst1/bank_row_active_0" BEL
+        "sdramburst1/active_row_for_bank_1_12" BEL
+        "sdramburst1/active_row_for_bank_1_11" BEL
+        "sdramburst1/active_row_for_bank_1_10" BEL
+        "sdramburst1/active_row_for_bank_1_9" BEL
+        "sdramburst1/active_row_for_bank_1_8" BEL
+        "sdramburst1/active_row_for_bank_1_7" BEL
+        "sdramburst1/active_row_for_bank_1_6" BEL
+        "sdramburst1/active_row_for_bank_1_5" BEL
+        "sdramburst1/active_row_for_bank_1_4" BEL
+        "sdramburst1/active_row_for_bank_1_3" BEL
+        "sdramburst1/active_row_for_bank_1_2" BEL
+        "sdramburst1/active_row_for_bank_1_1" BEL
+        "sdramburst1/active_row_for_bank_1_0" BEL
+        "sdramburst1/bank_row_active_1" BEL
+        "sdramburst1/rampipe_burstctr_bits_3" BEL "sdramburst1/address_b_23"
+        BEL "sdramburst1/address_b_22" BEL "sdramburst1/address_b_21" BEL
+        "sdramburst1/address_b_20" BEL "sdramburst1/address_b_19" BEL
+        "sdramburst1/address_b_18" BEL "sdramburst1/address_b_17" BEL
+        "sdramburst1/address_b_16" BEL "sdramburst1/address_b_15" BEL
+        "sdramburst1/address_b_14" BEL "sdramburst1/address_b_13" BEL
+        "sdramburst1/address_b_12" BEL "sdramburst1/address_b_11" BEL
+        "sdramburst1/address_b_10" BEL "sdramburst1/address_b_9" BEL
+        "sdramburst1/address_b_8" BEL "sdramburst1/address_b_7" BEL
+        "sdramburst1/address_b_6" BEL "sdramburst1/address_b_5" BEL
+        "sdramburst1/address_b_4" BEL "sdramburst1/command_8" BEL
+        "sdramburst1/command_7" BEL "sdramburst1/command_6" BEL
+        "sdramburst1/read_requested" BEL "sdramburst1/delay_8" BEL
+        "sdramburst1/delay_2" BEL "sdramburst1/next_state_3" BEL
+        "sdramburst1/next_state_2" BEL "sdramburst1/next_state_1" BEL
+        "sdramburst1/state_3" BEL "sdramburst1/state_2" BEL
+        "sdramburst1/state_1" BEL "sdramburst1/command_17" BEL
+        "sdramburst1/command_16" BEL "sdramburst1/command_15" BEL
+        "sdramburst1/command_13" BEL "sdramburst1/command_12" BEL
+        "sdramburst1/command_5" BEL "sdramburst1/command_4" BEL
+        "sdramburst1/command_3" BEL "sdramburst1/rampipe_inhibit_write_2" BEL
+        "sdramburst1/rampipe_inhibit_write_1" BEL
+        "sdramburst1/rampipe_inhibit_write_0" BEL
+        "sdramburst1/rampipe_sdouten_9" BEL "sdramburst1/rampipe_sdouten_8"
+        BEL "sdramburst1/rampipe_sdouten_7" BEL
+        "sdramburst1/rampipe_sdouten_6" BEL "sdramburst1/rampipe_sdouten_5"
+        BEL "sdramburst1/rampipe_sdouten_4" BEL
+        "sdramburst1/rampipe_sdouten_3" BEL "sdramburst1/delay_9" BEL
+        "sdramburst1/delay_7" BEL "sdramburst1/delay_6" BEL
+        "sdramburst1/delay_5" BEL "sdramburst1/delay_4" BEL
+        "sdramburst1/delay_3" BEL "sdramburst1/delay_1" BEL
+        "sdramburst1/delay_0" BEL "sdramburst1/next_state_0" BEL
+        "sdramburst1/state_4" BEL "sdramburst1/state_0" BEL
+        "sdramburst1/command_1" BEL "sdramburst1/command_0" BEL "sync_reset_1"
+        BEL "sync_reset_2" BEL "sync_reset_3" BEL "sync_reset_4" BEL
+        "sync_reset_5" BEL "sync_reset_6" BEL "sync_reset_7" BEL
+        "sync_reset_8" BEL "sync_reset_9" BEL "sync_reset_10" BEL
+        "sync_reset_11" BEL "sync_reset_12" BEL "sync_reset_13" BEL
+        "sdramburst1/state_0_1" BEL "sdramburst1/state_4_1" BEL
+        "sdramburst1/address_b_23_1" BEL "sync_reset_14" BEL "ram0.A" BEL
+        "ram1.A" PIN "cache.A_pins<25>" PIN "cache.B_pins<25>" BEL
+        "Mram_cached_address10.F" BEL "Mram_cached_address10.G" BEL
+        "Mram_cached_address11.F" BEL "Mram_cached_address11.G" BEL
+        "Mram_cached_address12.F" BEL "Mram_cached_address12.G" BEL
+        "Mram_cached_address13.F" BEL "Mram_cached_address13.G" BEL
+        "Mram_cached_address14.F" BEL "Mram_cached_address14.G" BEL
+        "Mram_cached_address15.F" BEL "Mram_cached_address15.G" BEL
+        "Mram_cached_address1.F" BEL "Mram_cached_address1.G" BEL
+        "Mram_cached_address2.F" BEL "Mram_cached_address2.G" BEL
+        "Mram_cached_address3.F" BEL "Mram_cached_address3.G" BEL
+        "Mram_cached_address4.F" BEL "Mram_cached_address4.G" BEL
+        "Mram_cached_address5.F" BEL "Mram_cached_address5.G" BEL
+        "Mram_cached_address6.F" BEL "Mram_cached_address6.G" BEL
+        "Mram_cached_address7.F" BEL "Mram_cached_address7.G" BEL
+        "Mram_cached_address8.F" BEL "Mram_cached_address8.G" BEL
+        "Mram_cached_address9.F" BEL "Mram_cached_address9.G";
+TIMEGRP sdramburst1_int_clk0_2 = BEL "sync_reset" BEL "sdram_wr" BEL
+        "sdram_rd" BEL "sdram_addr_4" BEL "sdram_addr_5" BEL "sdram_addr_6"
+        BEL "sdram_addr_7" BEL "sdram_addr_8" BEL "sdram_addr_9" BEL
+        "sdram_addr_10" BEL "sdram_addr_11" BEL "sdram_addr_12" BEL
+        "sdram_addr_13" BEL "sdram_addr_14" BEL "sdram_addr_15" BEL
+        "sdram_addr_16" BEL "sdram_addr_17" BEL "sdram_addr_18" BEL
+        "sdram_addr_19" BEL "sdram_addr_20" BEL "sdram_addr_21" BEL
+        "sdram_addr_22" BEL "sdram_addr_23" BEL "pcpu_clk_0" BEL "pcpu_clk_1"
+        BEL "invalid_cache_line" BEL "wait_for_spill" BEL "wait_for_fill" BEL
+        "read_buf_dirty_30" BEL "wait_for_cache" BEL "read_buf_dirty_31" BEL
+        "read_buf_dirty_29" BEL "read_buf_dirty_28" BEL "read_buf_dirty_25"
+        BEL "read_buf_dirty_27" BEL "read_buf_dirty_26" BEL
+        "read_buf_dirty_22" BEL "read_buf_dirty_24" BEL "read_buf_dirty_23"
+        BEL "read_buf_dirty_19" BEL "read_buf_dirty_21" BEL
+        "read_buf_dirty_20" BEL "read_buf_dirty_16" BEL "read_buf_dirty_18"
+        BEL "read_buf_dirty_17" BEL "read_buf_dirty_13" BEL
+        "read_buf_dirty_15" BEL "read_buf_dirty_14" BEL "read_buf_dirty_10"
+        BEL "read_buf_dirty_12" BEL "read_buf_dirty_11" BEL "read_buf_dirty_7"
+        BEL "read_buf_dirty_9" BEL "read_buf_dirty_8" BEL "read_buf_dirty_6"
+        BEL "read_buf_dirty_5" BEL "read_buf_dirty_2" BEL "read_buf_dirty_4"
+        BEL "read_buf_dirty_3" BEL "cacheline_valid_31" BEL "read_buf_dirty_1"
+        BEL "read_buf_dirty_0" BEL "cacheline_valid_28" BEL
+        "cacheline_valid_30" BEL "cacheline_valid_29" BEL "cacheline_valid_25"
+        BEL "cacheline_valid_27" BEL "cacheline_valid_26" BEL
+        "cacheline_valid_22" BEL "cacheline_valid_24" BEL "cacheline_valid_23"
+        BEL "cacheline_valid_19" BEL "cacheline_valid_21" BEL
+        "cacheline_valid_20" BEL "cacheline_valid_16" BEL "cacheline_valid_18"
+        BEL "cacheline_valid_17" BEL "cacheline_valid_15" BEL
+        "cacheline_valid_14" BEL "cacheline_valid_11" BEL "cacheline_valid_13"
+        BEL "cacheline_valid_12" BEL "cacheline_valid_8" BEL
+        "cacheline_valid_10" BEL "cacheline_valid_9" BEL "cacheline_valid_5"
+        BEL "cacheline_valid_7" BEL "cacheline_valid_6" BEL
+        "cacheline_valid_4" BEL "cacheline_valid_3" BEL "cacheline_valid_0"
+        BEL "cacheline_valid_2" BEL "cacheline_valid_1" BEL
+        "cache_line_addr_0" BEL "cache_line_addr_1" BEL "cache_line_addr_2"
+        BEL "cache_line_addr_3" BEL "cache_line_addr_4" BEL
+        "cache_line_addr_5" BEL "cache_line_addr_6" BEL "cache_line_addr_7"
+        BEL "cache_line_addr_8" BEL "cache_line_addr_9" BEL
+        "cache_line_addr_10" BEL "cache_line_addr_11" BEL "cache_line_addr_12"
+        BEL "cache_line_addr_13" BEL "cache_line_addr_14" BEL
+        "address_looker_0" BEL "address_looker_1" BEL "address_looker_2" BEL
+        "address_looker_3" BEL "char_val_0" BEL "char_val_2" BEL "char_val_3"
+        BEL "char_val_4" BEL "char_val_5" BEL "char_val_6" BEL "char_val_7"
+        BEL "clockphase_0" BEL "clockphase_1" BEL "clockphase_2" BEL
+        "clockphase_3" BEL "reset_for_longer_0" BEL "reset_for_longer_1" BEL
+        "reset_for_longer_2" BEL "reset_for_longer_3" BEL "reset_for_longer_4"
+        BEL "reset_for_longer_5" BEL "sdramburst1/burst_offset_2" BEL
+        "sdramburst1/burst_offset_1" BEL "sdramburst1/burst_offset_0" BEL
+        "sdramburst1/refreshctr_10" BEL "sdramburst1/refreshctr_9" BEL
+        "sdramburst1/refreshctr_8" BEL "sdramburst1/refreshctr_7" BEL
+        "sdramburst1/refreshctr_6" BEL "sdramburst1/refreshctr_5" BEL
+        "sdramburst1/refreshctr_4" BEL "sdramburst1/refreshctr_3" BEL
+        "sdramburst1/refreshctr_2" BEL "sdramburst1/refreshctr_1" BEL
+        "sdramburst1/refreshctr_0" BEL "sdramburst1/sDOutEn" BEL
+        "sdramburst1/rampipe_sdouten_10" BEL "sdramburst1/rampipe_sdouten_2"
+        BEL "sdramburst1/rampipe_sdouten_1" BEL
+        "sdramburst1/rampipe_sdouten_0" BEL "sdramburst1/ready" BEL
+        "sdramburst1/active_row_for_bank_0_12" BEL
+        "sdramburst1/active_row_for_bank_0_11" BEL
+        "sdramburst1/active_row_for_bank_0_10" BEL
+        "sdramburst1/active_row_for_bank_0_9" BEL
+        "sdramburst1/active_row_for_bank_0_8" BEL
+        "sdramburst1/active_row_for_bank_0_7" BEL
+        "sdramburst1/active_row_for_bank_0_6" BEL
+        "sdramburst1/active_row_for_bank_0_5" BEL
+        "sdramburst1/active_row_for_bank_0_4" BEL
+        "sdramburst1/active_row_for_bank_0_3" BEL
+        "sdramburst1/active_row_for_bank_0_2" BEL
+        "sdramburst1/active_row_for_bank_0_1" BEL
+        "sdramburst1/active_row_for_bank_0_0" BEL
+        "sdramburst1/bank_row_active_0" BEL
+        "sdramburst1/active_row_for_bank_1_12" BEL
+        "sdramburst1/active_row_for_bank_1_11" BEL
+        "sdramburst1/active_row_for_bank_1_10" BEL
+        "sdramburst1/active_row_for_bank_1_9" BEL
+        "sdramburst1/active_row_for_bank_1_8" BEL
+        "sdramburst1/active_row_for_bank_1_7" BEL
+        "sdramburst1/active_row_for_bank_1_6" BEL
+        "sdramburst1/active_row_for_bank_1_5" BEL
+        "sdramburst1/active_row_for_bank_1_4" BEL
+        "sdramburst1/active_row_for_bank_1_3" BEL
+        "sdramburst1/active_row_for_bank_1_2" BEL
+        "sdramburst1/active_row_for_bank_1_1" BEL
+        "sdramburst1/active_row_for_bank_1_0" BEL
+        "sdramburst1/bank_row_active_1" BEL
+        "sdramburst1/rampipe_burstctr_bits_3" BEL "sdramburst1/address_b_23"
+        BEL "sdramburst1/address_b_22" BEL "sdramburst1/address_b_21" BEL
+        "sdramburst1/address_b_20" BEL "sdramburst1/address_b_19" BEL
+        "sdramburst1/address_b_18" BEL "sdramburst1/address_b_17" BEL
+        "sdramburst1/address_b_16" BEL "sdramburst1/address_b_15" BEL
+        "sdramburst1/address_b_14" BEL "sdramburst1/address_b_13" BEL
+        "sdramburst1/address_b_12" BEL "sdramburst1/address_b_11" BEL
+        "sdramburst1/address_b_10" BEL "sdramburst1/address_b_9" BEL
+        "sdramburst1/address_b_8" BEL "sdramburst1/address_b_7" BEL
+        "sdramburst1/address_b_6" BEL "sdramburst1/address_b_5" BEL
+        "sdramburst1/address_b_4" BEL "sdramburst1/command_8" BEL
+        "sdramburst1/command_7" BEL "sdramburst1/command_6" BEL
+        "sdramburst1/read_requested" BEL "sdramburst1/delay_8" BEL
+        "sdramburst1/delay_2" BEL "sdramburst1/next_state_3" BEL
+        "sdramburst1/next_state_2" BEL "sdramburst1/next_state_1" BEL
+        "sdramburst1/state_3" BEL "sdramburst1/state_2" BEL
+        "sdramburst1/state_1" BEL "sdramburst1/command_17" BEL
+        "sdramburst1/command_16" BEL "sdramburst1/command_15" BEL
+        "sdramburst1/command_13" BEL "sdramburst1/command_12" BEL
+        "sdramburst1/command_5" BEL "sdramburst1/command_4" BEL
+        "sdramburst1/command_3" BEL "sdramburst1/rampipe_inhibit_write_2" BEL
+        "sdramburst1/rampipe_inhibit_write_1" BEL
+        "sdramburst1/rampipe_inhibit_write_0" BEL
+        "sdramburst1/rampipe_sdouten_9" BEL "sdramburst1/rampipe_sdouten_8"
+        BEL "sdramburst1/rampipe_sdouten_7" BEL
+        "sdramburst1/rampipe_sdouten_6" BEL "sdramburst1/rampipe_sdouten_5"
+        BEL "sdramburst1/rampipe_sdouten_4" BEL
+        "sdramburst1/rampipe_sdouten_3" BEL "sdramburst1/delay_9" BEL
+        "sdramburst1/delay_7" BEL "sdramburst1/delay_6" BEL
+        "sdramburst1/delay_5" BEL "sdramburst1/delay_4" BEL
+        "sdramburst1/delay_3" BEL "sdramburst1/delay_1" BEL
+        "sdramburst1/delay_0" BEL "sdramburst1/next_state_0" BEL
+        "sdramburst1/state_4" BEL "sdramburst1/state_0" BEL
+        "sdramburst1/command_1" BEL "sdramburst1/command_0" BEL "sync_reset_1"
+        BEL "sync_reset_2" BEL "sync_reset_3" BEL "sync_reset_4" BEL
+        "sync_reset_5" BEL "sync_reset_6" BEL "sync_reset_7" BEL
+        "sync_reset_8" BEL "sync_reset_9" BEL "sync_reset_10" BEL
+        "sync_reset_11" BEL "sync_reset_12" BEL "sync_reset_13" BEL
+        "sdramburst1/state_0_1" BEL "sdramburst1/state_4_1" BEL
+        "sdramburst1/address_b_23_1" BEL "sync_reset_14" BEL "ram0.A" BEL
+        "ram1.A" PIN "cache.A_pins<25>" PIN "cache.B_pins<25>" BEL
+        "Mram_cached_address10.F" BEL "Mram_cached_address10.G" BEL
+        "Mram_cached_address11.F" BEL "Mram_cached_address11.G" BEL
+        "Mram_cached_address12.F" BEL "Mram_cached_address12.G" BEL
+        "Mram_cached_address13.F" BEL "Mram_cached_address13.G" BEL
+        "Mram_cached_address14.F" BEL "Mram_cached_address14.G" BEL
+        "Mram_cached_address15.F" BEL "Mram_cached_address15.G" BEL
+        "Mram_cached_address1.F" BEL "Mram_cached_address1.G" BEL
+        "Mram_cached_address2.F" BEL "Mram_cached_address2.G" BEL
+        "Mram_cached_address3.F" BEL "Mram_cached_address3.G" BEL
+        "Mram_cached_address4.F" BEL "Mram_cached_address4.G" BEL
+        "Mram_cached_address5.F" BEL "Mram_cached_address5.G" BEL
+        "Mram_cached_address6.F" BEL "Mram_cached_address6.G" BEL
+        "Mram_cached_address7.F" BEL "Mram_cached_address7.G" BEL
+        "Mram_cached_address8.F" BEL "Mram_cached_address8.G" BEL
+        "Mram_cached_address9.F" BEL "Mram_cached_address9.G";
+PIN sdramburst1/clk_extdll_pins<8> = BEL "sdramburst1/clk_extdll" PINNAME
+        CLKIN;
+PIN sdramburst1/clk_intdll_pins<8> = BEL "sdramburst1/clk_intdll" PINNAME
+        CLKIN;
+TIMEGRP system_clk = BEL "sdramburst1/srl16/SRL16E" PIN
+        "sdramburst1/clk_extdll_pins<8>" PIN "sdramburst1/clk_intdll_pins<8>";
+TIMEGRP sdramburst1_int_clkdv = BEL "vga1/frame_counter_6" BEL
+        "vga1/frame_counter_5" BEL "vga1/frame_counter_4" BEL
+        "vga1/frame_counter_3" BEL "vga1/frame_counter_2" BEL
+        "vga1/frame_counter_1" BEL "vga1/frame_counter_0" BEL "vga1/vtimer_9"
+        BEL "vga1/vtimer_8" BEL "vga1/vtimer_7" BEL "vga1/vtimer_6" BEL
+        "vga1/vtimer_5" BEL "vga1/vtimer_3" BEL "vga1/vtimer_2" BEL
+        "vga1/vtimer_4" BEL "vga1/vtimer_1" BEL "vga1/vtimer_0" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_8" BEL "vga1/htimer_7" BEL
+        "vga1/htimer_6" BEL "vga1/htimer_5" BEL "vga1/htimer_4" BEL
+        "vga1/htimer_3" BEL "vga1/htimer_2" BEL "vga1/htimer_1" BEL
+        "vga1/hstate_FSM_FFd2" BEL "vga1/hstate_FSM_FFd1" BEL
+        "vga1/vstate_FSM_FFd2" BEL "vga1/vstate_FSM_FFd1" BEL
+        "vga1/glyph_bits_44" BEL "vga1/glyph_bits_41" BEL "vga1/glyph_bits_39"
+        BEL "vga1/glyph_bits_38" BEL "vga1/glyph_bits_36" BEL
+        "vga1/glyph_bits_35" BEL "vga1/glyph_bits_34" BEL "vga1/glyph_bits_33"
+        BEL "vga1/glyph_bits_32" BEL "vga1/glyph_bits_31" BEL
+        "vga1/glyph_bits_30" BEL "vga1/glyph_bits_29" BEL "vga1/glyph_bits_28"
+        BEL "vga1/glyph_bits_27" BEL "vga1/glyph_bits_26" BEL
+        "vga1/glyph_bits_25" BEL "vga1/glyph_bits_24" BEL "vga1/glyph_bits_23"
+        BEL "vga1/glyph_bits_22" BEL "vga1/glyph_bits_21" BEL
+        "vga1/glyph_bits_20" BEL "vga1/glyph_bits_19" BEL "vga1/glyph_bits_18"
+        BEL "vga1/glyph_bits_17" BEL "vga1/glyph_bits_16" BEL
+        "vga1/glyph_bits_15" BEL "vga1/glyph_bits_14" BEL "vga1/glyph_bits_13"
+        BEL "vga1/glyph_bits_12" BEL "vga1/glyph_bits_11" BEL
+        "vga1/glyph_bits_10" BEL "vga1/glyph_bits_9" BEL "vga1/glyph_bits_8"
+        BEL "vga1/glyph_bits_7" BEL "vga1/glyph_bits_6" BEL
+        "vga1/glyph_bits_5" BEL "vga1/glyph_bits_4" BEL "vga1/glyph_bits_3"
+        BEL "vga1/glyph_bits_2" BEL "vga1/glyph_bits_1" BEL
+        "vga1/glyph_bits_0" BEL "vga1/current_char_1_6" BEL
+        "vga1/current_char_1_4" BEL "vga1/current_char_1_3" BEL
+        "vga1/current_char_1_2" BEL "vga1/current_char_1_1" BEL
+        "vga1/current_char_1_0" BEL "vga1/vsync_delay_3" BEL
+        "vga1/hsync_delay_3" BEL "vga1/current_char_6" BEL
+        "vga1/current_char_5" BEL "vga1/current_char_4" BEL
+        "vga1/current_char_3" BEL "vga1/current_char_2" BEL
+        "vga1/current_char_11" BEL "vga1/current_char_0" BEL
+        "vga1/vsync_delay_2" BEL "vga1/hsync_delay_2" BEL "vga1/border_out_3"
+        BEL "vga1/char_out_3" BEL "vga1/vsync_delay_1" BEL
+        "vga1/hsync_delay_1" BEL "vga1/flash_display" BEL "vga1/border_out_2"
+        BEL "vga1/char_out_2" BEL "vga1/alt_prev" BEL "vga1/row_prev" BEL
+        "vga1/vsync_delay_0" BEL "vga1/hsync_delay_0" BEL
+        "vga1/flash_enabled_1" BEL "vga1/background_1_8" BEL
+        "vga1/background_1_7" BEL "vga1/background_1_6" BEL
+        "vga1/background_1_5" BEL "vga1/background_1_4" BEL
+        "vga1/background_1_3" BEL "vga1/background_1_2" BEL
+        "vga1/background_1_1" BEL "vga1/background_1_0" BEL
+        "vga1/foreground_1_8" BEL "vga1/foreground_1_7" BEL
+        "vga1/foreground_1_6" BEL "vga1/foreground_1_5" BEL
+        "vga1/foreground_1_4" BEL "vga1/foreground_1_3" BEL
+        "vga1/foreground_1_2" BEL "vga1/foreground_1_1" BEL
+        "vga1/foreground_1_0" BEL "vga1/border_out_1" BEL "vga1/char_out_1"
+        BEL "vga1/alt_cur" BEL "vga1/row_cur" BEL "vga1/next_foreground_8" BEL
+        "vga1/next_foreground_7" BEL "vga1/next_foreground_6" BEL
+        "vga1/next_foreground_5" BEL "vga1/next_foreground_4" BEL
+        "vga1/next_foreground_3" BEL "vga1/next_foreground_2" BEL
+        "vga1/next_foreground_1" BEL "vga1/next_foreground_0" BEL
+        "vga1/next_held_char_6" BEL "vga1/next_held_char_4" BEL
+        "vga1/next_held_char_3" BEL "vga1/next_held_char_2" BEL
+        "vga1/next_held_char_1" BEL "vga1/next_held_char_0" BEL
+        "vga1/prev_doubleheight" BEL "vga1/sticky_doubleheight" BEL
+        "vga1/current_doubleheight" BEL "vga1/flash_enabled" BEL
+        "vga1/held_char_6" BEL "vga1/held_char_4" BEL "vga1/held_char_3" BEL
+        "vga1/held_char_2" BEL "vga1/held_char_1" BEL "vga1/held_char_0" BEL
+        "vga1/next_hold_graphics" BEL "vga1/held_sep_graphics" BEL
+        "vga1/hold_graphics" BEL "vga1/sep_graphics" BEL "vga1/control_char"
+        BEL "vga1/graphics_char" BEL "vga1/graphics_mode" BEL
+        "vga1/background_8" BEL "vga1/background_7" BEL "vga1/background_6"
+        BEL "vga1/background_5" BEL "vga1/background_4" BEL
+        "vga1/background_3" BEL "vga1/background_2" BEL "vga1/background_11"
+        BEL "vga1/background_0" BEL "vga1/foreground_8" BEL
+        "vga1/foreground_7" BEL "vga1/foreground_6" BEL "vga1/foreground_5"
+        BEL "vga1/foreground_4" BEL "vga1/foreground_3" BEL
+        "vga1/foreground_2" BEL "vga1/foreground_11" BEL "vga1/foreground_0"
+        BEL "vga1/border_out_0" BEL "vga1/char_out_0" BEL "vga1/char_vpos_4"
+        BEL "vga1/char_vpos_3" BEL "vga1/char_vpos_2" BEL "vga1/char_vpos_1"
+        BEL "vga1/char_vpos_0" BEL "vga1/char_hpos_3" BEL "vga1/char_hpos_21"
+        BEL "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/row_num_4"
+        BEL "vga1/row_num_3" BEL "vga1/row_num_2" BEL "vga1/row_num_1" BEL
+        "vga1/row_num_0" BEL "vga1/blue_2" BEL "vga1/blue_1" BEL
+        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/col_num_5" BEL
+        "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
+        "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/red_2" BEL
+        "vga1/red_1" BEL "vga1/alt_next" BEL "vga1/htimer_0" BEL "vga1/blue_0"
+        BEL "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/row_num_0_1" BEL "vga1/col_num_3_1" BEL "vga1/col_num_1_1" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_1"
+        BEL "vga1/prev_doubleheight_1" BEL "vga1/col_num_1_2" BEL
+        "vga1/char_vpos_1_2" BEL "vga1/current_doubleheight_1" BEL
+        "vga1/col_num_0_1" BEL "vga1/col_num_1_3" BEL "vga1/col_num_1_4" BEL
+        "vga1/col_num_2_1" BEL "vga1/col_num_2_2" BEL "vga1/current_char_0_1"
+        BEL "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
+        "vga1/current_char_5_1" BEL "vga1/Mshreg_char_hpos_2_1" BEL
+        "vga1/char_hpos_2_1" BEL "vga1/Mshreg_char_hpos_2_3" BEL
+        "vga1/char_hpos_2_3" BEL "vga1/Mshreg_char_hpos_2_2" BEL
+        "vga1/char_hpos_2_2";
+TIMEGRP sdramburst1_int_clkdv_1 = BEL "vga1/frame_counter_6" BEL
+        "vga1/frame_counter_5" BEL "vga1/frame_counter_4" BEL
+        "vga1/frame_counter_3" BEL "vga1/frame_counter_2" BEL
+        "vga1/frame_counter_1" BEL "vga1/frame_counter_0" BEL "vga1/vtimer_9"
+        BEL "vga1/vtimer_8" BEL "vga1/vtimer_7" BEL "vga1/vtimer_6" BEL
+        "vga1/vtimer_5" BEL "vga1/vtimer_3" BEL "vga1/vtimer_2" BEL
+        "vga1/vtimer_4" BEL "vga1/vtimer_1" BEL "vga1/vtimer_0" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_8" BEL "vga1/htimer_7" BEL
+        "vga1/htimer_6" BEL "vga1/htimer_5" BEL "vga1/htimer_4" BEL
+        "vga1/htimer_3" BEL "vga1/htimer_2" BEL "vga1/htimer_1" BEL
+        "vga1/hstate_FSM_FFd2" BEL "vga1/hstate_FSM_FFd1" BEL
+        "vga1/vstate_FSM_FFd2" BEL "vga1/vstate_FSM_FFd1" BEL
+        "vga1/glyph_bits_44" BEL "vga1/glyph_bits_41" BEL "vga1/glyph_bits_39"
+        BEL "vga1/glyph_bits_38" BEL "vga1/glyph_bits_36" BEL
+        "vga1/glyph_bits_35" BEL "vga1/glyph_bits_34" BEL "vga1/glyph_bits_33"
+        BEL "vga1/glyph_bits_32" BEL "vga1/glyph_bits_31" BEL
+        "vga1/glyph_bits_30" BEL "vga1/glyph_bits_29" BEL "vga1/glyph_bits_28"
+        BEL "vga1/glyph_bits_27" BEL "vga1/glyph_bits_26" BEL
+        "vga1/glyph_bits_25" BEL "vga1/glyph_bits_24" BEL "vga1/glyph_bits_23"
+        BEL "vga1/glyph_bits_22" BEL "vga1/glyph_bits_21" BEL
+        "vga1/glyph_bits_20" BEL "vga1/glyph_bits_19" BEL "vga1/glyph_bits_18"
+        BEL "vga1/glyph_bits_17" BEL "vga1/glyph_bits_16" BEL
+        "vga1/glyph_bits_15" BEL "vga1/glyph_bits_14" BEL "vga1/glyph_bits_13"
+        BEL "vga1/glyph_bits_12" BEL "vga1/glyph_bits_11" BEL
+        "vga1/glyph_bits_10" BEL "vga1/glyph_bits_9" BEL "vga1/glyph_bits_8"
+        BEL "vga1/glyph_bits_7" BEL "vga1/glyph_bits_6" BEL
+        "vga1/glyph_bits_5" BEL "vga1/glyph_bits_4" BEL "vga1/glyph_bits_3"
+        BEL "vga1/glyph_bits_2" BEL "vga1/glyph_bits_1" BEL
+        "vga1/glyph_bits_0" BEL "vga1/current_char_1_6" BEL
+        "vga1/current_char_1_4" BEL "vga1/current_char_1_3" BEL
+        "vga1/current_char_1_2" BEL "vga1/current_char_1_1" BEL
+        "vga1/current_char_1_0" BEL "vga1/vsync_delay_3" BEL
+        "vga1/hsync_delay_3" BEL "vga1/current_char_6" BEL
+        "vga1/current_char_5" BEL "vga1/current_char_4" BEL
+        "vga1/current_char_3" BEL "vga1/current_char_2" BEL
+        "vga1/current_char_11" BEL "vga1/current_char_0" BEL
+        "vga1/vsync_delay_2" BEL "vga1/hsync_delay_2" BEL "vga1/border_out_3"
+        BEL "vga1/char_out_3" BEL "vga1/vsync_delay_1" BEL
+        "vga1/hsync_delay_1" BEL "vga1/flash_display" BEL "vga1/border_out_2"
+        BEL "vga1/char_out_2" BEL "vga1/alt_prev" BEL "vga1/row_prev" BEL
+        "vga1/vsync_delay_0" BEL "vga1/hsync_delay_0" BEL
+        "vga1/flash_enabled_1" BEL "vga1/background_1_8" BEL
+        "vga1/background_1_7" BEL "vga1/background_1_6" BEL
+        "vga1/background_1_5" BEL "vga1/background_1_4" BEL
+        "vga1/background_1_3" BEL "vga1/background_1_2" BEL
+        "vga1/background_1_1" BEL "vga1/background_1_0" BEL
+        "vga1/foreground_1_8" BEL "vga1/foreground_1_7" BEL
+        "vga1/foreground_1_6" BEL "vga1/foreground_1_5" BEL
+        "vga1/foreground_1_4" BEL "vga1/foreground_1_3" BEL
+        "vga1/foreground_1_2" BEL "vga1/foreground_1_1" BEL
+        "vga1/foreground_1_0" BEL "vga1/border_out_1" BEL "vga1/char_out_1"
+        BEL "vga1/alt_cur" BEL "vga1/row_cur" BEL "vga1/next_foreground_8" BEL
+        "vga1/next_foreground_7" BEL "vga1/next_foreground_6" BEL
+        "vga1/next_foreground_5" BEL "vga1/next_foreground_4" BEL
+        "vga1/next_foreground_3" BEL "vga1/next_foreground_2" BEL
+        "vga1/next_foreground_1" BEL "vga1/next_foreground_0" BEL
+        "vga1/next_held_char_6" BEL "vga1/next_held_char_4" BEL
+        "vga1/next_held_char_3" BEL "vga1/next_held_char_2" BEL
+        "vga1/next_held_char_1" BEL "vga1/next_held_char_0" BEL
+        "vga1/prev_doubleheight" BEL "vga1/sticky_doubleheight" BEL
+        "vga1/current_doubleheight" BEL "vga1/flash_enabled" BEL
+        "vga1/held_char_6" BEL "vga1/held_char_4" BEL "vga1/held_char_3" BEL
+        "vga1/held_char_2" BEL "vga1/held_char_1" BEL "vga1/held_char_0" BEL
+        "vga1/next_hold_graphics" BEL "vga1/held_sep_graphics" BEL
+        "vga1/hold_graphics" BEL "vga1/sep_graphics" BEL "vga1/control_char"
+        BEL "vga1/graphics_char" BEL "vga1/graphics_mode" BEL
+        "vga1/background_8" BEL "vga1/background_7" BEL "vga1/background_6"
+        BEL "vga1/background_5" BEL "vga1/background_4" BEL
+        "vga1/background_3" BEL "vga1/background_2" BEL "vga1/background_11"
+        BEL "vga1/background_0" BEL "vga1/foreground_8" BEL
+        "vga1/foreground_7" BEL "vga1/foreground_6" BEL "vga1/foreground_5"
+        BEL "vga1/foreground_4" BEL "vga1/foreground_3" BEL
+        "vga1/foreground_2" BEL "vga1/foreground_11" BEL "vga1/foreground_0"
+        BEL "vga1/border_out_0" BEL "vga1/char_out_0" BEL "vga1/char_vpos_4"
+        BEL "vga1/char_vpos_3" BEL "vga1/char_vpos_2" BEL "vga1/char_vpos_1"
+        BEL "vga1/char_vpos_0" BEL "vga1/char_hpos_3" BEL "vga1/char_hpos_21"
+        BEL "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/row_num_4"
+        BEL "vga1/row_num_3" BEL "vga1/row_num_2" BEL "vga1/row_num_1" BEL
+        "vga1/row_num_0" BEL "vga1/blue_2" BEL "vga1/blue_1" BEL
+        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/col_num_5" BEL
+        "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
+        "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/red_2" BEL
+        "vga1/red_1" BEL "vga1/alt_next" BEL "vga1/htimer_0" BEL "vga1/blue_0"
+        BEL "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/row_num_0_1" BEL "vga1/col_num_3_1" BEL "vga1/col_num_1_1" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_1"
+        BEL "vga1/prev_doubleheight_1" BEL "vga1/col_num_1_2" BEL
+        "vga1/char_vpos_1_2" BEL "vga1/current_doubleheight_1" BEL
+        "vga1/col_num_0_1" BEL "vga1/col_num_1_3" BEL "vga1/col_num_1_4" BEL
+        "vga1/col_num_2_1" BEL "vga1/col_num_2_2" BEL "vga1/current_char_0_1"
+        BEL "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
+        "vga1/current_char_5_1" BEL "vga1/Mshreg_char_hpos_2_1" BEL
+        "vga1/char_hpos_2_1" BEL "vga1/Mshreg_char_hpos_2_3" BEL
+        "vga1/char_hpos_2_3" BEL "vga1/Mshreg_char_hpos_2_2" BEL
+        "vga1/char_hpos_2_2";
+TIMEGRP sdramburst1_int_clkdv_0 = BEL "vga1/frame_counter_6" BEL
+        "vga1/frame_counter_5" BEL "vga1/frame_counter_4" BEL
+        "vga1/frame_counter_3" BEL "vga1/frame_counter_2" BEL
+        "vga1/frame_counter_1" BEL "vga1/frame_counter_0" BEL "vga1/vtimer_9"
+        BEL "vga1/vtimer_8" BEL "vga1/vtimer_7" BEL "vga1/vtimer_6" BEL
+        "vga1/vtimer_5" BEL "vga1/vtimer_3" BEL "vga1/vtimer_2" BEL
+        "vga1/vtimer_4" BEL "vga1/vtimer_1" BEL "vga1/vtimer_0" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_8" BEL "vga1/htimer_7" BEL
+        "vga1/htimer_6" BEL "vga1/htimer_5" BEL "vga1/htimer_4" BEL
+        "vga1/htimer_3" BEL "vga1/htimer_2" BEL "vga1/htimer_1" BEL
+        "vga1/hstate_FSM_FFd2" BEL "vga1/hstate_FSM_FFd1" BEL
+        "vga1/vstate_FSM_FFd2" BEL "vga1/vstate_FSM_FFd1" BEL
+        "vga1/glyph_bits_44" BEL "vga1/glyph_bits_41" BEL "vga1/glyph_bits_39"
+        BEL "vga1/glyph_bits_38" BEL "vga1/glyph_bits_36" BEL
+        "vga1/glyph_bits_35" BEL "vga1/glyph_bits_34" BEL "vga1/glyph_bits_33"
+        BEL "vga1/glyph_bits_32" BEL "vga1/glyph_bits_31" BEL
+        "vga1/glyph_bits_30" BEL "vga1/glyph_bits_29" BEL "vga1/glyph_bits_28"
+        BEL "vga1/glyph_bits_27" BEL "vga1/glyph_bits_26" BEL
+        "vga1/glyph_bits_25" BEL "vga1/glyph_bits_24" BEL "vga1/glyph_bits_23"
+        BEL "vga1/glyph_bits_22" BEL "vga1/glyph_bits_21" BEL
+        "vga1/glyph_bits_20" BEL "vga1/glyph_bits_19" BEL "vga1/glyph_bits_18"
+        BEL "vga1/glyph_bits_17" BEL "vga1/glyph_bits_16" BEL
+        "vga1/glyph_bits_15" BEL "vga1/glyph_bits_14" BEL "vga1/glyph_bits_13"
+        BEL "vga1/glyph_bits_12" BEL "vga1/glyph_bits_11" BEL
+        "vga1/glyph_bits_10" BEL "vga1/glyph_bits_9" BEL "vga1/glyph_bits_8"
+        BEL "vga1/glyph_bits_7" BEL "vga1/glyph_bits_6" BEL
+        "vga1/glyph_bits_5" BEL "vga1/glyph_bits_4" BEL "vga1/glyph_bits_3"
+        BEL "vga1/glyph_bits_2" BEL "vga1/glyph_bits_1" BEL
+        "vga1/glyph_bits_0" BEL "vga1/current_char_1_6" BEL
+        "vga1/current_char_1_4" BEL "vga1/current_char_1_3" BEL
+        "vga1/current_char_1_2" BEL "vga1/current_char_1_1" BEL
+        "vga1/current_char_1_0" BEL "vga1/vsync_delay_3" BEL
+        "vga1/hsync_delay_3" BEL "vga1/current_char_6" BEL
+        "vga1/current_char_5" BEL "vga1/current_char_4" BEL
+        "vga1/current_char_3" BEL "vga1/current_char_2" BEL
+        "vga1/current_char_11" BEL "vga1/current_char_0" BEL
+        "vga1/vsync_delay_2" BEL "vga1/hsync_delay_2" BEL "vga1/border_out_3"
+        BEL "vga1/char_out_3" BEL "vga1/vsync_delay_1" BEL
+        "vga1/hsync_delay_1" BEL "vga1/flash_display" BEL "vga1/border_out_2"
+        BEL "vga1/char_out_2" BEL "vga1/alt_prev" BEL "vga1/row_prev" BEL
+        "vga1/vsync_delay_0" BEL "vga1/hsync_delay_0" BEL
+        "vga1/flash_enabled_1" BEL "vga1/background_1_8" BEL
+        "vga1/background_1_7" BEL "vga1/background_1_6" BEL
+        "vga1/background_1_5" BEL "vga1/background_1_4" BEL
+        "vga1/background_1_3" BEL "vga1/background_1_2" BEL
+        "vga1/background_1_1" BEL "vga1/background_1_0" BEL
+        "vga1/foreground_1_8" BEL "vga1/foreground_1_7" BEL
+        "vga1/foreground_1_6" BEL "vga1/foreground_1_5" BEL
+        "vga1/foreground_1_4" BEL "vga1/foreground_1_3" BEL
+        "vga1/foreground_1_2" BEL "vga1/foreground_1_1" BEL
+        "vga1/foreground_1_0" BEL "vga1/border_out_1" BEL "vga1/char_out_1"
+        BEL "vga1/alt_cur" BEL "vga1/row_cur" BEL "vga1/next_foreground_8" BEL
+        "vga1/next_foreground_7" BEL "vga1/next_foreground_6" BEL
+        "vga1/next_foreground_5" BEL "vga1/next_foreground_4" BEL
+        "vga1/next_foreground_3" BEL "vga1/next_foreground_2" BEL
+        "vga1/next_foreground_1" BEL "vga1/next_foreground_0" BEL
+        "vga1/next_held_char_6" BEL "vga1/next_held_char_4" BEL
+        "vga1/next_held_char_3" BEL "vga1/next_held_char_2" BEL
+        "vga1/next_held_char_1" BEL "vga1/next_held_char_0" BEL
+        "vga1/prev_doubleheight" BEL "vga1/sticky_doubleheight" BEL
+        "vga1/current_doubleheight" BEL "vga1/flash_enabled" BEL
+        "vga1/held_char_6" BEL "vga1/held_char_4" BEL "vga1/held_char_3" BEL
+        "vga1/held_char_2" BEL "vga1/held_char_1" BEL "vga1/held_char_0" BEL
+        "vga1/next_hold_graphics" BEL "vga1/held_sep_graphics" BEL
+        "vga1/hold_graphics" BEL "vga1/sep_graphics" BEL "vga1/control_char"
+        BEL "vga1/graphics_char" BEL "vga1/graphics_mode" BEL
+        "vga1/background_8" BEL "vga1/background_7" BEL "vga1/background_6"
+        BEL "vga1/background_5" BEL "vga1/background_4" BEL
+        "vga1/background_3" BEL "vga1/background_2" BEL "vga1/background_11"
+        BEL "vga1/background_0" BEL "vga1/foreground_8" BEL
+        "vga1/foreground_7" BEL "vga1/foreground_6" BEL "vga1/foreground_5"
+        BEL "vga1/foreground_4" BEL "vga1/foreground_3" BEL
+        "vga1/foreground_2" BEL "vga1/foreground_11" BEL "vga1/foreground_0"
+        BEL "vga1/border_out_0" BEL "vga1/char_out_0" BEL "vga1/char_vpos_4"
+        BEL "vga1/char_vpos_3" BEL "vga1/char_vpos_2" BEL "vga1/char_vpos_1"
+        BEL "vga1/char_vpos_0" BEL "vga1/char_hpos_3" BEL "vga1/char_hpos_21"
+        BEL "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/row_num_4"
+        BEL "vga1/row_num_3" BEL "vga1/row_num_2" BEL "vga1/row_num_1" BEL
+        "vga1/row_num_0" BEL "vga1/blue_2" BEL "vga1/blue_1" BEL
+        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/col_num_5" BEL
+        "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
+        "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/red_2" BEL
+        "vga1/red_1" BEL "vga1/alt_next" BEL "vga1/htimer_0" BEL "vga1/blue_0"
+        BEL "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/row_num_0_1" BEL "vga1/col_num_3_1" BEL "vga1/col_num_1_1" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_1"
+        BEL "vga1/prev_doubleheight_1" BEL "vga1/col_num_1_2" BEL
+        "vga1/char_vpos_1_2" BEL "vga1/current_doubleheight_1" BEL
+        "vga1/col_num_0_1" BEL "vga1/col_num_1_3" BEL "vga1/col_num_1_4" BEL
+        "vga1/col_num_2_1" BEL "vga1/col_num_2_2" BEL "vga1/current_char_0_1"
+        BEL "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
+        "vga1/current_char_5_1" BEL "vga1/Mshreg_char_hpos_2_1" BEL
+        "vga1/char_hpos_2_1" BEL "vga1/Mshreg_char_hpos_2_3" BEL
+        "vga1/char_hpos_2_3" BEL "vga1/Mshreg_char_hpos_2_2" BEL
+        "vga1/char_hpos_2_2";
+TIMEGRP sdramburst1_int_clkdv_2 = BEL "vga1/frame_counter_6" BEL
+        "vga1/frame_counter_5" BEL "vga1/frame_counter_4" BEL
+        "vga1/frame_counter_3" BEL "vga1/frame_counter_2" BEL
+        "vga1/frame_counter_1" BEL "vga1/frame_counter_0" BEL "vga1/vtimer_9"
+        BEL "vga1/vtimer_8" BEL "vga1/vtimer_7" BEL "vga1/vtimer_6" BEL
+        "vga1/vtimer_5" BEL "vga1/vtimer_3" BEL "vga1/vtimer_2" BEL
+        "vga1/vtimer_4" BEL "vga1/vtimer_1" BEL "vga1/vtimer_0" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_8" BEL "vga1/htimer_7" BEL
+        "vga1/htimer_6" BEL "vga1/htimer_5" BEL "vga1/htimer_4" BEL
+        "vga1/htimer_3" BEL "vga1/htimer_2" BEL "vga1/htimer_1" BEL
+        "vga1/hstate_FSM_FFd2" BEL "vga1/hstate_FSM_FFd1" BEL
+        "vga1/vstate_FSM_FFd2" BEL "vga1/vstate_FSM_FFd1" BEL
+        "vga1/glyph_bits_44" BEL "vga1/glyph_bits_41" BEL "vga1/glyph_bits_39"
+        BEL "vga1/glyph_bits_38" BEL "vga1/glyph_bits_36" BEL
+        "vga1/glyph_bits_35" BEL "vga1/glyph_bits_34" BEL "vga1/glyph_bits_33"
+        BEL "vga1/glyph_bits_32" BEL "vga1/glyph_bits_31" BEL
+        "vga1/glyph_bits_30" BEL "vga1/glyph_bits_29" BEL "vga1/glyph_bits_28"
+        BEL "vga1/glyph_bits_27" BEL "vga1/glyph_bits_26" BEL
+        "vga1/glyph_bits_25" BEL "vga1/glyph_bits_24" BEL "vga1/glyph_bits_23"
+        BEL "vga1/glyph_bits_22" BEL "vga1/glyph_bits_21" BEL
+        "vga1/glyph_bits_20" BEL "vga1/glyph_bits_19" BEL "vga1/glyph_bits_18"
+        BEL "vga1/glyph_bits_17" BEL "vga1/glyph_bits_16" BEL
+        "vga1/glyph_bits_15" BEL "vga1/glyph_bits_14" BEL "vga1/glyph_bits_13"
+        BEL "vga1/glyph_bits_12" BEL "vga1/glyph_bits_11" BEL
+        "vga1/glyph_bits_10" BEL "vga1/glyph_bits_9" BEL "vga1/glyph_bits_8"
+        BEL "vga1/glyph_bits_7" BEL "vga1/glyph_bits_6" BEL
+        "vga1/glyph_bits_5" BEL "vga1/glyph_bits_4" BEL "vga1/glyph_bits_3"
+        BEL "vga1/glyph_bits_2" BEL "vga1/glyph_bits_1" BEL
+        "vga1/glyph_bits_0" BEL "vga1/current_char_1_6" BEL
+        "vga1/current_char_1_4" BEL "vga1/current_char_1_3" BEL
+        "vga1/current_char_1_2" BEL "vga1/current_char_1_1" BEL
+        "vga1/current_char_1_0" BEL "vga1/vsync_delay_3" BEL
+        "vga1/hsync_delay_3" BEL "vga1/current_char_6" BEL
+        "vga1/current_char_5" BEL "vga1/current_char_4" BEL
+        "vga1/current_char_3" BEL "vga1/current_char_2" BEL
+        "vga1/current_char_11" BEL "vga1/current_char_0" BEL
+        "vga1/vsync_delay_2" BEL "vga1/hsync_delay_2" BEL "vga1/border_out_3"
+        BEL "vga1/char_out_3" BEL "vga1/vsync_delay_1" BEL
+        "vga1/hsync_delay_1" BEL "vga1/flash_display" BEL "vga1/border_out_2"
+        BEL "vga1/char_out_2" BEL "vga1/alt_prev" BEL "vga1/row_prev" BEL
+        "vga1/vsync_delay_0" BEL "vga1/hsync_delay_0" BEL
+        "vga1/flash_enabled_1" BEL "vga1/background_1_8" BEL
+        "vga1/background_1_7" BEL "vga1/background_1_6" BEL
+        "vga1/background_1_5" BEL "vga1/background_1_4" BEL
+        "vga1/background_1_3" BEL "vga1/background_1_2" BEL
+        "vga1/background_1_1" BEL "vga1/background_1_0" BEL
+        "vga1/foreground_1_8" BEL "vga1/foreground_1_7" BEL
+        "vga1/foreground_1_6" BEL "vga1/foreground_1_5" BEL
+        "vga1/foreground_1_4" BEL "vga1/foreground_1_3" BEL
+        "vga1/foreground_1_2" BEL "vga1/foreground_1_1" BEL
+        "vga1/foreground_1_0" BEL "vga1/border_out_1" BEL "vga1/char_out_1"
+        BEL "vga1/alt_cur" BEL "vga1/row_cur" BEL "vga1/next_foreground_8" BEL
+        "vga1/next_foreground_7" BEL "vga1/next_foreground_6" BEL
+        "vga1/next_foreground_5" BEL "vga1/next_foreground_4" BEL
+        "vga1/next_foreground_3" BEL "vga1/next_foreground_2" BEL
+        "vga1/next_foreground_1" BEL "vga1/next_foreground_0" BEL
+        "vga1/next_held_char_6" BEL "vga1/next_held_char_4" BEL
+        "vga1/next_held_char_3" BEL "vga1/next_held_char_2" BEL
+        "vga1/next_held_char_1" BEL "vga1/next_held_char_0" BEL
+        "vga1/prev_doubleheight" BEL "vga1/sticky_doubleheight" BEL
+        "vga1/current_doubleheight" BEL "vga1/flash_enabled" BEL
+        "vga1/held_char_6" BEL "vga1/held_char_4" BEL "vga1/held_char_3" BEL
+        "vga1/held_char_2" BEL "vga1/held_char_1" BEL "vga1/held_char_0" BEL
+        "vga1/next_hold_graphics" BEL "vga1/held_sep_graphics" BEL
+        "vga1/hold_graphics" BEL "vga1/sep_graphics" BEL "vga1/control_char"
+        BEL "vga1/graphics_char" BEL "vga1/graphics_mode" BEL
+        "vga1/background_8" BEL "vga1/background_7" BEL "vga1/background_6"
+        BEL "vga1/background_5" BEL "vga1/background_4" BEL
+        "vga1/background_3" BEL "vga1/background_2" BEL "vga1/background_11"
+        BEL "vga1/background_0" BEL "vga1/foreground_8" BEL
+        "vga1/foreground_7" BEL "vga1/foreground_6" BEL "vga1/foreground_5"
+        BEL "vga1/foreground_4" BEL "vga1/foreground_3" BEL
+        "vga1/foreground_2" BEL "vga1/foreground_11" BEL "vga1/foreground_0"
+        BEL "vga1/border_out_0" BEL "vga1/char_out_0" BEL "vga1/char_vpos_4"
+        BEL "vga1/char_vpos_3" BEL "vga1/char_vpos_2" BEL "vga1/char_vpos_1"
+        BEL "vga1/char_vpos_0" BEL "vga1/char_hpos_3" BEL "vga1/char_hpos_21"
+        BEL "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/row_num_4"
+        BEL "vga1/row_num_3" BEL "vga1/row_num_2" BEL "vga1/row_num_1" BEL
+        "vga1/row_num_0" BEL "vga1/blue_2" BEL "vga1/blue_1" BEL
+        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/col_num_5" BEL
+        "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
+        "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/red_2" BEL
+        "vga1/red_1" BEL "vga1/alt_next" BEL "vga1/htimer_0" BEL "vga1/blue_0"
+        BEL "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/row_num_0_1" BEL "vga1/col_num_3_1" BEL "vga1/col_num_1_1" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_1"
+        BEL "vga1/prev_doubleheight_1" BEL "vga1/col_num_1_2" BEL
+        "vga1/char_vpos_1_2" BEL "vga1/current_doubleheight_1" BEL
+        "vga1/col_num_0_1" BEL "vga1/col_num_1_3" BEL "vga1/col_num_1_4" BEL
+        "vga1/col_num_2_1" BEL "vga1/col_num_2_2" BEL "vga1/current_char_0_1"
+        BEL "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
+        "vga1/current_char_5_1" BEL "vga1/Mshreg_char_hpos_2_1" BEL
+        "vga1/char_hpos_2_1" BEL "vga1/Mshreg_char_hpos_2_3" BEL
+        "vga1/char_hpos_2_3" BEL "vga1/Mshreg_char_hpos_2_2" BEL
+        "vga1/char_hpos_2_2";
+TS_system_clk = PERIOD TIMEGRP "system_clk" 20 ns HIGH 50%;
+TS_sdramburst1_int_clk0 = PERIOD TIMEGRP "sdramburst1_int_clk0" TS_system_clk
+        HIGH 50%;
+TS_sdramburst1_int_clkdv = PERIOD TIMEGRP "sdramburst1_int_clkdv"
+        TS_system_clk * 1.5 HIGH 50%;
+TS_sdramburst1_int_clk0_1 = PERIOD TIMEGRP "sdramburst1_int_clk0_1"
+        TS_system_clk HIGH 50%;
+TS_sdramburst1_int_clkdv_1 = PERIOD TIMEGRP "sdramburst1_int_clkdv_1"
+        TS_system_clk * 1.5 HIGH 50%;
+TS_sdramburst1_int_clk0_0 = PERIOD TIMEGRP "sdramburst1_int_clk0_0"
+        TS_system_clk HIGH 50%;
+TS_sdramburst1_int_clkdv_0 = PERIOD TIMEGRP "sdramburst1_int_clkdv_0"
+        TS_system_clk * 1.5 HIGH 50%;
+TS_sdramburst1_int_clk0_2 = PERIOD TIMEGRP "sdramburst1_int_clk0_2"
+        TS_system_clk HIGH 50%;
+TS_sdramburst1_int_clkdv_2 = PERIOD TIMEGRP "sdramburst1_int_clkdv_2"
+        TS_system_clk * 1.5 HIGH 50%;
+SCHEMATIC END;
+

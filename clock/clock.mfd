@@ -1,0 +1,11 @@
+MDF Database:  version 1.0
+MDF_INFO | clock | XC9572XL-10-VQ64
+MACROCELL | 1 | 1 | fpga_clock_a_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | master_clock
+INPUTP | 1 | 24
+EQ | 1 | 
+   fpga_clock_a = master_clock;
+
+PIN | master_clock | 64 | 0 | N/A | 24 | 1 | 1 | 1
+PIN | fpga_clock_a | 536871040 | 0 | N/A | 87

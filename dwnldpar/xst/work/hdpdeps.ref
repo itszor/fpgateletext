@@ -1,0 +1,9 @@
+V3 6
+FL "/home/jules/.wine/drive_c/Program Files/XSTOOLs/Examples/XSA/design_files/200/dwnldpar/dwnldpar.vhd" 2010/06/05.17:11:46 K.31
+FL /home/jules/code/tube/dwnldpar/dwnldpar.vhd 2015/01/17.15:45:17 K.31
+EN work/dwnldpar 1421510955 FL /home/jules/code/tube/dwnldpar/dwnldpar.vhd \
+      LB unisim PB ieee/std_logic_1164 1200023565 PB ieee/STD_LOGIC_UNSIGNED 1217055547 \
+      PH unisim/VCOMPONENTS 1217055545
+AR work/dwnldpar/arch 1421510956 \
+      FL /home/jules/code/tube/dwnldpar/dwnldpar.vhd EN work/dwnldpar 1421510955 \
+      CP pullup

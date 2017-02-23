@@ -1,0 +1,5 @@
+# begin LFP file /home/jules/code/tube/clock/clock.lfp
+designfile clock.v
+parttype xc9572xl-vq64-10
+bus_delimiter 0;
+set_busdelim_onsave 1;

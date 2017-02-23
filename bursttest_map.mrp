@@ -1,0 +1,287 @@
+Release 10.1 Map K.31 (lin)
+Xilinx Mapping Report File for Design 'bursttest'
+
+Design Information
+------------------
+Command Line   : map -ise /home/jules/code/tube/tube.ise -intstyle ise -p
+xc2s200-fg256-5 -cm area -pr off -k 4 -c 100 -tx off -o bursttest_map.ncd
+bursttest.ngd bursttest.pcf 
+Target Device  : xc2s200
+Target Package : fg256
+Target Speed   : -5
+Mapper Version : spartan2 -- $Revision: 1.46 $
+Mapped Date    : Mon Feb 20 16:50:49 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Number of Slice Flip Flops:       488 out of  4,704   10%
+  Number of 4 input LUTs:         1,734 out of  4,704   36%
+Logic Distribution:
+    Number of occupied Slices:                       1,084 out of  2,352   46%
+    Number of Slices containing only related logic:  1,084 out of  1,084  100%
+    Number of Slices containing unrelated logic:         0 out of  1,084    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:        1,796 out of  4,704   38%
+      Number used as logic:                     1,734
+      Number used as a route-thru:                 28
+      Number used for 32x1 RAMs:                   30
+      (Two LUTs used per 32x1 RAM)
+      Number used as Shift registers:               4
+   Number of bonded IOBs:           125 out of    176   71%
+   Number of Block RAMs:              3 out of     14   21%
+   Number of GCLKs:                   2 out of      4   50%
+   Number of GCLKIOBs:                2 out of      4   50%
+   Number of DLLs:                    2 out of      4   50%
+
+Peak Memory Usage:  151 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:267 - The F6 multiplexer vga1/COND_23_addsub0000<9>_12_f6_0 failed
+   to merge with F5 multiplexer vga1/COND_23_addsub0000<9>_13_f5_7.  There is a
+   conflict for the GYMUX.  The design will exhibit suboptimal timing.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:986 - The SAVE constraint for nets has been made more strict
+   starting in 10.1, such that the net driver and load blocks will be preserved
+   as well. To revert to the original behavior please set XIL_MAP_OLD_SAVE.
+INFO:MapLib:985 - SAVE has been detected on the following signals (maximum 5
+   shown):
+   pcpu_read,
+   pcpu_address<23>,
+   pcpu_address<22>,
+   pcpu_address<21>,
+   pcpu_address<20>.
+   To list all affected signals, run Map -detail.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   3 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| sdram_sclkfb                       | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
+| system_clk                         | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
+| button_nrst                        | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| flash_address<0>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<1>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<2>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<3>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<4>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<5>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<6>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<7>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<8>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<9>                   | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<10>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<11>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<12>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<13>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<14>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<15>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<16>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<17>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<18>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<19>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_address<20>                  | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_byte                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_ce                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<0>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<1>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<2>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<3>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<4>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<5>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<6>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_data<7>                      | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_oe                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_reset                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| flash_we                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| lcd_cs                             | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_address<0>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<1>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<2>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<3>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<4>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<5>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<6>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<7>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<8>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<9>                    | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<10>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<11>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<12>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<13>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<14>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<15>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<16>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<17>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<18>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<19>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<20>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<21>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<22>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_address<23>                   | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_clk<0>                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_clk<1>                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<0>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<1>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<2>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<3>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<4>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<5>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<6>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_data<7>                       | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_irq                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_nmi                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_nrdy                          | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| pcpu_read                          | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| pcpu_rst                           | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_ba<0>                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_ba<1>                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_cas_n                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_cke                          | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_cs_n                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_dqmh                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_dqml                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_ras_n                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<0>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<1>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<2>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<3>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<4>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<5>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<6>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<7>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<8>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<9>                     | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<10>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<11>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_saddr<12>                    | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sclk                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<0>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<1>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<2>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<3>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<4>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<5>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<6>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<7>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<8>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<9>                     | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<10>                    | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<11>                    | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<12>                    | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<13>                    | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<14>                    | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_sdata<15>                    | IOB     | BIDIR     | LVTTL       | 12       | SLOW |          |          |       |
+| sdram_we_n                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_blue<0>                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_blue<1>                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_blue<2>                        | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_green<0>                       | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_green<1>                       | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_green<2>                       | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_hsync                          | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_red<0>                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_red<1>                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_red<2>                         | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| vga_vsync                          | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+No timing report for this architecture.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.

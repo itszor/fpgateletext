@@ -1,0 +1,284 @@
+Release 10.1 par K.31 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+squid::  Thu Feb 23 00:24:18 2017
+
+par -w -intstyle ise -ol med -t 1 bbc2_map.ncd bbc2.ncd bbc2.pcf 
+
+
+Constraints file: bbc2.pcf.
+Loading device for application Rf_Device from file 'v200.nph' in environment /opt/Xilinx/10.1/ISE.
+   "bbc2" is an NCD, version 3.2, device xc2s200, package fg256, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 2.375 Volts. (default - Range: 2.375 to 2.625 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.27 2008-01-09".
+
+
+Device Utilization Summary:
+
+   Number of DLLs                            2 out of 4      50%
+      Number of LOCed DLLs                   2 out of 2     100%
+
+   Number of GCLKs                           2 out of 4      50%
+      Number of LOCed GCLKs                  2 out of 2     100%
+
+   Number of External GCLKIOBs               2 out of 4      50%
+      Number of LOCed GCLKIOBs               2 out of 2     100%
+
+   Number of External IOBs                 125 out of 176    71%
+      Number of LOCed IOBs                 125 out of 125   100%
+
+   Number of SLICEs                        647 out of 2352   27%
+
+
+Overall effort level (-ol):   Medium
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Medium
+
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
+
+WARNING:Par:288 - The signal pcpu_address<20>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<21>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<22>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<23>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<16>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<17>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<18>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<19>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_data<7>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_address<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal pcpu_read_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal flash_data<7>_IBUF has no load.  PAR will not attempt to route this signal.
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:98b41a) REAL time: 0 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.23
+WARNING:Place:108 - Related GCLK/GCLKIO/DLL components should be placed on the same edge of the chip if possible. Not
+   all configurations may allow this. See Xilinx application notes.
+      sdram_sclkfb of type GCLK IOB is placed at GCLKPAD0
+      sdramburst1/clk_extdll of type DLL is placed at DLL3
+      system_clk of type GCLK IOB is placed at GCLKPAD3
+      sdramburst1/clk_intdll of type DLL is placed at DLL2
+      sdramburst1/intclk_buf of type GCLK BUFFER is placed at GCLKBUF2
+      sdramburst1/intclk_dv_buf of type GCLK BUFFER is placed at GCLKBUF3
+
+Phase 4.23 (Checksum:26259fc) REAL time: 1 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:2faf07b) REAL time: 1 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 1 secs 
+
+Phase 7.8
+................
+...........
+..............
+.....
+.......
+Phase 7.8 (Checksum:c2a073) REAL time: 1 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 1 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:55d4a77) REAL time: 2 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:5f5e0f6) REAL time: 2 secs 
+
+REAL time consumed by placer: 2 secs 
+CPU  time consumed by placer: 2 secs 
+Writing design to file bbc2.ncd
+
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU time to Placer completion: 2 secs 
+
+Starting Router
+
+Phase 1: 4694 unrouted;       REAL time: 2 secs 
+
+Phase 2: 4391 unrouted;       REAL time: 4 secs 
+
+Phase 3: 1137 unrouted;       REAL time: 5 secs 
+
+Phase 4: 1137 unrouted; (0)      REAL time: 5 secs 
+
+Phase 5: 1137 unrouted; (0)      REAL time: 5 secs 
+
+Phase 6: 1137 unrouted; (0)      REAL time: 5 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 5 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 5 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 5 secs 
+
+Total REAL time to Router completion: 5 secs 
+Total CPU time to Router completion: 5 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|               clkdv |      GCLKBUF3|Yes   |  201 |  0.120     |  0.793      |
++---------------------+--------------+------+------+------------+-------------+
+|               clk1x |      GCLKBUF2|Yes   |   70 |  0.107     |  0.794      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Number of Timing Constraints that were not applied: 11
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv_4 = PERIOD TIMEG | SETUP   |     4.988ns|    25.012ns|       0|           0
+  RP "sdramburst1_int_clkdv_4"         TS_s | HOLD    |     2.308ns|            |       0|           0
+  ystem_clk * 1.5 HIGH 50%                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0_4 = PERIOD TIMEGR | SETUP   |     7.720ns|    12.280ns|       0|           0
+  P "sdramburst1_int_clk0_4"         TS_sys | HOLD    |     2.311ns|            |       0|           0
+  tem_clk HIGH 50%                          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_system_clk = PERIOD TIMEGRP "system_cl | N/A     |         N/A|         N/A|     N/A|         N/A
+  k" 20 ns HIGH 50%                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0 = PERIOD TIMEGRP  | N/A     |         N/A|         N/A|     N/A|         N/A
+  "sdramburst1_int_clk0" TS_system_clk      |         |            |            |        |            
+      HIGH 50%                              |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv = PERIOD TIMEGRP | N/A     |         N/A|         N/A|     N/A|         N/A
+   "sdramburst1_int_clkdv"         TS_syste |         |            |            |        |            
+  m_clk * 1.5 HIGH 50%                      |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0_1 = PERIOD TIMEGR | N/A     |         N/A|         N/A|     N/A|         N/A
+  P "sdramburst1_int_clk0_1"         TS_sys |         |            |            |        |            
+  tem_clk HIGH 50%                          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv_1 = PERIOD TIMEG | N/A     |         N/A|         N/A|     N/A|         N/A
+  RP "sdramburst1_int_clkdv_1"         TS_s |         |            |            |        |            
+  ystem_clk * 1.5 HIGH 50%                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0_0 = PERIOD TIMEGR | N/A     |         N/A|         N/A|     N/A|         N/A
+  P "sdramburst1_int_clk0_0"         TS_sys |         |            |            |        |            
+  tem_clk HIGH 50%                          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv_0 = PERIOD TIMEG | N/A     |         N/A|         N/A|     N/A|         N/A
+  RP "sdramburst1_int_clkdv_0"         TS_s |         |            |            |        |            
+  ystem_clk * 1.5 HIGH 50%                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0_2 = PERIOD TIMEGR | N/A     |         N/A|         N/A|     N/A|         N/A
+  P "sdramburst1_int_clk0_2"         TS_sys |         |            |            |        |            
+  tem_clk HIGH 50%                          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv_2 = PERIOD TIMEG | N/A     |         N/A|         N/A|     N/A|         N/A
+  RP "sdramburst1_int_clkdv_2"         TS_s |         |            |            |        |            
+  ystem_clk * 1.5 HIGH 50%                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0_3 = PERIOD TIMEGR | N/A     |         N/A|         N/A|     N/A|         N/A
+  P "sdramburst1_int_clk0_3"         TS_sys |         |            |            |        |            
+  tem_clk HIGH 50%                          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv_3 = PERIOD TIMEG | N/A     |         N/A|         N/A|     N/A|         N/A
+  RP "sdramburst1_int_clkdv_3"         TS_s |         |            |            |        |            
+  ystem_clk * 1.5 HIGH 50%                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_system_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_system_clk                  |     20.000ns|          N/A|     16.675ns|            0|            0|            0|        55564|
+| TS_sdramburst1_int_clk0       |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv      |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_1     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_1    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_0     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_0    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_2     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_2    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_3     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_3    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_4     |     20.000ns|     12.280ns|          N/A|            0|            0|         3518|            0|
+| TS_sdramburst1_int_clkdv_4    |     30.000ns|     25.012ns|          N/A|            0|            0|        52046|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 19 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 5 secs 
+Total CPU time to PAR completion: 5 secs 
+
+Peak Memory Usage:  122 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 22
+Number of info messages: 1
+
+Writing design to file bbc2.ncd
+
+
+
+PAR done!

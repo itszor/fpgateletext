@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="137" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;sdram_sclkfb&quot; TNM_NET = &quot;sdram_sclkfb&quot;;&gt; [bbc2.ucf(2)]</arg>: No appropriate instances for the TNM constraint are driven by &quot;<arg fmt="%s" index="2">sdram_sclkfb</arg>&quot;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC &quot;TS_sdram_sclkfb&quot; = PERIOD &quot;sdram_sclkfb&quot; 20 ns HIGH 50%;&gt; [bbc2.ucf(5)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">sdram_sclkfb</arg>&apos;.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_0 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_0 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clk0_1 = PERIOD &quot;sdramburst1_int_cl...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1011" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;TIMESPEC TS_sdramburst1_int_clkdv_1 = PERIOD &quot;sdramburst1_int_c...&gt;</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;0&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;1&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;2&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;3&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;4&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;5&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;6&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">pcpu_data&lt;7&gt;</arg>&apos; has no legal driver
+</msg>
+
+<msg type="warning" file="NgdBuild" num="470" delta="unknown" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">flash_data&lt;7&gt;</arg>&apos; has no legal driver
+</msg>
+
+</messages>
+

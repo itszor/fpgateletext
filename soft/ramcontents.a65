@@ -1,0 +1,9 @@
+	*= $0
+
+	.dsb $400 - *, 3
+
+hellow
+	.asc "RAM_contents!345"
+	.asc "789abcdefghijklm"
+	.asc "nopqrstuvwxyzHel"
+	.asc "loWorldElephants"

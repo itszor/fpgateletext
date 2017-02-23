@@ -1,0 +1,17 @@
+xst -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -ifn "/home/jules/code/tube/clock/clock.xst" -ofn "/home/jules/code/tube/clock/clock.syr"
+xst -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -ifn "/home/jules/code/tube/clock/clock.xst" -ofn "/home/jules/code/tube/clock/clock.syr"
+ngdbuild -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "clock.ngc" clock.ngd
+cpldfit -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper clock.ngd
+XSLTProcess -ise "/home/jules/code/tube/clock/clock.ise" clock_build.xml
+tsim -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise clock clock.nga
+taengine -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -f clock -w --format html1 -l /home/jules/code/tube/clock/clock_html/tim/timing_report.htm
+hprep6 -ise "/home/jules/code/tube/clock/clock.ise" -s IEEE1149 -n clock -i clock
+ngdbuild -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "clock.ngc" clock.ngd
+ngdbuild -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -dd _ngo  -i -p xc9572xl-VQ64-10 "clock.ngc" clock.ngd
+cpldfit -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -p xc9572xl-10-VQ64 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper clock.ngd
+XSLTProcess -ise "/home/jules/code/tube/clock/clock.ise" clock_build.xml
+tsim -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise clock clock.nga
+taengine -ise "/home/jules/code/tube/clock/clock.ise" -intstyle ise -f clock -w --format html1 -l /home/jules/code/tube/clock/clock_html/tim/timing_report.htm
+hprep6 -ise "/home/jules/code/tube/clock/clock.ise" -s IEEE1149 -n clock -i clock
+hprep6 -ise "/home/jules/code/tube/clock/clock.ise" -s IEEE1149 -n clock -i clock
+hprep6 -ise "/home/jules/code/tube/clock/clock.ise" -s IEEE1532 -n clock -i clock

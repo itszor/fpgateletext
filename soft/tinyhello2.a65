@@ -1,0 +1,122 @@
+	*= $200
+
+hello
+	.(
+	ldx #255
+	txs
+
+	; function set; 8 bit, etc.
+	lda #32+16+8
+	sta $fd00
+	jsr wait
+
+	; display on, cursor on
+	lda #14
+	sta $fd00
+	jsr wait
+
+	; entry mode set
+	lda #6
+	sta $fd00
+	jsr wait
+
+	; clear+home
+	lda #1
+	sta $fd00
+	jsr wait
+
+restart
+	lda #0
+	sta line
+
+	lda #<$400
+	sta $10
+	lda #>$400
+	sta $11
+
+	; just read a thing
+	;ldy #0
+	;lda ($10),y
+
+	;jmp stop
+
+	lda #'x'
+	sta $412
+	lda #'y'
+	sta $413
+
+do_lines
+	ldx line
+	cpx #4
+	beq done
+	lda lines,x
+	ora #128
+	sta $fd00
+	jsr wait
+	inc line
+
+	; trigger SDRAM read
+	;lda $fd02
+
+	ldy #0
+loop
+	;lda ($10),y
+	;nop
+	;nop
+	;nop
+	lda ($10),y
+	tax
+	tya
+	and #1
+	beq asis
+	;ldx #'x'
+asis
+	txa
+	sta $fd01
+	;lda #'x'
+	;sta $412
+	;lda #'y'
+	;sta $413
+	jsr wait
+	iny
+	cpy #16
+	bne loop
+
+	lda $10
+	clc
+	adc #16
+	sta $10
+	lda $11
+	adc #0
+	sta $11
+
+	jmp do_lines
+
+done	
+
+	;jmp restart
+stop
+	jmp stop
+	.)
+
+wait
+	bit $fd00
+	bmi wait
+	rts
+
+hellow
+	.asc "Hello world!!", 0
+
+line
+	.byte 0
+
+lines
+	.byte $00
+	.byte $40
+	.byte $10
+	.byte $50
+	
+	.dsb $3fc - *, 0
+reset
+	.word hello
+	.word 0

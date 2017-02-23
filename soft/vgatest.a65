@@ -1,0 +1,248 @@
+	*= $0
+
+#define ACC8 .( : .as : sep #$20 : .)
+#define ACC16 .( : .al : rep #$20 : .)
+#define IDX8 .( : .xs : sep #$10 : .)
+#define IDX16 .( : .xl : rep #$10 : .)
+
+	; ZP variables
+
+corner	.byte 0
+	.byte 0
+	.byte 0
+	.byte 0
+
+red		.word 0
+redctr		.byte 0
+green		.word 0
+greenctr	.byte 0
+
+blue	.word 0
+xtop	.word 0
+ytop	.word 0
+
+	;.dsb $2000 - *, 0
+
+hello
+	lda #221
+	sta $fef0
+
+	; enter native mode
+	clc
+	xce
+
+	; 8k stack
+	IDX16
+	ldx #$1fff
+	txs
+	
+	jsr clear
+	jsr rgb
+	jmp stop
+
+rgb
+	.(
+	ACC16
+	stz xtop
+	stz ytop
+	stz blue
+	jsr square
+
+	lda #400
+	sta xtop
+	lda #(1 << 12)
+	sta blue
+	jsr square
+
+	lda #800
+	sta xtop
+	lda #(2 << 12)
+	sta blue
+	jsr square
+
+	lda #1200
+	sta xtop
+	lda #(3 << 12)
+	sta blue
+	jsr square
+
+	stz xtop
+	lda #300
+	sta ytop
+	lda #(4 << 12)
+	sta blue
+	jsr square
+	
+	lda #400
+	sta xtop
+	lda #(5 << 12)
+	sta blue
+	jsr square
+
+	lda #800
+	sta xtop
+	lda #(6 << 12)
+	sta blue
+	jsr square
+
+	lda #1200
+	sta xtop
+	lda #(7 << 12)
+	sta blue
+	jsr square
+	
+	rts
+	.)
+
+square
+	.(
+	php
+	pha
+	phx
+	phy
+	
+	ACC16
+	; mult operand A
+	lda ytop
+	sta $fee0
+	stz $fee2
+	lda #1600
+	; mult operand B
+	sta $fee4
+	stz $fee6
+	ACC8
+	; initiate multiply
+	lda #0
+	sta $feef
+	lda #$f0
+	sta corner+2
+	ACC16
+	lda xtop
+	clc
+	adc $fee8
+	sta corner
+	ACC8
+	lda corner+2
+	adc $feea
+	sta corner+2
+
+	; corner now xtop + (ytop*1600) + 0xf00000
+	
+	ldx #300
+	stz green
+	ACC8
+	stz greenctr
+	ACC16
+yloop
+	ACC16
+	stz red
+	ACC8
+	stz redctr
+	ldy #0
+xloop
+	ACC16
+	
+	lda green
+	asl
+	asl
+	asl
+	asl
+	asl
+	ora red
+	ora blue
+	sta [corner],y
+
+	ACC8
+	
+	; red, yreg=0..159
+	lda redctr
+	clc
+	adc #4
+	cmp #26
+	.(
+	bcc noinc
+	inc red
+	sec
+	sbc #25
+noinc	.)
+	sta redctr
+	
+	iny
+	iny
+	cpy #400
+	bne xloop
+
+	; green, yidx=0..239
+	lda greenctr
+	clc
+	adc #8
+	cmp #76
+	.(
+	bcc noinc
+	inc green
+	sec
+	sbc #75
+noinc	.)
+	sta greenctr
+
+	ACC16
+	; next row
+	lda corner
+	clc
+	adc #1600
+	sta corner
+	.(
+	bcc noinc
+	ACC8
+	inc corner+2
+noinc	.)
+
+	ACC16
+	
+	dex
+	bne yloop
+	
+	ply
+	plx
+	pla
+	plp
+	rts
+	.)
+
+clear
+	.(
+	ACC16
+	IDX16
+	lda #0
+	ldx #0
+loop
+	sta $f00000,x
+	sta $f10000,x
+	sta $f20000,x
+	sta $f30000,x
+	sta $f40000,x
+	sta $f50000,x
+	sta $f60000,x
+	sta $f70000,x
+	sta $f80000,x
+	;sta $f90000,x
+	;sta $fa0000,x
+	;sta $fb0000,x
+	;sta $fc0000,x
+	;sta $fd0000,x
+	;sta $fe0000,x
+	inx
+	inx
+	cpx #0
+	bne loop
+	rts
+	.)
+
+stop
+	; stp
+	jmp stop
+
+	.dsb $fffc - *, 0
+reset
+	.word hello
+	.word 0

@@ -1,0 +1,441 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/opt/xilinx/10.1/ISE/bin/lin/unwrapped/trce -ise /home/jules/code/tube/tube.ise
+-intstyle ise -v 3 -s 5 -xml bbc2_preroute bbc2_map.ncd -o bbc2_preroute.twr
+bbc2.pcf -ucf bursttest.ucf
+
+Design file:              bbc2_map.ncd
+Physical constraint file: bbc2.pcf
+Device,package,speed:     xc2s200,fg256,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_system_clk = PERIOD TIMEGRP "system_clk" 20 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0" TS_system_clk         HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_1 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_1"         TS_system_clk HIGH 50%;
+
+ 145945 paths analyzed, 1821 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  13.555ns.
+--------------------------------------------------------------------------------
+Slack:                  6.445ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpu1/PC_11 (FF)
+  Destination:          cpu1/BAL_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      13.555ns (Levels of Logic = 13)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: cpu1/PC_11 to cpu1/BAL_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE.XQ             Tcko                  1.292   cpu1/PC<11>
+                                                       cpu1/PC_11
+    SLICE.G1             net (fanout=9)     e  0.222   cpu1/PC<11>
+    SLICE.X              Tif5x                 1.028   N340
+                                                       _and00001_SW0_F
+                                                       _and00001_SW0
+    SLICE.G4             net (fanout=1)     e  0.222   N340
+    SLICE.Y              Tilo                  0.653   cpu_address<12>
+                                                       _and00001
+    SLICE.G4             net (fanout=2)     e  0.222   N121
+    SLICE.Y              Tilo                  0.653   N101
+                                                       addr_select_or00001
+    SLICE.F1             net (fanout=10)    e  0.222   addr_select<1>
+    SLICE.X              Tilo                  0.653   cpu1/IR_1_1
+                                                       cpu_din<1>_SW0
+    SLICE.G4             net (fanout=2)     e  0.222   N326
+    SLICE.Y              Tilo                  0.653   cpu1/IR_1_1
+                                                       cpu_din<1>
+    SLICE.F2             net (fanout=8)     e  0.222   cpu_din<1>
+    SLICE.X              Tilo                  0.653   cpu1/mux9_7
+                                                       cpu1/mux9_7
+    SLICE.G2             net (fanout=1)     e  0.222   cpu1/mux9_7
+    SLICE.X              Tif5x                 1.028   cpu1/BusA_r<1>
+                                                       cpu1/Set_BusA_To<2>_F
+                                                       cpu1/Set_BusA_To<2>
+    SLICE.G2             net (fanout=1)     e  0.222   cpu1/BusA<1>
+    SLICE.COUT           Topcyg                1.396   cpu1/BAL_add0001<1>
+                                                       cpu1/Madd_BAL_add0001_lut<1>
+                                                       cpu1/Madd_BAL_add0001_cy<1>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<1>
+    SLICE.COUT           Tbyp                  0.096   cpu1/BAL_add0001<2>
+                                                       cpu1/Madd_BAL_add0001_cy<2>
+                                                       cpu1/Madd_BAL_add0001_cy<3>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<3>
+    SLICE.COUT           Tbyp                  0.096   cpu1/BAL_add0001<4>
+                                                       cpu1/Madd_BAL_add0001_cy<4>
+                                                       cpu1/Madd_BAL_add0001_cy<5>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<5>
+    SLICE.X              Tcinx                 0.463   cpu1/BAL_add0001<6>
+                                                       cpu1/Madd_BAL_add0001_xor<6>
+    SLICE.F3             net (fanout=1)     e  0.222   cpu1/BAL_add0001<6>
+    SLICE.X              Tilo                  0.653   cpu1/BAL<6>
+                                                       cpu1/BAL_6_mux0001103
+    SLICE.G1             net (fanout=1)     e  0.222   cpu1/BAL_6_mux0001103/O
+    SLICE.CLK            Tick                  1.352   cpu1/BAL<6>
+                                                       cpu1/BAL_6_mux0001137
+                                                       cpu1/BAL_6
+    -------------------------------------------------  ---------------------------
+    Total                                     13.555ns (10.669ns logic, 2.886ns route)
+                                                       (78.7% logic, 21.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.445ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpu1/PC_10 (FF)
+  Destination:          cpu1/BAL_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      13.555ns (Levels of Logic = 13)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: cpu1/PC_10 to cpu1/BAL_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE.XQ             Tcko                  1.292   cpu1/PC<10>
+                                                       cpu1/PC_10
+    SLICE.G3             net (fanout=11)    e  0.222   cpu1/PC<10>
+    SLICE.X              Tif5x                 1.028   N340
+                                                       _and00001_SW0_F
+                                                       _and00001_SW0
+    SLICE.G4             net (fanout=1)     e  0.222   N340
+    SLICE.Y              Tilo                  0.653   cpu_address<12>
+                                                       _and00001
+    SLICE.G4             net (fanout=2)     e  0.222   N121
+    SLICE.Y              Tilo                  0.653   N101
+                                                       addr_select_or00001
+    SLICE.F1             net (fanout=10)    e  0.222   addr_select<1>
+    SLICE.X              Tilo                  0.653   cpu1/IR_1_1
+                                                       cpu_din<1>_SW0
+    SLICE.G4             net (fanout=2)     e  0.222   N326
+    SLICE.Y              Tilo                  0.653   cpu1/IR_1_1
+                                                       cpu_din<1>
+    SLICE.F2             net (fanout=8)     e  0.222   cpu_din<1>
+    SLICE.X              Tilo                  0.653   cpu1/mux9_7
+                                                       cpu1/mux9_7
+    SLICE.G2             net (fanout=1)     e  0.222   cpu1/mux9_7
+    SLICE.X              Tif5x                 1.028   cpu1/BusA_r<1>
+                                                       cpu1/Set_BusA_To<2>_F
+                                                       cpu1/Set_BusA_To<2>
+    SLICE.G2             net (fanout=1)     e  0.222   cpu1/BusA<1>
+    SLICE.COUT           Topcyg                1.396   cpu1/BAL_add0001<1>
+                                                       cpu1/Madd_BAL_add0001_lut<1>
+                                                       cpu1/Madd_BAL_add0001_cy<1>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<1>
+    SLICE.COUT           Tbyp                  0.096   cpu1/BAL_add0001<2>
+                                                       cpu1/Madd_BAL_add0001_cy<2>
+                                                       cpu1/Madd_BAL_add0001_cy<3>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<3>
+    SLICE.COUT           Tbyp                  0.096   cpu1/BAL_add0001<4>
+                                                       cpu1/Madd_BAL_add0001_cy<4>
+                                                       cpu1/Madd_BAL_add0001_cy<5>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<5>
+    SLICE.X              Tcinx                 0.463   cpu1/BAL_add0001<6>
+                                                       cpu1/Madd_BAL_add0001_xor<6>
+    SLICE.F3             net (fanout=1)     e  0.222   cpu1/BAL_add0001<6>
+    SLICE.X              Tilo                  0.653   cpu1/BAL<6>
+                                                       cpu1/BAL_6_mux0001103
+    SLICE.G1             net (fanout=1)     e  0.222   cpu1/BAL_6_mux0001103/O
+    SLICE.CLK            Tick                  1.352   cpu1/BAL<6>
+                                                       cpu1/BAL_6_mux0001137
+                                                       cpu1/BAL_6
+    -------------------------------------------------  ---------------------------
+    Total                                     13.555ns (10.669ns logic, 2.886ns route)
+                                                       (78.7% logic, 21.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.445ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpu1/Set_Addr_To_r_1 (FF)
+  Destination:          cpu1/BAL_6 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      13.555ns (Levels of Logic = 13)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: cpu1/Set_Addr_To_r_1 to cpu1/BAL_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE.YQ             Tcko                  1.292   cpu1/Set_Addr_To_r<1>
+                                                       cpu1/Set_Addr_To_r_1
+    SLICE.G2             net (fanout=16)    e  0.222   cpu1/Set_Addr_To_r<1>
+    SLICE.X              Tif5x                 1.028   N340
+                                                       _and00001_SW0_F
+                                                       _and00001_SW0
+    SLICE.G4             net (fanout=1)     e  0.222   N340
+    SLICE.Y              Tilo                  0.653   cpu_address<12>
+                                                       _and00001
+    SLICE.G4             net (fanout=2)     e  0.222   N121
+    SLICE.Y              Tilo                  0.653   N101
+                                                       addr_select_or00001
+    SLICE.F1             net (fanout=10)    e  0.222   addr_select<1>
+    SLICE.X              Tilo                  0.653   cpu1/IR_1_1
+                                                       cpu_din<1>_SW0
+    SLICE.G4             net (fanout=2)     e  0.222   N326
+    SLICE.Y              Tilo                  0.653   cpu1/IR_1_1
+                                                       cpu_din<1>
+    SLICE.F2             net (fanout=8)     e  0.222   cpu_din<1>
+    SLICE.X              Tilo                  0.653   cpu1/mux9_7
+                                                       cpu1/mux9_7
+    SLICE.G2             net (fanout=1)     e  0.222   cpu1/mux9_7
+    SLICE.X              Tif5x                 1.028   cpu1/BusA_r<1>
+                                                       cpu1/Set_BusA_To<2>_F
+                                                       cpu1/Set_BusA_To<2>
+    SLICE.G2             net (fanout=1)     e  0.222   cpu1/BusA<1>
+    SLICE.COUT           Topcyg                1.396   cpu1/BAL_add0001<1>
+                                                       cpu1/Madd_BAL_add0001_lut<1>
+                                                       cpu1/Madd_BAL_add0001_cy<1>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<1>
+    SLICE.COUT           Tbyp                  0.096   cpu1/BAL_add0001<2>
+                                                       cpu1/Madd_BAL_add0001_cy<2>
+                                                       cpu1/Madd_BAL_add0001_cy<3>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<3>
+    SLICE.COUT           Tbyp                  0.096   cpu1/BAL_add0001<4>
+                                                       cpu1/Madd_BAL_add0001_cy<4>
+                                                       cpu1/Madd_BAL_add0001_cy<5>
+    SLICE.CIN            net (fanout=1)     e  0.222   cpu1/Madd_BAL_add0001_cy<5>
+    SLICE.X              Tcinx                 0.463   cpu1/BAL_add0001<6>
+                                                       cpu1/Madd_BAL_add0001_xor<6>
+    SLICE.F3             net (fanout=1)     e  0.222   cpu1/BAL_add0001<6>
+    SLICE.X              Tilo                  0.653   cpu1/BAL<6>
+                                                       cpu1/BAL_6_mux0001103
+    SLICE.G1             net (fanout=1)     e  0.222   cpu1/BAL_6_mux0001103/O
+    SLICE.CLK            Tick                  1.352   cpu1/BAL<6>
+                                                       cpu1/BAL_6_mux0001137
+                                                       cpu1/BAL_6
+    -------------------------------------------------  ---------------------------
+    Total                                     13.555ns (10.669ns logic, 2.886ns route)
+                                                       (78.7% logic, 21.3% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_1 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_1"         TS_system_clk * 1.5 HIGH 50%;
+
+ 66153 paths analyzed, 997 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  16.351ns.
+--------------------------------------------------------------------------------
+Slack:                  7.654ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sync_reset_1 (FF)
+  Destination:          clkdv_reset (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      2.346ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk1x rising at 20.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sync_reset_1 to clkdv_reset
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE.YQ             Tcko                  1.292   sync_reset_2
+                                                       sync_reset_1
+    SLICE.BY             net (fanout=59)    e  0.222   sync_reset_1
+    SLICE.CLK            Tdick                 0.832   clkdv_reset
+                                                       clkdv_reset
+    -------------------------------------------------  ---------------------------
+    Total                                      2.346ns (2.124ns logic, 0.222ns route)
+                                                       (90.5% logic, 9.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.654ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sync_reset_3 (FF)
+  Destination:          clkdv_reset_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      2.346ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk1x rising at 20.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sync_reset_3 to clkdv_reset_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE.YQ             Tcko                  1.292   sync_reset_3
+                                                       sync_reset_3
+    SLICE.BY             net (fanout=60)    e  0.222   sync_reset_3
+    SLICE.CLK            Tdick                 0.832   clkdv_reset_1
+                                                       clkdv_reset_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.346ns (2.124ns logic, 0.222ns route)
+                                                       (90.5% logic, 9.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  13.649ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga1/char_vpos_1 (FF)
+  Destination:          vga1/alt_next (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      16.351ns (Levels of Logic = 14)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clkdv rising at 0.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga1/char_vpos_1 to vga1/alt_next
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE.XQ             Tcko                  1.292   vga1/char_vpos<1>
+                                                       vga1/char_vpos_1
+    SLICE.F4             net (fanout=36)    e  0.222   vga1/char_vpos<1>
+    SLICE.X              Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>17/O
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>17
+    SLICE.G1             net (fanout=1)     e  0.222   vga1/Msub_alt_next_addsub0001_xor<1>17/O
+    SLICE.Y              Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>17/O
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>110
+    SLICE.G2             net (fanout=2)     e  0.222   vga1/Msub_alt_next_addsub0001_xor<1>110
+    SLICE.Y              Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>137
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>1371
+    SLICE.G2             net (fanout=1)     e  0.222   vga1/Msub_alt_next_addsub0001_xor<1>137
+    SLICE.COUT           Topcyg                1.396   vga1/Mmult_alt_next_mult0001_Madd_1
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>137_rt
+                                                       vga1/Mmult_alt_next_mult0001_Madd_cy<1>
+    SLICE.CIN            net (fanout=1)     e  0.222   vga1/Mmult_alt_next_mult0001_Madd_cy<1>
+    SLICE.X              Tcinx                 0.463   vga1/Mmult_alt_next_mult0001_Madd_2
+                                                       vga1/Mmult_alt_next_mult0001_Madd_xor<2>
+    SLICE.F1             net (fanout=1)     e  0.222   vga1/Mmult_alt_next_mult0001_Madd_2
+    SLICE.Y              Topy                  1.937   vga1/alt_next_mult0001<2>
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_lut<2>_INV_0
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_cy<2>
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_xor<3>
+    SLICE.G4             net (fanout=3)     e  0.222   vga1/Madd__COND_25_Madd6
+    SLICE.Y              Tilo                  0.653   vga1/N77
+                                                       vga1/Madd__COND_25_Madd_xor<4>111
+    SLICE.G2             net (fanout=18)    e  0.222   vga1/N241
+    SLICE.F5             Tif5                  0.828   vga1/Mmux__varindex0002_13_f5
+                                                       vga1/Mmux__varindex0002_15
+                                                       vga1/Mmux__varindex0002_13_f5
+    SLICE.F5IN           net (fanout=1)     e  0.222   vga1/Mmux__varindex0002_13_f5
+    SLICE.Y              Tf5iny                0.376   vga1/Mmux__varindex0002_11_f6
+                                                       vga1/Mmux__varindex0002_11_f6
+    SLICE.G3             net (fanout=1)     e  0.222   vga1/Mmux__varindex0002_11_f6
+    SLICE.X              Tif5x                 1.028   vga1/Mmux__varindex0002_5_f5
+                                                       vga1/Mmux__varindex0002_7
+                                                       vga1/Mmux__varindex0002_5_f5
+    SLICE.G2             net (fanout=2)     e  0.222   vga1/Mmux__varindex0002_5_f5
+    SLICE.Y              Tilo                  0.653   N547
+                                                       vga1/alt_next_mux0000163_SW0
+    SLICE.G4             net (fanout=1)     e  0.222   N547
+    SLICE.Y              Tilo                  0.653   vga1/alt_next_mux0000110/O
+                                                       vga1/alt_next_mux0000171
+    SLICE.F3             net (fanout=1)     e  0.222   vga1/alt_next_mux0000171
+    SLICE.X              Tilo                  0.653   vga1/alt_next
+                                                       vga1/alt_next_mux0000182
+    SLICE.G1             net (fanout=1)     e  0.222   vga1/alt_next_mux0000182/O
+    SLICE.CLK            Tick                  1.352   vga1/alt_next
+                                                       vga1/alt_next_mux0000377
+                                                       vga1/alt_next
+    -------------------------------------------------  ---------------------------
+    Total                                     16.351ns (13.243ns logic, 3.108ns route)
+                                                       (81.0% logic, 19.0% route)
+
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_system_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_system_clk                  |     20.000ns|          N/A|     13.555ns|            0|            0|            0|       212098|
+| TS_sdramburst1_int_clk0       |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv      |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_1     |     20.000ns|     13.555ns|          N/A|            0|            0|       145945|            0|
+| TS_sdramburst1_int_clkdv_1    |     30.000ns|     16.351ns|          N/A|            0|            0|        66153|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock system_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+system_clk     |   16.351|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 212098 paths, 0 nets, and 9427 connections
+
+Design statistics:
+   Minimum period:  16.351ns{1}   (Maximum frequency:  61.158MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Jan  5 20:13:13 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 81 MB
+
+
+

@@ -1,0 +1,296 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version K.31                              Xilinx Inc.
+                                  Fitter Report
+Design Name: clock                               Date:  1-17-2015,  2:39PM
+Device Used: XC9572XL-10-VQ64
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+1  /72  (  1%) 1   /360  (  1%) 1  /216 (  1%)   0  /72  (  0%) 2  /52  (  4%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           0/18        0/54        0/90       0/13
+FB2           1/18        1/54        1/90       1/13
+FB3           0/18        0/54        0/90       0/14
+FB4           0/18        0/54        0/90       0/12
+             -----       -----       -----      -----    
+              1/72        1/216       1/360      1/52 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    1           1    |  I/O              :     1      46
+Output        :    1           1    |  GCK/IO           :     1       3
+Bidirectional :    0           0    |  GTS/IO           :     0       2
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total      2           2
+
+** Power Data **
+
+There are 1 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+*************************  Summary of Mapped Logic  ************************
+
+** 1 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+fpga_clock_a        1     1     FB2_2   60~  I/O     O       STD  FAST 
+
+** 1 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+master_clock        FB1_14  17~  GCK/I/O I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+(unused)              0       0     0   5     FB1_2   8     I/O     
+(unused)              0       0     0   5     FB1_3   12    I/O     
+(unused)              0       0     0   5     FB1_4   13    I/O     
+(unused)              0       0     0   5     FB1_5   9     I/O     
+(unused)              0       0     0   5     FB1_6   10    I/O     
+(unused)              0       0     0   5     FB1_7         (b)     
+(unused)              0       0     0   5     FB1_8   11    I/O     
+(unused)              0       0     0   5     FB1_9   15    GCK/I/O 
+(unused)              0       0     0   5     FB1_10  18    I/O     
+(unused)              0       0     0   5     FB1_11  16    GCK/I/O 
+(unused)              0       0     0   5     FB1_12  23    I/O     
+(unused)              0       0     0   5     FB1_13        (b)     
+(unused)              0       0     0   5     FB1_14  17    GCK/I/O I
+(unused)              0       0     0   5     FB1_15  19    I/O     
+(unused)              0       0     0   5     FB1_16        (b)     
+(unused)              0       0     0   5     FB1_17  20    I/O     
+(unused)              0       0     0   5     FB1_18        (b)     
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               1/53
+Number of signals used by logic mapping into function block:  1
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1         (b)     
+fpga_clock_a          1       0     0   4     FB2_2   60~   I/O     O
+(unused)              0       0     0   5     FB2_3   58    I/O     
+(unused)              0       0     0   5     FB2_4   59    I/O     
+(unused)              0       0     0   5     FB2_5   61    I/O     
+(unused)              0       0     0   5     FB2_6   62    I/O     
+(unused)              0       0     0   5     FB2_7         (b)     
+(unused)              0       0     0   5     FB2_8   63    I/O     
+(unused)              0       0     0   5     FB2_9   64    GSR/I/O 
+(unused)              0       0     0   5     FB2_10  1     I/O     
+(unused)              0       0     0   5     FB2_11  2     GTS/I/O 
+(unused)              0       0     0   5     FB2_12  4     I/O     
+(unused)              0       0     0   5     FB2_13        (b)     
+(unused)              0       0     0   5     FB2_14  5     GTS/I/O 
+(unused)              0       0     0   5     FB2_15  6     I/O     
+(unused)              0       0     0   5     FB2_16        (b)     
+(unused)              0       0     0   5     FB2_17  7     I/O     
+(unused)              0       0     0   5     FB2_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: master_clock     
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+fpga_clock_a         X....................................... 1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1         (b)     
+(unused)              0       0     0   5     FB3_2   22    I/O     
+(unused)              0       0     0   5     FB3_3   31    I/O     
+(unused)              0       0     0   5     FB3_4   32    I/O     
+(unused)              0       0     0   5     FB3_5   24    I/O     
+(unused)              0       0     0   5     FB3_6   34    I/O     
+(unused)              0       0     0   5     FB3_7         (b)     
+(unused)              0       0     0   5     FB3_8   25    I/O     
+(unused)              0       0     0   5     FB3_9   27    I/O     
+(unused)              0       0     0   5     FB3_10  39    I/O     
+(unused)              0       0     0   5     FB3_11  33    I/O     
+(unused)              0       0     0   5     FB3_12  40    I/O     
+(unused)              0       0     0   5     FB3_13        (b)     
+(unused)              0       0     0   5     FB3_14  35    I/O     
+(unused)              0       0     0   5     FB3_15  36    I/O     
+(unused)              0       0     0   5     FB3_16  42    I/O     
+(unused)              0       0     0   5     FB3_17  38    I/O     
+(unused)              0       0     0   5     FB3_18        (b)     
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               0/54
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1         (b)     
+(unused)              0       0     0   5     FB4_2   43    I/O     
+(unused)              0       0     0   5     FB4_3   46    I/O     
+(unused)              0       0     0   5     FB4_4   47    I/O     
+(unused)              0       0     0   5     FB4_5   44    I/O     
+(unused)              0       0     0   5     FB4_6   49    I/O     
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   45    I/O     
+(unused)              0       0     0   5     FB4_9         (b)     
+(unused)              0       0     0   5     FB4_10  51    I/O     
+(unused)              0       0     0   5     FB4_11  48    I/O     
+(unused)              0       0     0   5     FB4_12  52    I/O     
+(unused)              0       0     0   5     FB4_13        (b)     
+(unused)              0       0     0   5     FB4_14  50    I/O     
+(unused)              0       0     0   5     FB4_15  56    I/O     
+(unused)              0       0     0   5     FB4_16        (b)     
+(unused)              0       0     0   5     FB4_17  57    I/O     
+(unused)              0       0     0   5     FB4_18        (b)     
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+fpga_clock_a <= master_clock;
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572XL-10-VQ64
+
+
+   -----------------------------------------------  
+  /48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 \
+ | 49                                           32 | 
+ | 50                                           31 | 
+ | 51                                           30 | 
+ | 52                                           29 | 
+ | 53                                           28 | 
+ | 54                                           27 | 
+ | 55                                           26 | 
+ | 56              XC9572XL-10-VQ64             25 | 
+ | 57                                           24 | 
+ | 58                                           23 | 
+ | 59                                           22 | 
+ | 60                                           21 | 
+ | 61                                           20 | 
+ | 62                                           19 | 
+ | 63                                           18 | 
+ | 64                                           17 | 
+ \ 1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 /
+   -----------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 KPR                              33 KPR                           
+  2 KPR                              34 KPR                           
+  3 VCC                              35 KPR                           
+  4 KPR                              36 KPR                           
+  5 KPR                              37 VCC                           
+  6 KPR                              38 KPR                           
+  7 KPR                              39 KPR                           
+  8 KPR                              40 KPR                           
+  9 KPR                              41 GND                           
+ 10 KPR                              42 KPR                           
+ 11 KPR                              43 KPR                           
+ 12 KPR                              44 KPR                           
+ 13 KPR                              45 KPR                           
+ 14 GND                              46 KPR                           
+ 15 KPR                              47 KPR                           
+ 16 KPR                              48 KPR                           
+ 17 master_clock                     49 KPR                           
+ 18 KPR                              50 KPR                           
+ 19 KPR                              51 KPR                           
+ 20 KPR                              52 KPR                           
+ 21 GND                              53 TDO                           
+ 22 KPR                              54 GND                           
+ 23 KPR                              55 VCC                           
+ 24 KPR                              56 KPR                           
+ 25 KPR                              57 KPR                           
+ 26 VCC                              58 KPR                           
+ 27 KPR                              59 KPR                           
+ 28 TDI                              60 fpga_clock_a                  
+ 29 TMS                              61 KPR                           
+ 30 TCK                              62 KPR                           
+ 31 KPR                              63 KPR                           
+ 32 KPR                              64 KPR                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-10-VQ64
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

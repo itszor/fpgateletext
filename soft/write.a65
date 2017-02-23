@@ -1,0 +1,19 @@
+	*= $0
+
+	nop
+	nop
+	nop
+repeat
+	stz $0
+	lda #65
+	sta $1
+	lda #255
+
+stop
+	jmp stop
+	
+	.dsb $fffc - *, 0
+reset
+	.word repeat
+	.word 0
+	.word 0

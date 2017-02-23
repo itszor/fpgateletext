@@ -1,0 +1,1365 @@
+NDS Database:  version K.31
+
+NDS_INFO | xc9500xl | 9572XL64 | XC9572XL-10-VQ64
+
+DEVICE | 9572XL | 9572XL64 | 
+
+NETWORK | dwnldpar | 0 | 0 | 16391
+
+INPUT_INSTANCE | 0 | 0 | NULL | pp_d_2_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<2> | 956 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pp_d_2_IBUF | 869 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | fpga_done_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | fpga_done | 957 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | fpga_cclk_OBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<0> | 958 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+PinTrst+OptxMapped | config_data<0> | dwnldpar_COPY_0_COPY_0 | 2155889664 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_2_IBUF | 869 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | config_data<0> | 872 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<0>.Q | config_data<0> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | config_data<0>$OE | 873 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<0>.BUFOE.OUT | config_data<0> | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | config_data<0>.SI | config_data<0> | 0 | 3 | 4
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_2_IBUF | 869 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | config_data<0>.D1 | 971 | ? | 0 | 4096 | config_data<0> | NULL | NULL | config_data<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | config_data<0>.D2 | 972 | ? | 0 | 4096 | config_data<0> | NULL | NULL | config_data<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_2_IBUF
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | config_data<0>.CLKF | 973 | ? | 0 | 4096 | config_data<0> | NULL | NULL | config_data<0>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | config_data<0>.TRST | 975 | ? | 0 | 4096 | config_data<0> | NULL | NULL | config_data<0>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | config_data<0>.REG | config_data<0> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | config_data<0>.D | 970 | ? | 0 | 0 | config_data<0> | NULL | NULL | config_data<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | config_data<0>.CLKF | 973 | ? | 0 | 4096 | config_data<0> | NULL | NULL | config_data<0>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | config_data<0>.Q | 976 | ? | 0 | 0 | config_data<0> | NULL | NULL | config_data<0>.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | config_data<0>.BUFOE | config_data<0> | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | config_data<0>.TRST | 975 | ? | 0 | 4096 | config_data<0> | NULL | NULL | config_data<0>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | config_data<0>.BUFOE.OUT | 974 | ? | 0 | 0 | config_data<0> | NULL | NULL | config_data<0>.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | pp_d_3_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<3> | 959 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pp_d_3_IBUF | 874 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_3_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+PinTrst+OptxMapped | config_data<1> | dwnldpar_COPY_0_COPY_0 | 2155889664 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_3_IBUF | 874 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | config_data<1> | 875 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<1>.Q | config_data<1> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | config_data<1>$OE | 876 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<1>.BUFOE.OUT | config_data<1> | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | config_data<1>.SI | config_data<1> | 0 | 3 | 4
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_3_IBUF | 874 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | config_data<1>.D1 | 978 | ? | 0 | 4096 | config_data<1> | NULL | NULL | config_data<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | config_data<1>.D2 | 979 | ? | 0 | 4096 | config_data<1> | NULL | NULL | config_data<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_3_IBUF
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | config_data<1>.CLKF | 980 | ? | 0 | 4096 | config_data<1> | NULL | NULL | config_data<1>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | config_data<1>.TRST | 982 | ? | 0 | 4096 | config_data<1> | NULL | NULL | config_data<1>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | config_data<1>.REG | config_data<1> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | config_data<1>.D | 977 | ? | 0 | 0 | config_data<1> | NULL | NULL | config_data<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | config_data<1>.CLKF | 980 | ? | 0 | 4096 | config_data<1> | NULL | NULL | config_data<1>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | config_data<1>.Q | 983 | ? | 0 | 0 | config_data<1> | NULL | NULL | config_data<1>.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | config_data<1>.BUFOE | config_data<1> | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | config_data<1>.TRST | 982 | ? | 0 | 4096 | config_data<1> | NULL | NULL | config_data<1>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | config_data<1>.BUFOE.OUT | 981 | ? | 0 | 0 | config_data<1> | NULL | NULL | config_data<1>.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | pp_d_4_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<4> | 960 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pp_d_4_IBUF | 877 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_4_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+PinTrst+OptxMapped | config_data<2> | dwnldpar_COPY_0_COPY_0 | 2155889664 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_4_IBUF | 877 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | config_data<2> | 878 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<2>.Q | config_data<2> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | config_data<2>$OE | 879 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<2>.BUFOE.OUT | config_data<2> | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | config_data<2>.SI | config_data<2> | 0 | 3 | 4
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_4_IBUF | 877 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | config_data<2>.D1 | 985 | ? | 0 | 4096 | config_data<2> | NULL | NULL | config_data<2>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | config_data<2>.D2 | 986 | ? | 0 | 4096 | config_data<2> | NULL | NULL | config_data<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_4_IBUF
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | config_data<2>.CLKF | 987 | ? | 0 | 4096 | config_data<2> | NULL | NULL | config_data<2>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | config_data<2>.TRST | 989 | ? | 0 | 4096 | config_data<2> | NULL | NULL | config_data<2>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | config_data<2>.REG | config_data<2> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | config_data<2>.D | 984 | ? | 0 | 0 | config_data<2> | NULL | NULL | config_data<2>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | config_data<2>.CLKF | 987 | ? | 0 | 4096 | config_data<2> | NULL | NULL | config_data<2>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | config_data<2>.Q | 990 | ? | 0 | 0 | config_data<2> | NULL | NULL | config_data<2>.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | config_data<2>.BUFOE | config_data<2> | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | config_data<2>.TRST | 989 | ? | 0 | 4096 | config_data<2> | NULL | NULL | config_data<2>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | config_data<2>.BUFOE.OUT | 988 | ? | 0 | 0 | config_data<2> | NULL | NULL | config_data<2>.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | pp_d_5_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<5> | 961 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pp_d_5_IBUF | 880 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_5_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+PinTrst+OptxMapped | config_data<3> | dwnldpar_COPY_0_COPY_0 | 2155889664 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_5_IBUF | 880 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | config_data<3> | 881 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<3>.Q | config_data<3> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | config_data<3>$OE | 882 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<3>.BUFOE.OUT | config_data<3> | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | config_data<3>.SI | config_data<3> | 0 | 3 | 4
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_5_IBUF | 880 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | config_data<3>.D1 | 992 | ? | 0 | 4096 | config_data<3> | NULL | NULL | config_data<3>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | config_data<3>.D2 | 993 | ? | 0 | 4096 | config_data<3> | NULL | NULL | config_data<3>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_5_IBUF
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | config_data<3>.CLKF | 994 | ? | 0 | 4096 | config_data<3> | NULL | NULL | config_data<3>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | config_data<3>.TRST | 996 | ? | 0 | 4096 | config_data<3> | NULL | NULL | config_data<3>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | config_data<3>.REG | config_data<3> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | config_data<3>.D | 991 | ? | 0 | 0 | config_data<3> | NULL | NULL | config_data<3>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | config_data<3>.CLKF | 994 | ? | 0 | 4096 | config_data<3> | NULL | NULL | config_data<3>.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | config_data<3>.Q | 997 | ? | 0 | 0 | config_data<3> | NULL | NULL | config_data<3>.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | config_data<3>.BUFOE | config_data<3> | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | config_data<3>.TRST | 996 | ? | 0 | 4096 | config_data<3> | NULL | NULL | config_data<3>.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | config_data<3>.BUFOE.OUT | 995 | ? | 0 | 0 | config_data<3> | NULL | NULL | config_data<3>.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | flash_ce_n_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | flash_ce_n | 963 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv+PinTrst+OptxMapped+Placed | fpga_d_1_mux0000 | dwnldpar_COPY_0_COPY_0 | 2692759808 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_3_IBUF | 874 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fpga_d_1_mux0000 | 883 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_d_1_mux0000.Q | fpga_d_1_mux0000 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | fpga_d_1_mux0000$OE | 884 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_d_1_mux0000.BUFOE.OUT | fpga_d_1_mux0000 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | fpga_d_1_mux0000.SI | fpga_d_1_mux0000 | 0 | 3 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_3_IBUF | 874 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fpga_d_1_mux0000.D1 | 999 | ? | 0 | 4096 | fpga_d_1_mux0000 | NULL | NULL | fpga_d_1_mux0000.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fpga_d_1_mux0000.D2 | 1000 | ? | 0 | 4096 | fpga_d_1_mux0000 | NULL | NULL | fpga_d_1_mux0000.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | fpga_done_IBUF | IV_FALSE | pp_d_3_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | fpga_d_1_mux0000.TRST | 1002 | ? | 0 | 4096 | fpga_d_1_mux0000 | NULL | NULL | fpga_d_1_mux0000.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 2 | IV_TRUE | fpga_done_IBUF | IV_FALSE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | fpga_d_1_mux0000.REG | fpga_d_1_mux0000 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fpga_d_1_mux0000.D | 998 | ? | 0 | 0 | fpga_d_1_mux0000 | NULL | NULL | fpga_d_1_mux0000.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fpga_d_1_mux0000.Q | 1003 | ? | 0 | 0 | fpga_d_1_mux0000 | NULL | NULL | fpga_d_1_mux0000.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | fpga_d_1_mux0000.BUFOE | fpga_d_1_mux0000 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | fpga_d_1_mux0000.TRST | 1002 | ? | 0 | 4096 | fpga_d_1_mux0000 | NULL | NULL | fpga_d_1_mux0000.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 2 | IV_TRUE | fpga_done_IBUF | IV_FALSE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | fpga_d_1_mux0000.BUFOE.OUT | 1001 | ? | 0 | 0 | fpga_d_1_mux0000 | NULL | NULL | fpga_d_1_mux0000.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | clkb_OBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | master_clk | 962 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | clkb_OBUF | 885 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clkb_OBUF/FCLK | 886 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 3 | 5 | II_FCLK
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | clk_divider<1> | dwnldpar_COPY_0_COPY_0 | 2155877376 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_divider<0> | 914 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | clk_divider<0>.Q | clk_divider<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clkb_OBUF/FCLK | 886 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | clk_divider<1>$Q | 887 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | clk_divider<1>.Q | clk_divider<1> | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | clk_divider<1>.SI | clk_divider<1> | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_divider<0> | 914 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | clk_divider<0>.Q | clk_divider<0> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clk_divider<1>.D1 | 1005 | ? | 0 | 0 | clk_divider<1> | NULL | NULL | clk_divider<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clk_divider<1>.D2 | 1006 | ? | 0 | 4096 | clk_divider<1> | NULL | NULL | clk_divider<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | clk_divider<0>
+
+SRFF_INSTANCE | clk_divider<1>.REG | clk_divider<1> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clk_divider<1>.D | 1004 | ? | 0 | 0 | clk_divider<1> | NULL | NULL | clk_divider<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clkb_OBUF/FCLK | 886 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clk_divider<1>.Q | 1007 | ? | 0 | 0 | clk_divider<1> | NULL | NULL | clk_divider<1>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | cclk | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | cclk$Q | 889 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | cclk.Q | cclk | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | cclk$OE | 890 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | cclk.BUFOE.OUT | cclk | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | cclk.SI | cclk | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cclk.D1 | 1009 | ? | 0 | 4096 | cclk | NULL | NULL | cclk.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cclk.D2 | 1010 | ? | 0 | 4096 | cclk | NULL | NULL | cclk.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | fpga_cclk_OBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | cclk.TRST | 1012 | ? | 0 | 4096 | cclk | NULL | NULL | cclk.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | cclk.REG | cclk | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cclk.D | 1008 | ? | 0 | 0 | cclk | NULL | NULL | cclk.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cclk.Q | 1013 | ? | 0 | 0 | cclk | NULL | NULL | cclk.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | cclk.BUFOE | cclk | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | cclk.TRST | 1012 | ? | 0 | 4096 | cclk | NULL | NULL | cclk.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | cclk.BUFOE.OUT | 1011 | ? | 0 | 0 | cclk | NULL | NULL | cclk.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | pp_d_1_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<1> | 964 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pp_d_1_IBUF | 891 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | fpga_pp_d_1_OBUFE | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_1_IBUF | 891 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fpga_pp_d_1_OBUFE | 892 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_pp_d_1_OBUFE.Q | fpga_pp_d_1_OBUFE | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | fpga_pp_d_1_OBUFE$OE | 893 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_pp_d_1_OBUFE.BUFOE.OUT | fpga_pp_d_1_OBUFE | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | fpga_pp_d_1_OBUFE.SI | fpga_pp_d_1_OBUFE | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_1_IBUF | 891 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fpga_pp_d_1_OBUFE.D1 | 1015 | ? | 0 | 4096 | fpga_pp_d_1_OBUFE | NULL | NULL | fpga_pp_d_1_OBUFE.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fpga_pp_d_1_OBUFE.D2 | 1016 | ? | 0 | 4096 | fpga_pp_d_1_OBUFE | NULL | NULL | fpga_pp_d_1_OBUFE.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | pp_d_1_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | fpga_pp_d_1_OBUFE.TRST | 1018 | ? | 0 | 4096 | fpga_pp_d_1_OBUFE | NULL | NULL | fpga_pp_d_1_OBUFE.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | fpga_pp_d_1_OBUFE.REG | fpga_pp_d_1_OBUFE | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fpga_pp_d_1_OBUFE.D | 1014 | ? | 0 | 0 | fpga_pp_d_1_OBUFE | NULL | NULL | fpga_pp_d_1_OBUFE.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fpga_pp_d_1_OBUFE.Q | 1019 | ? | 0 | 0 | fpga_pp_d_1_OBUFE | NULL | NULL | fpga_pp_d_1_OBUFE.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | fpga_pp_d_1_OBUFE.BUFOE | fpga_pp_d_1_OBUFE | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | fpga_pp_d_1_OBUFE.TRST | 1018 | ? | 0 | 4096 | fpga_pp_d_1_OBUFE | NULL | NULL | fpga_pp_d_1_OBUFE.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | fpga_pp_d_1_OBUFE.BUFOE.OUT | 1017 | ? | 0 | 0 | fpga_pp_d_1_OBUFE | NULL | NULL | fpga_pp_d_1_OBUFE.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_2_IBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_2_IBUF | 869 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_2_IBUF$BUF0 | 894 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF0.Q | pp_d_2_IBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_2_IBUF$BUF0$OE | 895 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF0.BUFOE.OUT | pp_d_2_IBUF$BUF0 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_2_IBUF$BUF0.SI | pp_d_2_IBUF$BUF0 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_2_IBUF | 869 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_2_IBUF$BUF0.D1 | 1021 | ? | 0 | 4096 | pp_d_2_IBUF$BUF0 | NULL | NULL | pp_d_2_IBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_2_IBUF$BUF0.D2 | 1022 | ? | 0 | 4096 | pp_d_2_IBUF$BUF0 | NULL | NULL | pp_d_2_IBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_2_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_2_IBUF$BUF0.TRST | 1024 | ? | 0 | 4096 | pp_d_2_IBUF$BUF0 | NULL | NULL | pp_d_2_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | pp_d_2_IBUF$BUF0.REG | pp_d_2_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_2_IBUF$BUF0.D | 1020 | ? | 0 | 0 | pp_d_2_IBUF$BUF0 | NULL | NULL | pp_d_2_IBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_2_IBUF$BUF0.Q | 1025 | ? | 0 | 0 | pp_d_2_IBUF$BUF0 | NULL | NULL | pp_d_2_IBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_2_IBUF$BUF0.BUFOE | pp_d_2_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_2_IBUF$BUF0.TRST | 1024 | ? | 0 | 4096 | pp_d_2_IBUF$BUF0 | NULL | NULL | pp_d_2_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_2_IBUF$BUF0.BUFOE.OUT | 1023 | ? | 0 | 0 | pp_d_2_IBUF$BUF0 | NULL | NULL | pp_d_2_IBUF$BUF0.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_2_IBUF$BUF1 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_2_IBUF | 869 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_2_IBUF$BUF1 | 896 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF1.Q | pp_d_2_IBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_2_IBUF$BUF1$OE | 897 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF1.BUFOE.OUT | pp_d_2_IBUF$BUF1 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_2_IBUF$BUF1.SI | pp_d_2_IBUF$BUF1 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_2_IBUF | 869 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_2_IBUF$BUF1.D1 | 1027 | ? | 0 | 4096 | pp_d_2_IBUF$BUF1 | NULL | NULL | pp_d_2_IBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_2_IBUF$BUF1.D2 | 1028 | ? | 0 | 4096 | pp_d_2_IBUF$BUF1 | NULL | NULL | pp_d_2_IBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_2_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_2_IBUF$BUF1.TRST | 1030 | ? | 0 | 4096 | pp_d_2_IBUF$BUF1 | NULL | NULL | pp_d_2_IBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | pp_d_2_IBUF$BUF1.REG | pp_d_2_IBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_2_IBUF$BUF1.D | 1026 | ? | 0 | 0 | pp_d_2_IBUF$BUF1 | NULL | NULL | pp_d_2_IBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_2_IBUF$BUF1.Q | 1031 | ? | 0 | 0 | pp_d_2_IBUF$BUF1 | NULL | NULL | pp_d_2_IBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_2_IBUF$BUF1.BUFOE | pp_d_2_IBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_2_IBUF$BUF1.TRST | 1030 | ? | 0 | 4096 | pp_d_2_IBUF$BUF1 | NULL | NULL | pp_d_2_IBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_2_IBUF$BUF1.BUFOE.OUT | 1029 | ? | 0 | 0 | pp_d_2_IBUF$BUF1 | NULL | NULL | pp_d_2_IBUF$BUF1.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_3_IBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_3_IBUF | 874 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_3_IBUF$BUF0 | 898 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_3_IBUF$BUF0.Q | pp_d_3_IBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_3_IBUF$BUF0$OE | 899 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_3_IBUF$BUF0.BUFOE.OUT | pp_d_3_IBUF$BUF0 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_3_IBUF$BUF0.SI | pp_d_3_IBUF$BUF0 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_3_IBUF | 874 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_3_IBUF$BUF0.D1 | 1033 | ? | 0 | 4096 | pp_d_3_IBUF$BUF0 | NULL | NULL | pp_d_3_IBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_3_IBUF$BUF0.D2 | 1034 | ? | 0 | 4096 | pp_d_3_IBUF$BUF0 | NULL | NULL | pp_d_3_IBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_3_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_3_IBUF$BUF0.TRST | 1036 | ? | 0 | 4096 | pp_d_3_IBUF$BUF0 | NULL | NULL | pp_d_3_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | pp_d_3_IBUF$BUF0.REG | pp_d_3_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_3_IBUF$BUF0.D | 1032 | ? | 0 | 0 | pp_d_3_IBUF$BUF0 | NULL | NULL | pp_d_3_IBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_3_IBUF$BUF0.Q | 1037 | ? | 0 | 0 | pp_d_3_IBUF$BUF0 | NULL | NULL | pp_d_3_IBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_3_IBUF$BUF0.BUFOE | pp_d_3_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_3_IBUF$BUF0.TRST | 1036 | ? | 0 | 4096 | pp_d_3_IBUF$BUF0 | NULL | NULL | pp_d_3_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_3_IBUF$BUF0.BUFOE.OUT | 1035 | ? | 0 | 0 | pp_d_3_IBUF$BUF0 | NULL | NULL | pp_d_3_IBUF$BUF0.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_4_IBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_4_IBUF | 877 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_4_IBUF$BUF0 | 900 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF0.Q | pp_d_4_IBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_4_IBUF$BUF0$OE | 901 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF0.BUFOE.OUT | pp_d_4_IBUF$BUF0 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_4_IBUF$BUF0.SI | pp_d_4_IBUF$BUF0 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_4_IBUF | 877 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_4_IBUF$BUF0.D1 | 1039 | ? | 0 | 4096 | pp_d_4_IBUF$BUF0 | NULL | NULL | pp_d_4_IBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_4_IBUF$BUF0.D2 | 1040 | ? | 0 | 4096 | pp_d_4_IBUF$BUF0 | NULL | NULL | pp_d_4_IBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_4_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_4_IBUF$BUF0.TRST | 1042 | ? | 0 | 4096 | pp_d_4_IBUF$BUF0 | NULL | NULL | pp_d_4_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | pp_d_4_IBUF$BUF0.REG | pp_d_4_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_4_IBUF$BUF0.D | 1038 | ? | 0 | 0 | pp_d_4_IBUF$BUF0 | NULL | NULL | pp_d_4_IBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_4_IBUF$BUF0.Q | 1043 | ? | 0 | 0 | pp_d_4_IBUF$BUF0 | NULL | NULL | pp_d_4_IBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_4_IBUF$BUF0.BUFOE | pp_d_4_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_4_IBUF$BUF0.TRST | 1042 | ? | 0 | 4096 | pp_d_4_IBUF$BUF0 | NULL | NULL | pp_d_4_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_4_IBUF$BUF0.BUFOE.OUT | 1041 | ? | 0 | 0 | pp_d_4_IBUF$BUF0 | NULL | NULL | pp_d_4_IBUF$BUF0.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_4_IBUF$BUF1 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_4_IBUF | 877 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_4_IBUF$BUF1 | 902 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF1.Q | pp_d_4_IBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_4_IBUF$BUF1$OE | 903 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF1.BUFOE.OUT | pp_d_4_IBUF$BUF1 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_4_IBUF$BUF1.SI | pp_d_4_IBUF$BUF1 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_4_IBUF | 877 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_4_IBUF$BUF1.D1 | 1045 | ? | 0 | 4096 | pp_d_4_IBUF$BUF1 | NULL | NULL | pp_d_4_IBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_4_IBUF$BUF1.D2 | 1046 | ? | 0 | 4096 | pp_d_4_IBUF$BUF1 | NULL | NULL | pp_d_4_IBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_4_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_4_IBUF$BUF1.TRST | 1048 | ? | 0 | 4096 | pp_d_4_IBUF$BUF1 | NULL | NULL | pp_d_4_IBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | pp_d_4_IBUF$BUF1.REG | pp_d_4_IBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_4_IBUF$BUF1.D | 1044 | ? | 0 | 0 | pp_d_4_IBUF$BUF1 | NULL | NULL | pp_d_4_IBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_4_IBUF$BUF1.Q | 1049 | ? | 0 | 0 | pp_d_4_IBUF$BUF1 | NULL | NULL | pp_d_4_IBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_4_IBUF$BUF1.BUFOE | pp_d_4_IBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_4_IBUF$BUF1.TRST | 1048 | ? | 0 | 4096 | pp_d_4_IBUF$BUF1 | NULL | NULL | pp_d_4_IBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_4_IBUF$BUF1.BUFOE.OUT | 1047 | ? | 0 | 0 | pp_d_4_IBUF$BUF1 | NULL | NULL | pp_d_4_IBUF$BUF1.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_5_IBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_5_IBUF | 880 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_5_IBUF$BUF0 | 904 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF0.Q | pp_d_5_IBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_5_IBUF$BUF0$OE | 905 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF0.BUFOE.OUT | pp_d_5_IBUF$BUF0 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_5_IBUF$BUF0.SI | pp_d_5_IBUF$BUF0 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_5_IBUF | 880 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_5_IBUF$BUF0.D1 | 1051 | ? | 0 | 4096 | pp_d_5_IBUF$BUF0 | NULL | NULL | pp_d_5_IBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_5_IBUF$BUF0.D2 | 1052 | ? | 0 | 4096 | pp_d_5_IBUF$BUF0 | NULL | NULL | pp_d_5_IBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_5_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_5_IBUF$BUF0.TRST | 1054 | ? | 0 | 4096 | pp_d_5_IBUF$BUF0 | NULL | NULL | pp_d_5_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | pp_d_5_IBUF$BUF0.REG | pp_d_5_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_5_IBUF$BUF0.D | 1050 | ? | 0 | 0 | pp_d_5_IBUF$BUF0 | NULL | NULL | pp_d_5_IBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_5_IBUF$BUF0.Q | 1055 | ? | 0 | 0 | pp_d_5_IBUF$BUF0 | NULL | NULL | pp_d_5_IBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_5_IBUF$BUF0.BUFOE | pp_d_5_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_5_IBUF$BUF0.TRST | 1054 | ? | 0 | 4096 | pp_d_5_IBUF$BUF0 | NULL | NULL | pp_d_5_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_5_IBUF$BUF0.BUFOE.OUT | 1053 | ? | 0 | 0 | pp_d_5_IBUF$BUF0 | NULL | NULL | pp_d_5_IBUF$BUF0.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_5_IBUF$BUF1 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_5_IBUF | 880 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_5_IBUF$BUF1 | 906 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF1.Q | pp_d_5_IBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_5_IBUF$BUF1$OE | 907 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF1.BUFOE.OUT | pp_d_5_IBUF$BUF1 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_5_IBUF$BUF1.SI | pp_d_5_IBUF$BUF1 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_5_IBUF | 880 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_5_IBUF$BUF1.D1 | 1057 | ? | 0 | 4096 | pp_d_5_IBUF$BUF1 | NULL | NULL | pp_d_5_IBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_5_IBUF$BUF1.D2 | 1058 | ? | 0 | 4096 | pp_d_5_IBUF$BUF1 | NULL | NULL | pp_d_5_IBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_5_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_5_IBUF$BUF1.TRST | 1060 | ? | 0 | 4096 | pp_d_5_IBUF$BUF1 | NULL | NULL | pp_d_5_IBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | pp_d_5_IBUF$BUF1.REG | pp_d_5_IBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_5_IBUF$BUF1.D | 1056 | ? | 0 | 0 | pp_d_5_IBUF$BUF1 | NULL | NULL | pp_d_5_IBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_5_IBUF$BUF1.Q | 1061 | ? | 0 | 0 | pp_d_5_IBUF$BUF1 | NULL | NULL | pp_d_5_IBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_5_IBUF$BUF1.BUFOE | pp_d_5_IBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_5_IBUF$BUF1.TRST | 1060 | ? | 0 | 4096 | pp_d_5_IBUF$BUF1 | NULL | NULL | pp_d_5_IBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_5_IBUF$BUF1.BUFOE.OUT | 1059 | ? | 0 | 0 | pp_d_5_IBUF$BUF1 | NULL | NULL | pp_d_5_IBUF$BUF1.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | pp_d_6_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<6> | 965 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pp_d_6_IBUF | 908 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_6_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_6_IBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_6_IBUF | 908 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_6_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_6_IBUF$BUF0 | 909 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_6_IBUF$BUF0.Q | pp_d_6_IBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_6_IBUF$BUF0$OE | 910 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_6_IBUF$BUF0.BUFOE.OUT | pp_d_6_IBUF$BUF0 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_6_IBUF$BUF0.SI | pp_d_6_IBUF$BUF0 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_6_IBUF | 908 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_6_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_6_IBUF$BUF0.D1 | 1063 | ? | 0 | 4096 | pp_d_6_IBUF$BUF0 | NULL | NULL | pp_d_6_IBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_6_IBUF$BUF0.D2 | 1064 | ? | 0 | 4096 | pp_d_6_IBUF$BUF0 | NULL | NULL | pp_d_6_IBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_6_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_6_IBUF$BUF0.TRST | 1066 | ? | 0 | 4096 | pp_d_6_IBUF$BUF0 | NULL | NULL | pp_d_6_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | pp_d_6_IBUF$BUF0.REG | pp_d_6_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_6_IBUF$BUF0.D | 1062 | ? | 0 | 0 | pp_d_6_IBUF$BUF0 | NULL | NULL | pp_d_6_IBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_6_IBUF$BUF0.Q | 1067 | ? | 0 | 0 | pp_d_6_IBUF$BUF0 | NULL | NULL | pp_d_6_IBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_6_IBUF$BUF0.BUFOE | pp_d_6_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_6_IBUF$BUF0.TRST | 1066 | ? | 0 | 4096 | pp_d_6_IBUF$BUF0 | NULL | NULL | pp_d_6_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_6_IBUF$BUF0.BUFOE.OUT | 1065 | ? | 0 | 0 | pp_d_6_IBUF$BUF0 | NULL | NULL | pp_d_6_IBUF$BUF0.BUFOE | 0 | 10 | BUF_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | pp_d_7_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pp_d<7> | 966 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pp_d_7_IBUF | 911 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_7_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | pp_d_7_IBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_7_IBUF | 911 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_7_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_d_7_IBUF$BUF0 | 912 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_7_IBUF$BUF0.Q | pp_d_7_IBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | pp_d_7_IBUF$BUF0$OE | 913 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_7_IBUF$BUF0.BUFOE.OUT | pp_d_7_IBUF$BUF0 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | pp_d_7_IBUF$BUF0.SI | pp_d_7_IBUF$BUF0 | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_7_IBUF | 911 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_7_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_d_7_IBUF$BUF0.D1 | 1069 | ? | 0 | 4096 | pp_d_7_IBUF$BUF0 | NULL | NULL | pp_d_7_IBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_d_7_IBUF$BUF0.D2 | 1070 | ? | 0 | 4096 | pp_d_7_IBUF$BUF0 | NULL | NULL | pp_d_7_IBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | pp_d_7_IBUF
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | pp_d_7_IBUF$BUF0.TRST | 1072 | ? | 0 | 4096 | pp_d_7_IBUF$BUF0 | NULL | NULL | pp_d_7_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+
+SRFF_INSTANCE | pp_d_7_IBUF$BUF0.REG | pp_d_7_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_d_7_IBUF$BUF0.D | 1068 | ? | 0 | 0 | pp_d_7_IBUF$BUF0 | NULL | NULL | pp_d_7_IBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_d_7_IBUF$BUF0.Q | 1073 | ? | 0 | 0 | pp_d_7_IBUF$BUF0 | NULL | NULL | pp_d_7_IBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | pp_d_7_IBUF$BUF0.BUFOE | pp_d_7_IBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | pp_d_7_IBUF$BUF0.TRST | 1072 | ? | 0 | 4096 | pp_d_7_IBUF$BUF0 | NULL | NULL | pp_d_7_IBUF$BUF0.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_TRUE | flash_ce_n_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | pp_d_7_IBUF$BUF0.BUFOE.OUT | 1071 | ? | 0 | 0 | pp_d_7_IBUF$BUF0 | NULL | NULL | pp_d_7_IBUF$BUF0.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | clk_divider<0> | dwnldpar_COPY_0_COPY_0 | 2155877376 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clkb_OBUF/FCLK | 886 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | clk_divider<0> | 914 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | clk_divider<0>.Q | clk_divider<0> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | clk_divider<0>.SI | clk_divider<0> | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clk_divider<0>.D1 | 1075 | ? | 0 | 4096 | clk_divider<0> | NULL | NULL | clk_divider<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clk_divider<0>.D2 | 1076 | ? | 0 | 4096 | clk_divider<0> | NULL | NULL | clk_divider<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+
+SRFF_INSTANCE | clk_divider<0>.REG | clk_divider<0> | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clk_divider<0>.D | 1074 | ? | 0 | 0 | clk_divider<0> | NULL | NULL | clk_divider<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clkb_OBUF/FCLK | 886 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clk_divider<0>.Q | 1077 | ? | 0 | 0 | clk_divider<0> | NULL | NULL | clk_divider<0>.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | fpga_pp_s_3_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | fpga_pp_s<3> | 967 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | fpga_pp_s_3_IBUF | 915 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_3_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | fpga_pp_s_4_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | fpga_pp_s<4> | 968 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | fpga_pp_s_4_IBUF | 916 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_4_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | fpga_pp_s_5_IBUF | dwnldpar_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | fpga_pp_s<5> | 969 | PI | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | fpga_pp_s_5_IBUF | 917 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_5_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | pp_s_0 | dwnldpar_COPY_0_COPY_0 | 2155873280 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_pp_s_3_IBUF | 915 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_s_0 | 918 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_s_0.Q | pp_s_0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | pp_s_0.SI | pp_s_0 | 0 | 2 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_pp_s_3_IBUF | 915 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_s_0.D1 | 1079 | ? | 0 | 4096 | pp_s_0 | NULL | NULL | pp_s_0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_s_0.D2 | 1080 | ? | 0 | 6144 | pp_s_0 | NULL | NULL | pp_s_0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | pp_s_0.CLKF | 1081 | ? | 0 | 6144 | pp_s_0 | NULL | NULL | pp_s_0.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | pp_s_0.SETF | 1082 | ? | 0 | 4096 | pp_s_0 | NULL | NULL | pp_s_0.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_TRUE | fpga_pp_s_3_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | pp_s_0.RSTF | 1083 | ? | 0 | 4096 | pp_s_0 | NULL | NULL | pp_s_0.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_FALSE | fpga_pp_s_3_IBUF
+
+SRFF_INSTANCE | pp_s_0.REG | pp_s_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_s_0.D | 1078 | ? | 0 | 0 | pp_s_0 | NULL | NULL | pp_s_0.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | pp_s_0.CLKF | 1081 | ? | 0 | 6144 | pp_s_0 | NULL | NULL | pp_s_0.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | pp_s_0.SETF | 1082 | ? | 0 | 4096 | pp_s_0 | NULL | NULL | pp_s_0.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_TRUE | fpga_pp_s_3_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | pp_s_0.RSTF | 1083 | ? | 0 | 4096 | pp_s_0 | NULL | NULL | pp_s_0.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_FALSE | fpga_pp_s_3_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_s_0.Q | 1084 | ? | 0 | 0 | pp_s_0 | NULL | NULL | pp_s_0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | pp_s_1 | dwnldpar_COPY_0_COPY_0 | 2155873280 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_pp_s_4_IBUF | 916 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_s_1 | 919 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_s_1.Q | pp_s_1 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | pp_s_1.SI | pp_s_1 | 0 | 2 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_pp_s_4_IBUF | 916 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_s_1.D1 | 1086 | ? | 0 | 4096 | pp_s_1 | NULL | NULL | pp_s_1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_s_1.D2 | 1087 | ? | 0 | 6144 | pp_s_1 | NULL | NULL | pp_s_1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | pp_s_1.CLKF | 1088 | ? | 0 | 6144 | pp_s_1 | NULL | NULL | pp_s_1.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | pp_s_1.SETF | 1089 | ? | 0 | 4096 | pp_s_1 | NULL | NULL | pp_s_1.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_TRUE | fpga_pp_s_4_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | pp_s_1.RSTF | 1090 | ? | 0 | 4096 | pp_s_1 | NULL | NULL | pp_s_1.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_FALSE | fpga_pp_s_4_IBUF
+
+SRFF_INSTANCE | pp_s_1.REG | pp_s_1 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_s_1.D | 1085 | ? | 0 | 0 | pp_s_1 | NULL | NULL | pp_s_1.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | pp_s_1.CLKF | 1088 | ? | 0 | 6144 | pp_s_1 | NULL | NULL | pp_s_1.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | pp_s_1.SETF | 1089 | ? | 0 | 4096 | pp_s_1 | NULL | NULL | pp_s_1.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_TRUE | fpga_pp_s_4_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | pp_s_1.RSTF | 1090 | ? | 0 | 4096 | pp_s_1 | NULL | NULL | pp_s_1.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_FALSE | fpga_pp_s_4_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_s_1.Q | 1091 | ? | 0 | 0 | pp_s_1 | NULL | NULL | pp_s_1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | pp_s_2 | dwnldpar_COPY_0_COPY_0 | 2155873280 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_pp_s_5_IBUF | 917 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | pp_s_2 | 920 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_s_2.Q | pp_s_2 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | pp_s_2.SI | pp_s_2 | 0 | 2 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | flash_ce_n_IBUF | 888 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | flash_ce_n_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_pp_s_5_IBUF | 917 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_s_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pp_s_2.D1 | 1093 | ? | 0 | 4096 | pp_s_2 | NULL | NULL | pp_s_2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | pp_s_2.D2 | 1094 | ? | 0 | 6144 | pp_s_2 | NULL | NULL | pp_s_2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | pp_s_2.CLKF | 1095 | ? | 0 | 6144 | pp_s_2 | NULL | NULL | pp_s_2.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | pp_s_2.SETF | 1096 | ? | 0 | 4096 | pp_s_2 | NULL | NULL | pp_s_2.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_TRUE | fpga_pp_s_5_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | pp_s_2.RSTF | 1097 | ? | 0 | 4096 | pp_s_2 | NULL | NULL | pp_s_2.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_FALSE | fpga_pp_s_5_IBUF
+
+SRFF_INSTANCE | pp_s_2.REG | pp_s_2 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | pp_s_2.D | 1092 | ? | 0 | 0 | pp_s_2 | NULL | NULL | pp_s_2.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | pp_s_2.CLKF | 1095 | ? | 0 | 6144 | pp_s_2 | NULL | NULL | pp_s_2.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | pp_s_2.SETF | 1096 | ? | 0 | 4096 | pp_s_2 | NULL | NULL | pp_s_2.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_TRUE | fpga_pp_s_5_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | pp_s_2.RSTF | 1097 | ? | 0 | 4096 | pp_s_2 | NULL | NULL | pp_s_2.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 2 | IV_TRUE | flash_ce_n_IBUF | IV_FALSE | fpga_pp_s_5_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | pp_s_2.Q | 1098 | ? | 0 | 0 | pp_s_2 | NULL | NULL | pp_s_2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | FbkInv+PinTrst+Merge+OptxMapped | fpga_tck_OBUF | dwnldpar_COPY_0_COPY_0 | 2155923456 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fpga_tck_OBUF$Q | 921 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF.Q | fpga_tck_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | fpga_tck_OBUF$OE | 922 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF.BUFOE.OUT | fpga_tck_OBUF | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | fpga_tck_OBUF.SI | fpga_tck_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fpga_tck_OBUF.D1 | 1100 | ? | 0 | 4096 | fpga_tck_OBUF | NULL | NULL | fpga_tck_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fpga_tck_OBUF.D2 | 1101 | ? | 0 | 4096 | fpga_tck_OBUF | NULL | NULL | fpga_tck_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | fpga_tck_OBUF.TRST | 1103 | ? | 0 | 4096 | fpga_tck_OBUF | NULL | NULL | fpga_tck_OBUF.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | fpga_tck_OBUF.REG | fpga_tck_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fpga_tck_OBUF.D | 1099 | ? | 0 | 0 | fpga_tck_OBUF | NULL | NULL | fpga_tck_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fpga_tck_OBUF.Q | 1104 | ? | 0 | 0 | fpga_tck_OBUF | NULL | NULL | fpga_tck_OBUF.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | fpga_tck_OBUF.BUFOE | fpga_tck_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | fpga_tck_OBUF.TRST | 1103 | ? | 0 | 4096 | fpga_tck_OBUF | NULL | NULL | fpga_tck_OBUF.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | fpga_tck_OBUF.BUFOE.OUT | 1102 | ? | 0 | 0 | fpga_tck_OBUF | NULL | NULL | fpga_tck_OBUF.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | fpga_tck_OBUF$BUF1 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_7_IBUF | 911 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fpga_tck_OBUF$BUF1 | 923 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF1.Q | fpga_tck_OBUF$BUF1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | fpga_tck_OBUF$BUF1$OE | 924 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF1.BUFOE.OUT | fpga_tck_OBUF$BUF1 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | fpga_tck_OBUF$BUF1.SI | fpga_tck_OBUF$BUF1 | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pp_d_7_IBUF | 911 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_d_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fpga_tck_OBUF$BUF1.D1 | 1106 | ? | 0 | 4096 | fpga_tck_OBUF$BUF1 | NULL | NULL | fpga_tck_OBUF$BUF1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fpga_tck_OBUF$BUF1.D2 | 1107 | ? | 0 | 6144 | fpga_tck_OBUF$BUF1 | NULL | NULL | fpga_tck_OBUF$BUF1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | fpga_tck_OBUF$BUF1.TRST | 1109 | ? | 0 | 4096 | fpga_tck_OBUF$BUF1 | NULL | NULL | fpga_tck_OBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | pp_d_7_IBUF
+
+SRFF_INSTANCE | fpga_tck_OBUF$BUF1.REG | fpga_tck_OBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fpga_tck_OBUF$BUF1.D | 1105 | ? | 0 | 0 | fpga_tck_OBUF$BUF1 | NULL | NULL | fpga_tck_OBUF$BUF1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fpga_tck_OBUF$BUF1.Q | 1110 | ? | 0 | 0 | fpga_tck_OBUF$BUF1 | NULL | NULL | fpga_tck_OBUF$BUF1.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | fpga_tck_OBUF$BUF1.BUFOE | fpga_tck_OBUF$BUF1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | fpga_tck_OBUF$BUF1.TRST | 1109 | ? | 0 | 4096 | fpga_tck_OBUF$BUF1 | NULL | NULL | fpga_tck_OBUF$BUF1.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | pp_d_7_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | fpga_tck_OBUF$BUF1.BUFOE.OUT | 1108 | ? | 0 | 0 | fpga_tck_OBUF$BUF1 | NULL | NULL | fpga_tck_OBUF$BUF1.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | PinTrst+OptxMapped | fpga_tck_OBUF$BUF2 | dwnldpar_COPY_0_COPY_0 | 2155888640 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fpga_tck_OBUF$BUF2 | 925 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF2.Q | fpga_tck_OBUF$BUF2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 2 | 0 | MC_OE
+NODE | fpga_tck_OBUF$BUF2$OE | 926 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF2.BUFOE.OUT | fpga_tck_OBUF$BUF2 | 2 | 0 | MC_OE
+
+SIGNAL_INSTANCE | fpga_tck_OBUF$BUF2.SI | fpga_tck_OBUF$BUF2 | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_done_IBUF | 870 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_done_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fpga_tck_OBUF$BUF2.D1 | 1112 | ? | 0 | 4096 | fpga_tck_OBUF$BUF2 | NULL | NULL | fpga_tck_OBUF$BUF2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fpga_tck_OBUF$BUF2.D2 | 1113 | ? | 0 | 6144 | fpga_tck_OBUF$BUF2 | NULL | NULL | fpga_tck_OBUF$BUF2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 4 | 9 | MC_SI_TRST
+SIGNAL | NODE | fpga_tck_OBUF$BUF2.TRST | 1115 | ? | 0 | 4096 | fpga_tck_OBUF$BUF2 | NULL | NULL | fpga_tck_OBUF$BUF2.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+
+SRFF_INSTANCE | fpga_tck_OBUF$BUF2.REG | fpga_tck_OBUF$BUF2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fpga_tck_OBUF$BUF2.D | 1111 | ? | 0 | 0 | fpga_tck_OBUF$BUF2 | NULL | NULL | fpga_tck_OBUF$BUF2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fpga_tck_OBUF$BUF2.Q | 1116 | ? | 0 | 0 | fpga_tck_OBUF$BUF2 | NULL | NULL | fpga_tck_OBUF$BUF2.REG | 0 | 8 | SRFF_Q
+
+BUF_INSTANCE | fpga_tck_OBUF$BUF2.BUFOE | fpga_tck_OBUF$BUF2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 10 | CTOR_UNKNOWN
+SIGNAL | NODE | fpga_tck_OBUF$BUF2.TRST | 1115 | ? | 0 | 4096 | fpga_tck_OBUF$BUF2 | NULL | NULL | fpga_tck_OBUF$BUF2.SI | 4 | 9 | MC_SI_TRST
+SPPTERM | 1 | IV_FALSE | fpga_done_IBUF
+OUTPUT_NODE_TYPE | 0 | 10 | BUF_OUT
+NODE | fpga_tck_OBUF$BUF2.BUFOE.OUT | 1114 | ? | 0 | 0 | fpga_tck_OBUF$BUF2 | NULL | NULL | fpga_tck_OBUF$BUF2.BUFOE | 0 | 10 | BUF_OUT
+
+MACROCELL_INSTANCE | OptxMapped | clkb_OBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155872256 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clkb_OBUF | 885 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | clkb_OBUF$BUF0 | 927 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | clkb_OBUF$BUF0.Q | clkb_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | clkb_OBUF$BUF0.SI | clkb_OBUF$BUF0 | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clkb_OBUF | 885 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb_OBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clkb_OBUF$BUF0.D1 | 1118 | ? | 0 | 4096 | clkb_OBUF$BUF0 | NULL | NULL | clkb_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clkb_OBUF$BUF0.D2 | 1119 | ? | 0 | 4096 | clkb_OBUF$BUF0 | NULL | NULL | clkb_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | clkb_OBUF
+
+SRFF_INSTANCE | clkb_OBUF$BUF0.REG | clkb_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clkb_OBUF$BUF0.D | 1117 | ? | 0 | 0 | clkb_OBUF$BUF0 | NULL | NULL | clkb_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clkb_OBUF$BUF0.Q | 1120 | ? | 0 | 0 | clkb_OBUF$BUF0 | NULL | NULL | clkb_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | fpga_cclk_OBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155872256 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fpga_cclk_OBUF$BUF0 | 928 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_cclk_OBUF$BUF0.Q | fpga_cclk_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fpga_cclk_OBUF$BUF0.SI | fpga_cclk_OBUF$BUF0 | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | fpga_cclk_OBUF | 871 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk_OBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fpga_cclk_OBUF$BUF0.D1 | 1122 | ? | 0 | 4096 | fpga_cclk_OBUF$BUF0 | NULL | NULL | fpga_cclk_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fpga_cclk_OBUF$BUF0.D2 | 1123 | ? | 0 | 4096 | fpga_cclk_OBUF$BUF0 | NULL | NULL | fpga_cclk_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | fpga_cclk_OBUF
+
+SRFF_INSTANCE | fpga_cclk_OBUF$BUF0.REG | fpga_cclk_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fpga_cclk_OBUF$BUF0.D | 1121 | ? | 0 | 0 | fpga_cclk_OBUF$BUF0 | NULL | NULL | fpga_cclk_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fpga_cclk_OBUF$BUF0.Q | 1124 | ? | 0 | 0 | fpga_cclk_OBUF$BUF0 | NULL | NULL | fpga_cclk_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | fpga_tck_OBUF$BUF0 | dwnldpar_COPY_0_COPY_0 | 2155872256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | fpga_tck_OBUF$BUF0 | 929 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF0.Q | fpga_tck_OBUF$BUF0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | fpga_tck_OBUF$BUF0.SI | fpga_tck_OBUF$BUF0 | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | fpga_tck_OBUF$BUF0.D1 | 1126 | ? | 0 | 4096 | fpga_tck_OBUF$BUF0 | NULL | NULL | fpga_tck_OBUF$BUF0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | fpga_tck_OBUF$BUF0.D2 | 1127 | ? | 0 | 6144 | fpga_tck_OBUF$BUF0 | NULL | NULL | fpga_tck_OBUF$BUF0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | fpga_tck_OBUF$BUF0.REG | fpga_tck_OBUF$BUF0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | fpga_tck_OBUF$BUF0.D | 1125 | ? | 0 | 0 | fpga_tck_OBUF$BUF0 | NULL | NULL | fpga_tck_OBUF$BUF0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | fpga_tck_OBUF$BUF0.Q | 1128 | ? | 0 | 0 | fpga_tck_OBUF$BUF0 | NULL | NULL | fpga_tck_OBUF$BUF0.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | fpga_d<4> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | config_data<0> | 872 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<0>.Q | config_data<0> | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | config_data<0>$OE | 873 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<0>.BUFOE.OUT | config_data<0> | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<4> | 930 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_d<5> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | config_data<1> | 875 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<1>.Q | config_data<1> | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | config_data<1>$OE | 876 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<1>.BUFOE.OUT | config_data<1> | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<5> | 931 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_d<6> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | config_data<2> | 878 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<2>.Q | config_data<2> | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | config_data<2>$OE | 879 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<2>.BUFOE.OUT | config_data<2> | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<6> | 932 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<6> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_d<7> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | config_data<3> | 881 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<3>.Q | config_data<3> | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | config_data<3>$OE | 882 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | config_data<3>.BUFOE.OUT | config_data<3> | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<7> | 933 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_d<1> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fpga_d_1_mux0000 | 883 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_d_1_mux0000.Q | fpga_d_1_mux0000 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | fpga_d_1_mux0000$OE | 884 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_d_1_mux0000.BUFOE.OUT | fpga_d_1_mux0000 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<1> | 934 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | clka | dwnldpar_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | clk_divider<1>$Q | 887 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | clk_divider<1>.Q | clk_divider<1> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | clka | 935 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clka | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<0> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | cclk$Q | 889 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | cclk.Q | cclk | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | cclk$OE | 890 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | cclk.BUFOE.OUT | cclk | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<0> | 936 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<1> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fpga_pp_d_1_OBUFE | 892 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_pp_d_1_OBUFE.Q | fpga_pp_d_1_OBUFE | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | fpga_pp_d_1_OBUFE$OE | 893 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_pp_d_1_OBUFE.BUFOE.OUT | fpga_pp_d_1_OBUFE | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<1> | 937 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<2> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_2_IBUF$BUF0 | 894 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF0.Q | pp_d_2_IBUF$BUF0 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_2_IBUF$BUF0$OE | 895 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF0.BUFOE.OUT | pp_d_2_IBUF$BUF0 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<2> | 938 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_d<0> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_2_IBUF$BUF1 | 896 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF1.Q | pp_d_2_IBUF$BUF1 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_2_IBUF$BUF1$OE | 897 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_2_IBUF$BUF1.BUFOE.OUT | pp_d_2_IBUF$BUF1 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<0> | 939 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<3> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_3_IBUF$BUF0 | 898 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_3_IBUF$BUF0.Q | pp_d_3_IBUF$BUF0 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_3_IBUF$BUF0$OE | 899 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_3_IBUF$BUF0.BUFOE.OUT | pp_d_3_IBUF$BUF0 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<3> | 940 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<4> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_4_IBUF$BUF0 | 900 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF0.Q | pp_d_4_IBUF$BUF0 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_4_IBUF$BUF0$OE | 901 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF0.BUFOE.OUT | pp_d_4_IBUF$BUF0 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<4> | 941 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_d<2> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_4_IBUF$BUF1 | 902 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF1.Q | pp_d_4_IBUF$BUF1 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_4_IBUF$BUF1$OE | 903 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_4_IBUF$BUF1.BUFOE.OUT | pp_d_4_IBUF$BUF1 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<2> | 942 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<5> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_5_IBUF$BUF0 | 904 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF0.Q | pp_d_5_IBUF$BUF0 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_5_IBUF$BUF0$OE | 905 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF0.BUFOE.OUT | pp_d_5_IBUF$BUF0 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<5> | 943 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_d<3> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_5_IBUF$BUF1 | 906 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF1.Q | pp_d_5_IBUF$BUF1 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_5_IBUF$BUF1$OE | 907 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_5_IBUF$BUF1.BUFOE.OUT | pp_d_5_IBUF$BUF1 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_d<3> | 944 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_d<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<6> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_6_IBUF$BUF0 | 909 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_6_IBUF$BUF0.Q | pp_d_6_IBUF$BUF0 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_6_IBUF$BUF0$OE | 910 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_6_IBUF$BUF0.BUFOE.OUT | pp_d_6_IBUF$BUF0 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<6> | 945 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<6> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_pp_d<7> | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_d_7_IBUF$BUF0 | 912 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_7_IBUF$BUF0.Q | pp_d_7_IBUF$BUF0 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | pp_d_7_IBUF$BUF0$OE | 913 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_d_7_IBUF$BUF0.BUFOE.OUT | pp_d_7_IBUF$BUF0 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_pp_d<7> | 946 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_pp_d<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | pp_s<3> | dwnldpar_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_s_0 | 918 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_s_0.Q | pp_s_0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | pp_s<3> | 947 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_s<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | pp_s<4> | dwnldpar_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_s_1 | 919 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_s_1.Q | pp_s_1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | pp_s<4> | 948 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_s<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | pp_s<5> | dwnldpar_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | pp_s_2 | 920 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | pp_s_2.Q | pp_s_2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | pp_s<5> | 949 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | pp_s<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_wr_n | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fpga_tck_OBUF$Q | 921 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF.Q | fpga_tck_OBUF | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | fpga_tck_OBUF$OE | 922 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF.BUFOE.OUT | fpga_tck_OBUF | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_wr_n | 950 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_wr_n | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_prog_n | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fpga_tck_OBUF$BUF1 | 923 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF1.Q | fpga_tck_OBUF$BUF1 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | fpga_tck_OBUF$BUF1$OE | 924 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF1.BUFOE.OUT | fpga_tck_OBUF$BUF1 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_prog_n | 951 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_prog_n | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_cs_n | dwnldpar_COPY_0_COPY_0 | 7 | 2 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fpga_tck_OBUF$BUF2 | 925 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF2.Q | fpga_tck_OBUF$BUF2 | 0 | 0 | MC_Q
+INPUT_NODE_TYPE | 2 | 6 | OI_OE
+NODE | fpga_tck_OBUF$BUF2$OE | 926 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF2.BUFOE.OUT | fpga_tck_OBUF$BUF2 | 2 | 0 | MC_OE
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_cs_n | 952 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cs_n | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | clkb | dwnldpar_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | clkb_OBUF$BUF0 | 927 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | clkb_OBUF$BUF0.Q | clkb_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | clkb | 953 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | clkb | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_cclk | dwnldpar_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fpga_cclk_OBUF$BUF0 | 928 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_cclk_OBUF$BUF0.Q | fpga_cclk_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_cclk | 954 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_cclk | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | fpga_tck | dwnldpar_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | fpga_tck_OBUF$BUF0 | 929 | ? | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | fpga_tck_OBUF$BUF0.Q | fpga_tck_OBUF$BUF0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | fpga_tck | 955 | PO | 0 | 0 | dwnldpar_COPY_0_COPY_0 | NULL | NULL | fpga_tck | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | dwnldpar_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | config_data<0> | 1 | NULL | 0 | fpga_d<4> | 1 | 8 | 49152
+FBPIN | 5 | config_data<1> | 1 | NULL | 0 | fpga_d<5> | 1 | 9 | 49152
+FBPIN | 6 | config_data<2> | 1 | NULL | 0 | fpga_d<6> | 1 | 10 | 49152
+FBPIN | 8 | config_data<3> | 1 | NULL | 0 | fpga_d<7> | 1 | 11 | 49152
+FBPIN | 9 | pp_s_2 | 1 | NULL | 0 | pp_s<5> | 1 | 15 | 57344
+FBPIN | 10 | NULL | 0 | pp_d_7_IBUF | 1 | NULL | 0 | 18 | 49152
+FBPIN | 11 | pp_s_1 | 1 | NULL | 0 | pp_s<4> | 1 | 16 | 57344
+FBPIN | 12 | NULL | 0 | pp_d_3_IBUF | 1 | NULL | 0 | 23 | 49152
+FBPIN | 14 | NULL | 0 | clkb_OBUF | 1 | NULL | 0 | 17 | 57344
+FBPIN | 15 | NULL | 0 | pp_d_6_IBUF | 1 | NULL | 0 | 19 | 49152
+FBPIN | 17 | NULL | 0 | pp_d_5_IBUF | 1 | NULL | 0 | 20 | 49152
+
+FB_INSTANCE | FOOBAR2_ | dwnldpar_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | clk_divider<1> | 1 | NULL | 0 | clka | 1 | 60 | 49152
+FBPIN | 3 | fpga_tck_OBUF$BUF0 | 1 | NULL | 0 | fpga_tck | 1 | 58 | 49152
+FBPIN | 4 | fpga_cclk_OBUF$BUF0 | 1 | NULL | 0 | fpga_cclk | 1 | 59 | 49152
+FBPIN | 6 | fpga_tck_OBUF$BUF1 | 1 | NULL | 0 | fpga_prog_n | 1 | 62 | 49152
+FBPIN | 8 | NULL | 0 | fpga_done_IBUF | 1 | NULL | 0 | 63 | 49152
+FBPIN | 9 | NULL | 0 | fpga_pp_s_3_IBUF | 1 | NULL | 0 | 64 | 51200
+FBPIN | 10 | NULL | 0 | flash_ce_n_IBUF | 1 | NULL | 0 | 1 | 49152
+FBPIN | 12 | pp_d_2_IBUF$BUF1 | 1 | NULL | 0 | fpga_d<0> | 1 | 4 | 49152
+FBPIN | 14 | fpga_d_1_mux0000 | 1 | NULL | 0 | fpga_d<1> | 1 | 5 | 53248
+FBPIN | 15 | pp_d_4_IBUF$BUF1 | 1 | NULL | 0 | fpga_d<2> | 1 | 6 | 49152
+FBPIN | 17 | pp_d_5_IBUF$BUF1 | 1 | NULL | 0 | fpga_d<3> | 1 | 7 | 49152
+
+FB_INSTANCE | FOOBAR3_ | dwnldpar_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | NULL | 0 | pp_d_4_IBUF | 1 | NULL | 0 | 22 | 49152
+FBPIN | 3 | NULL | 0 | fpga_cclk_OBUF | 1 | NULL | 0 | 31 | 49152
+FBPIN | 4 | pp_d_7_IBUF$BUF0 | 1 | NULL | 0 | fpga_pp_d<7> | 1 | 32 | 49152
+FBPIN | 5 | NULL | 0 | pp_d_2_IBUF | 1 | NULL | 0 | 24 | 49152
+FBPIN | 6 | pp_d_5_IBUF$BUF0 | 1 | NULL | 0 | fpga_pp_d<5> | 1 | 34 | 49152
+FBPIN | 8 | NULL | 0 | pp_d_1_IBUF | 1 | NULL | 0 | 25 | 49152
+FBPIN | 9 | pp_s_0 | 1 | NULL | 0 | pp_s<3> | 1 | 27 | 49152
+FBPIN | 10 | fpga_pp_d_1_OBUFE | 1 | NULL | 0 | fpga_pp_d<1> | 1 | 39 | 49152
+FBPIN | 11 | pp_d_6_IBUF$BUF0 | 1 | NULL | 0 | fpga_pp_d<6> | 1 | 33 | 49152
+FBPIN | 12 | cclk | 1 | NULL | 0 | fpga_pp_d<0> | 1 | 40 | 49152
+FBPIN | 14 | pp_d_4_IBUF$BUF0 | 1 | NULL | 0 | fpga_pp_d<4> | 1 | 35 | 49152
+FBPIN | 15 | pp_d_3_IBUF$BUF0 | 1 | NULL | 0 | fpga_pp_d<3> | 1 | 36 | 49152
+FBPIN | 17 | pp_d_2_IBUF$BUF0 | 1 | NULL | 0 | fpga_pp_d<2> | 1 | 38 | 49152
+
+FB_INSTANCE | FOOBAR4_ | dwnldpar_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | NULL | 0 | fpga_pp_s_5_IBUF | 1 | NULL | 0 | 49 | 49152
+FBPIN | 12 | fpga_tck_OBUF$BUF2 | 1 | NULL | 0 | fpga_cs_n | 1 | 52 | 49152
+FBPIN | 14 | NULL | 0 | fpga_pp_s_4_IBUF | 1 | NULL | 0 | 50 | 49152
+FBPIN | 15 | fpga_tck_OBUF | 1 | NULL | 0 | fpga_wr_n | 1 | 56 | 49152
+FBPIN | 17 | clkb_OBUF$BUF0 | 1 | NULL | 0 | clkb | 1 | 57 | 49152
+FBPIN | 18 | clk_divider<0> | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | dwnldpar_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | FPGA_D<7:0> | 8 | 0 | 1 | fpga_d<0> | 7 | fpga_d<1> | 6 | fpga_d<2> | 5 | fpga_d<3> | 4 | fpga_d<4> | 3 | fpga_d<5> | 2 | fpga_d<6> | 1 | fpga_d<7> | 0
+BUSINFO | FPGA_PP_D<7:0> | 8 | 0 | 1 | fpga_pp_d<0> | 7 | fpga_pp_d<1> | 6 | fpga_pp_d<2> | 5 | fpga_pp_d<3> | 4 | fpga_pp_d<4> | 3 | fpga_pp_d<5> | 2 | fpga_pp_d<6> | 1 | fpga_pp_d<7> | 0
+BUSINFO | FPGA_PP_S<5:3> | 3 | 0 | 0 | fpga_pp_s<3> | 2 | fpga_pp_s<4> | 1 | fpga_pp_s<5> | 0
+BUSINFO | PP_D<7:0> | 8 | 0 | 0 | pp_d<0> | 7 | pp_d<1> | 6 | pp_d<2> | 5 | pp_d<3> | 4 | pp_d<4> | 3 | pp_d<5> | 2 | pp_d<6> | 1 | pp_d<7> | 0
+BUSINFO | PP_S<5:3> | 3 | 0 | 1 | pp_s<3> | 2 | pp_s<4> | 1 | pp_s<5> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 3 | fpga_pp_s<5> | 49 | 6 | pp_d<5> | 20 | 9 | pp_d<0> | 31 | 10 | pp_d<3> | 23 | 12 | pp_d<2> | 24
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 22 | pp_d<4> | 22 | 30 | fpga_pp_s<4> | 50 | 32 | fpga_done | 63 | 48 | flash_ce_n | 1
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | 93 | -1 | -1 | 132 | -1 | -1 | 135 | 136 | -1 | 138 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 134 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 89 | -1 | 84 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 88 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 2 | pp_d<7> | 18 | 6 | pp_d<5> | 20 | 9 | pp_d<0> | 31 | 10 | pp_d<3> | 23 | 12 | pp_d<2> | 24
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 17 | clk_divider<0> | NULL | 22 | pp_d<4> | 22 | 32 | fpga_done | 63 | 48 | flash_ce_n | 1
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | -1 | 128 | -1 | -1 | -1 | 132 | -1 | -1 | 135 | 136 | -1 | 138 | -1 | -1 | -1 | -1 | 71 | -1 | -1 | -1 | -1 | 134 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 84 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 88 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 2 | pp_d<7> | 18 | 4 | pp_d<6> | 19 | 6 | pp_d<5> | 20 | 9 | pp_d<0> | 31 | 10 | pp_d<3> | 23
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 12 | pp_d<2> | 24 | 14 | fpga_pp_s<3> | 64 | 16 | pp_d<1> | 25 | 22 | pp_d<4> | 22 | 48 | flash_ce_n | 1
+
+FB_IMUX_INDEX | FOOBAR3_ | -1 | -1 | 128 | -1 | 130 | -1 | 132 | -1 | -1 | 135 | 136 | -1 | 138 | -1 | 86 | -1 | 142 | -1 | -1 | -1 | -1 | -1 | 134 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 88 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 0 | master_clk | 17 | 12 | fpga_done | 63
+
+FB_IMUX_INDEX | FOOBAR4_ | 126 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 84 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | master_clk | 2 | 2

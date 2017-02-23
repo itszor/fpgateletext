@@ -1,0 +1,93 @@
+Release 8.1i - Fit K.31
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 1-17-2015  4:09PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  dwnldpar.ngd
+output file: dwnldpar.pad
+Part type:   xc9572xl
+Speed grade: -10
+Package:     vq64
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+P1|flash_ce_n|I|I/O|INPUT|||||||||
+P2|TIE||I/O/GTS2||||||||||
+P3|VCC||VCCINT||||||||||
+P4|fpga_d<0>|O|I/O|OUTPUT|||||||||
+P5|fpga_d<1>|O|I/O/GTS1|OUTPUT|||||||||
+P6|fpga_d<2>|O|I/O|OUTPUT|||||||||
+P7|fpga_d<3>|O|I/O|OUTPUT|||||||||
+P8|fpga_d<4>|O|I/O|OUTPUT|||||||||
+P9|fpga_d<5>|O|I/O|OUTPUT|||||||||
+P10|fpga_d<6>|O|I/O|OUTPUT|||||||||
+P11|fpga_d<7>|O|I/O|OUTPUT|||||||||
+P12|TIE||I/O||||||||||
+P13|TIE||I/O||||||||||
+P14|GND||GND||||||||||
+P15|pp_s<5>|O|I/O/GCK1|OUTPUT|||||||||
+P16|pp_s<4>|O|I/O/GCK2|OUTPUT|||||||||
+P17|master_clk|GCK/I|I/O/GCK3||||||||||
+P18|pp_d<7>|I|I/O|INPUT|||||||||
+P19|pp_d<6>|I|I/O|INPUT|||||||||
+P20|pp_d<5>|I|I/O|INPUT|||||||||
+P21|GND||GND||||||||||
+P22|pp_d<4>|I|I/O|INPUT|||||||||
+P23|pp_d<3>|I|I/O|INPUT|||||||||
+P24|pp_d<2>|I|I/O|INPUT|||||||||
+P25|pp_d<1>|I|I/O|INPUT|||||||||
+P26|VCC||VCCIO||||||||||
+P27|pp_s<3>|O|I/O|OUTPUT|||||||||
+P28|TDI||TDI||||||||||
+P29|TMS||TMS||||||||||
+P30|TCK||TCK||||||||||
+P31|pp_d<0>|I|I/O|INPUT|||||||||
+P32|fpga_pp_d<7>|O|I/O|OUTPUT|||||||||
+P33|fpga_pp_d<6>|O|I/O|OUTPUT|||||||||
+P34|fpga_pp_d<5>|O|I/O|OUTPUT|||||||||
+P35|fpga_pp_d<4>|O|I/O|OUTPUT|||||||||
+P36|fpga_pp_d<3>|O|I/O|OUTPUT|||||||||
+P37|VCC||VCCINT||||||||||
+P38|fpga_pp_d<2>|O|I/O|OUTPUT|||||||||
+P39|fpga_pp_d<1>|O|I/O|OUTPUT|||||||||
+P40|fpga_pp_d<0>|O|I/O|OUTPUT|||||||||
+P41|GND||GND||||||||||
+P42|TIE||I/O||||||||||
+P43|TIE||I/O||||||||||
+P44|TIE||I/O||||||||||
+P45|TIE||I/O||||||||||
+P46|TIE||I/O||||||||||
+P47|TIE||I/O||||||||||
+P48|TIE||I/O||||||||||
+P49|fpga_pp_s<5>|I|I/O|INPUT|||||||||
+P50|fpga_pp_s<4>|I|I/O|INPUT|||||||||
+P51|TIE||I/O||||||||||
+P52|fpga_cs_n|O|I/O|OUTPUT|||||||||
+P53|TDO||TDO||||||||||
+P54|GND||GND||||||||||
+P55|VCC||VCCIO||||||||||
+P56|fpga_wr_n|O|I/O|OUTPUT|||||||||
+P57|clkb|O|I/O|OUTPUT|||||||||
+P58|fpga_tck|O|I/O|OUTPUT|||||||||
+P59|fpga_cclk|O|I/O|OUTPUT|||||||||
+P60|clka|O|I/O|OUTPUT|||||||||
+P61|TIE||I/O||||||||||
+P62|fpga_prog_n|O|I/O|OUTPUT|||||||||
+P63|fpga_done|I|I/O|INPUT|||||||||
+P64|fpga_pp_s<3>|I|I/O/GSR|INPUT|||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

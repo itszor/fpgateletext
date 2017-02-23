@@ -1,0 +1,3 @@
+verilog work "vga.v"
+verilog work "sdramburst.v"
+verilog work "bbc2.v"

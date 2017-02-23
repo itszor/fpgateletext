@@ -1,0 +1,59 @@
+Number of Timing Constraints that were not applied: 5
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+* TS_sdramburst1_int_clk0_1 = PERIOD TIMEGR | SETUP   |    -0.068ns|    20.068ns|       1|          68
+  P "sdramburst1_int_clk0_1"         TS_sys | HOLD    |     2.315ns|            |       0|           0
+  tem_clk HIGH 50%                          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv_1 = PERIOD TIMEG | SETUP   |     0.981ns|    29.019ns|       0|           0
+  RP "sdramburst1_int_clkdv_1"         TS_s | HOLD    |     2.329ns|            |       0|           0
+  ystem_clk * 1.5 HIGH 50%                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_system_clk = PERIOD TIMEGRP "system_cl | N/A     |         N/A|         N/A|     N/A|         N/A
+  k" 20 ns HIGH 50%                         |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0 = PERIOD TIMEGRP  | N/A     |         N/A|         N/A|     N/A|         N/A
+  "sdramburst1_int_clk0" TS_system_clk      |         |            |            |        |            
+      HIGH 50%                              |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv = PERIOD TIMEGRP | N/A     |         N/A|         N/A|     N/A|         N/A
+   "sdramburst1_int_clkdv"         TS_syste |         |            |            |        |            
+  m_clk * 1.5 HIGH 50%                      |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clk0_0 = PERIOD TIMEGR | N/A     |         N/A|         N/A|     N/A|         N/A
+  P "sdramburst1_int_clk0_0"         TS_sys |         |            |            |        |            
+  tem_clk HIGH 50%                          |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  TS_sdramburst1_int_clkdv_0 = PERIOD TIMEG | N/A     |         N/A|         N/A|     N/A|         N/A
+  RP "sdramburst1_int_clkdv_0"         TS_s |         |            |            |        |            
+  ystem_clk * 1.5 HIGH 50%                  |         |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_system_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_system_clk                  |     20.000ns|          N/A|     20.068ns|            0|            1|            0|       162995|
+| TS_sdramburst1_int_clk0       |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv      |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_0     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_0    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_1     |     20.000ns|     20.068ns|          N/A|            1|            0|        97043|            0|
+| TS_sdramburst1_int_clkdv_1    |     30.000ns|     29.019ns|          N/A|            0|            0|        65952|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+

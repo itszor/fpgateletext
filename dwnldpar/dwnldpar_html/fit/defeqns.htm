@@ -1,0 +1,135 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FTCPE_clk_divider0: FTCPE port map (clk_divider(0),'1',master_clk,'0','0');
+</td></tr><tr><td>
+FTCPE_clka: FTCPE port map (clka,clk_divider(0),master_clk,'0','0');
+</td></tr><tr><td>
+</td></tr><tr><td>
+clkb <= master_clk;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_cclk <= pp_d(0);
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_cs_n_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_cs_n <= fpga_cs_n_I when fpga_cs_n_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_cs_n_OE <= NOT fpga_done;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_d_I(0) <= pp_d(2);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(0) <= fpga_d_I(0) when fpga_d_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(0) <= NOT fpga_done;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_d_I(1) <= NOT ((NOT fpga_done AND NOT pp_d(3)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(1) <= fpga_d_I(1) when fpga_d_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(1) <= NOT ((fpga_done AND NOT flash_ce_n));
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_d_I(2) <= pp_d(4);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(2) <= fpga_d_I(2) when fpga_d_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(2) <= NOT fpga_done;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_d_I(3) <= pp_d(5);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(3) <= fpga_d_I(3) when fpga_d_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(3) <= NOT fpga_done;
+</td></tr><tr><td>
+FDCPE_fpga_d4: FDCPE port map (fpga_d_I(4),pp_d(2),NOT pp_d(0),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(4) <= fpga_d_I(4) when fpga_d_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(4) <= NOT fpga_done;
+</td></tr><tr><td>
+FDCPE_fpga_d5: FDCPE port map (fpga_d_I(5),pp_d(3),NOT pp_d(0),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(5) <= fpga_d_I(5) when fpga_d_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(5) <= NOT fpga_done;
+</td></tr><tr><td>
+FDCPE_fpga_d6: FDCPE port map (fpga_d_I(6),pp_d(4),NOT pp_d(0),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(6) <= fpga_d_I(6) when fpga_d_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(6) <= NOT fpga_done;
+</td></tr><tr><td>
+FDCPE_fpga_d7: FDCPE port map (fpga_d_I(7),pp_d(5),NOT pp_d(0),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d(7) <= fpga_d_I(7) when fpga_d_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_d_OE(7) <= NOT fpga_done;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(0) <= NOT pp_d(0);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(0) <= fpga_pp_d_I(0) when fpga_pp_d_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(0) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(1) <= NOT pp_d(1);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(1) <= fpga_pp_d_I(1) when fpga_pp_d_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(1) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(2) <= pp_d(2);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(2) <= fpga_pp_d_I(2) when fpga_pp_d_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(2) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(3) <= pp_d(3);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(3) <= fpga_pp_d_I(3) when fpga_pp_d_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(3) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(4) <= pp_d(4);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(4) <= fpga_pp_d_I(4) when fpga_pp_d_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(4) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(5) <= pp_d(5);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(5) <= fpga_pp_d_I(5) when fpga_pp_d_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(5) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(6) <= pp_d(6);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(6) <= fpga_pp_d_I(6) when fpga_pp_d_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(6) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_pp_d_I(7) <= pp_d(7);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d(7) <= fpga_pp_d_I(7) when fpga_pp_d_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_pp_d_OE(7) <= flash_ce_n;
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_prog_n_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_prog_n <= fpga_prog_n_I when fpga_prog_n_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_prog_n_OE <= NOT pp_d(7);
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_tck <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+fpga_wr_n_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_wr_n <= fpga_wr_n_I when fpga_wr_n_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fpga_wr_n_OE <= NOT fpga_done;
+</td></tr><tr><td>
+FDCPE_pp_s3: FDCPE port map (pp_s(3),'0','0',pp_s_CLR(3),pp_s_PRE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp_s_CLR(3) <= (flash_ce_n AND NOT fpga_pp_s(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp_s_PRE(3) <= (flash_ce_n AND fpga_pp_s(3));
+</td></tr><tr><td>
+FDCPE_pp_s4: FDCPE port map (pp_s(4),'0','0',pp_s_CLR(4),pp_s_PRE(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp_s_CLR(4) <= (flash_ce_n AND NOT fpga_pp_s(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp_s_PRE(4) <= (flash_ce_n AND fpga_pp_s(4));
+</td></tr><tr><td>
+FDCPE_pp_s5: FDCPE port map (pp_s(5),'0','0',pp_s_CLR(5),pp_s_PRE(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp_s_CLR(5) <= (flash_ce_n AND NOT fpga_pp_s(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pp_s_PRE(5) <= (flash_ce_n AND fpga_pp_s(5));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

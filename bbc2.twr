@@ -1,0 +1,518 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/10.1/ISE/bin/lin/unwrapped/trce -ise /home/jules/code/tube/tube.ise
+-intstyle ise -v 3 -s 5 -xml bbc2 bbc2.ncd -o bbc2.twr bbc2.pcf -ucf bbc2.ucf
+
+Design file:              bbc2.ncd
+Physical constraint file: bbc2.pcf
+Device,package,speed:     xc2s200,fg256,-5 (PRODUCTION 1.27 2008-01-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_system_clk = PERIOD TIMEGRP "system_clk" 20 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0" TS_system_clk         HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_1 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_1"         TS_system_clk HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_1 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_1"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_0 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_0"         TS_system_clk HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_0 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_0"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_2 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_2"         TS_system_clk HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_2 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_2"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_3 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_3"         TS_system_clk HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_3 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_3"         TS_system_clk * 1.5 HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clk0_4 = PERIOD TIMEGRP 
+"sdramburst1_int_clk0_4"         TS_system_clk HIGH 50%;
+
+ 3518 paths analyzed, 370 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  12.280ns.
+--------------------------------------------------------------------------------
+Slack:                  7.720ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sdramburst1/delay_0 (FF)
+  Destination:          sdramburst1/delay_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.190ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.090ns (0.108 - 0.198)
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sdramburst1/delay_0 to sdramburst1/delay_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R4C12.S0.XQ      Tcko                  1.292   sdramburst1/delay<0>
+                                                       sdramburst1/delay_0
+    CLB_R2C16.S0.F4      net (fanout=10)       1.998   sdramburst1/delay<0>
+    CLB_R2C16.S0.X       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>19
+                                                       sdramburst1/Msub_delay_addsub0000_cy<7>19
+    CLB_R2C16.S1.G1      net (fanout=3)        0.433   sdramburst1/Msub_delay_addsub0000_cy<7>19
+    CLB_R2C16.S1.Y       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
+                                                       sdramburst1/delay_mux0000<9>53
+    CLB_R2C13.S0.F1      net (fanout=9)        1.512   sdramburst1/delay_mux0000<9>53
+    CLB_R2C13.S0.X       Tilo                  0.653   sdramburst1/N33
+                                                       sdramburst1/delay_mux0000<1>24
+    CLB_R2C13.S0.G4      net (fanout=4)        0.222   sdramburst1/N33
+    CLB_R2C13.S0.Y       Tilo                  0.653   sdramburst1/N33
+                                                       sdramburst1/delay_mux0000<3>11
+    CLB_R3C16.S0.F3      net (fanout=4)        1.184   sdramburst1/N19
+    CLB_R3C16.S0.X       Tilo                  0.653   sdramburst1/delay<7>
+                                                       sdramburst1/delay_mux0000<7>521_SW0
+    CLB_R3C16.S0.G1      net (fanout=1)        0.932   sdramburst1/delay_mux0000<7>521_SW0/O
+    CLB_R3C16.S0.CLK     Tick                  1.352   sdramburst1/delay<7>
+                                                       sdramburst1/delay_mux0000<7>521
+                                                       sdramburst1/delay_7
+    -------------------------------------------------  ---------------------------
+    Total                                     12.190ns (5.909ns logic, 6.281ns route)
+                                                       (48.5% logic, 51.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  8.039ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sdramburst1/delay_1 (FF)
+  Destination:          sdramburst1/delay_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.956ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.005ns (0.108 - 0.113)
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sdramburst1/delay_1 to sdramburst1/delay_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R1C13.S1.YQ      Tcko                  1.292   sdramburst1/delay<1>
+                                                       sdramburst1/delay_1
+    CLB_R2C16.S0.F2      net (fanout=8)        1.764   sdramburst1/delay<1>
+    CLB_R2C16.S0.X       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>19
+                                                       sdramburst1/Msub_delay_addsub0000_cy<7>19
+    CLB_R2C16.S1.G1      net (fanout=3)        0.433   sdramburst1/Msub_delay_addsub0000_cy<7>19
+    CLB_R2C16.S1.Y       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
+                                                       sdramburst1/delay_mux0000<9>53
+    CLB_R2C13.S0.F1      net (fanout=9)        1.512   sdramburst1/delay_mux0000<9>53
+    CLB_R2C13.S0.X       Tilo                  0.653   sdramburst1/N33
+                                                       sdramburst1/delay_mux0000<1>24
+    CLB_R2C13.S0.G4      net (fanout=4)        0.222   sdramburst1/N33
+    CLB_R2C13.S0.Y       Tilo                  0.653   sdramburst1/N33
+                                                       sdramburst1/delay_mux0000<3>11
+    CLB_R3C16.S0.F3      net (fanout=4)        1.184   sdramburst1/N19
+    CLB_R3C16.S0.X       Tilo                  0.653   sdramburst1/delay<7>
+                                                       sdramburst1/delay_mux0000<7>521_SW0
+    CLB_R3C16.S0.G1      net (fanout=1)        0.932   sdramburst1/delay_mux0000<7>521_SW0/O
+    CLB_R3C16.S0.CLK     Tick                  1.352   sdramburst1/delay<7>
+                                                       sdramburst1/delay_mux0000<7>521
+                                                       sdramburst1/delay_7
+    -------------------------------------------------  ---------------------------
+    Total                                     11.956ns (5.909ns logic, 6.047ns route)
+                                                       (49.4% logic, 50.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  8.119ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sdramburst1/delay_3 (FF)
+  Destination:          sdramburst1/delay_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      11.876ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.005ns (0.108 - 0.113)
+  Source Clock:         clk1x rising at 0.000ns
+  Destination Clock:    clk1x rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: sdramburst1/delay_3 to sdramburst1/delay_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R3C14.S1.XQ      Tcko                  1.292   sdramburst1/delay<3>
+                                                       sdramburst1/delay_3
+    CLB_R2C16.S1.F1      net (fanout=10)       1.896   sdramburst1/delay<3>
+    CLB_R2C16.S1.X       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
+                                                       sdramburst1/Msub_delay_addsub0000_cy<7>14
+    CLB_R2C16.S1.G4      net (fanout=3)        0.221   sdramburst1/Msub_delay_addsub0000_cy<7>14
+    CLB_R2C16.S1.Y       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
+                                                       sdramburst1/delay_mux0000<9>53
+    CLB_R2C13.S0.F1      net (fanout=9)        1.512   sdramburst1/delay_mux0000<9>53
+    CLB_R2C13.S0.X       Tilo                  0.653   sdramburst1/N33
+                                                       sdramburst1/delay_mux0000<1>24
+    CLB_R2C13.S0.G4      net (fanout=4)        0.222   sdramburst1/N33
+    CLB_R2C13.S0.Y       Tilo                  0.653   sdramburst1/N33
+                                                       sdramburst1/delay_mux0000<3>11
+    CLB_R3C16.S0.F3      net (fanout=4)        1.184   sdramburst1/N19
+    CLB_R3C16.S0.X       Tilo                  0.653   sdramburst1/delay<7>
+                                                       sdramburst1/delay_mux0000<7>521_SW0
+    CLB_R3C16.S0.G1      net (fanout=1)        0.932   sdramburst1/delay_mux0000<7>521_SW0/O
+    CLB_R3C16.S0.CLK     Tick                  1.352   sdramburst1/delay<7>
+                                                       sdramburst1/delay_mux0000<7>521
+                                                       sdramburst1/delay_7
+    -------------------------------------------------  ---------------------------
+    Total                                     11.876ns (5.909ns logic, 5.967ns route)
+                                                       (49.8% logic, 50.2% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sdramburst1_int_clkdv_4 = PERIOD TIMEGRP 
+"sdramburst1_int_clkdv_4"         TS_system_clk * 1.5 HIGH 50%;
+
+ 52046 paths analyzed, 1020 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum period is  25.012ns.
+--------------------------------------------------------------------------------
+Slack:                  4.988ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga1/char_vpos_2_1 (FF)
+  Destination:          vga1/alt_next (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      25.004ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.008ns (0.077 - 0.085)
+  Source Clock:         clkdv rising at 0.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga1/char_vpos_2_1 to vga1/alt_next
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R14C19.S1.YQ     Tcko                  1.292   vga1/char_vpos_2_2
+                                                       vga1/char_vpos_2_1
+    CLB_R15C21.S1.F3     net (fanout=4)        2.296   vga1/char_vpos_2_1
+    CLB_R15C21.S1.X      Tilo                  0.653   N207
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_SW0
+    CLB_R16C21.S1.F4     net (fanout=2)        0.700   N207
+    CLB_R16C21.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>1
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>11
+    CLB_R16C22.S0.G2     net (fanout=1)        0.597   vga1/Msub_alt_next_addsub0001_xor<1>1
+    CLB_R16C22.S0.Y      Topgy                 1.035   vga1/Mmult_alt_next_mult0001_Madd_1
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_rt
+                                                       vga1/Mmult_alt_next_mult0001_Madd_xor<1>
+    CLB_R16C23.S0.G1     net (fanout=1)        0.626   vga1/Mmult_alt_next_mult0001_Madd_1
+    CLB_R16C23.S0.Y      Topgy                 1.035   vga1/alt_next_mult0001<1>
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_lut<1>_INV_0
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_xor<1>
+    CLB_R16C23.S1.G1     net (fanout=2)        1.171   vga1/alt_next_mult0001<1>
+    CLB_R16C23.S1.Y      Tilo                  0.653   vga1/Mmult_alt_next_mult0001_Madd_0
+                                                       vga1/Madd__COND_16_Madd_xor<2>121
+    CLB_R15C24.S0.F3     net (fanout=4)        0.925   vga1/N84
+    CLB_R15C24.S0.X      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
+                                                       vga1/Madd__COND_16_Madd_cy<2>11
+    CLB_R15C24.S0.G4     net (fanout=2)        0.221   vga1/Madd__COND_16_Madd_cy<2>
+    CLB_R15C24.S0.Y      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
+                                                       vga1/Madd__COND_16_Madd_xor<4>11
+    CLB_R18C26.S0.G2     net (fanout=16)       2.107   vga1/_COND_16<4>
+    CLB_R18C26.S0.F5     Tif5                  0.828   vga1/Mmux__varindex0002_12_f5
+                                                       vga1/Mmux__varindex0002_14
+                                                       vga1/Mmux__varindex0002_12_f5
+    CLB_R18C26.S1.F5IN   net (fanout=1)        0.000   vga1/Mmux__varindex0002_12_f5
+    CLB_R18C26.S1.Y      Tf5iny                0.376   vga1/Mmux__varindex0002_10_f6
+                                                       vga1/Mmux__varindex0002_10_f6
+    CLB_R16C24.S0.F4     net (fanout=1)        1.424   vga1/Mmux__varindex0002_10_f6
+    CLB_R16C24.S0.X      Tif5x                 1.016   vga1/Mmux__varindex0002_5_f5
+                                                       vga1/Mmux__varindex0002_6
+                                                       vga1/Mmux__varindex0002_5_f5
+    CLB_R16C24.S1.G1     net (fanout=2)        0.434   vga1/Mmux__varindex0002_5_f5
+    CLB_R16C24.S1.Y      Tilo                  0.653   vga1/N275
+                                                       vga1/alt_next_mux0000170_SW0
+    CLB_R14C24.S0.G3     net (fanout=1)        0.942   N246
+    CLB_R14C24.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000117/O
+                                                       vga1/alt_next_mux0000178
+    CLB_R13C21.S0.F4     net (fanout=1)        1.181   vga1/alt_next_mux0000178
+    CLB_R13C21.S0.X      Tilo                  0.653   vga1/alt_next
+                                                       vga1/alt_next_mux0000374_SW0
+    CLB_R13C21.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000374_SW0/O
+    CLB_R13C21.S0.CLK    Tick                  1.352   vga1/alt_next
+                                                       vga1/alt_next_mux0000385
+                                                       vga1/alt_next
+    -------------------------------------------------  ---------------------------
+    Total                                     25.004ns (12.158ns logic, 12.846ns route)
+                                                       (48.6% logic, 51.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  5.023ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga1/char_vpos_2_1 (FF)
+  Destination:          vga1/alt_next (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      24.969ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.008ns (0.077 - 0.085)
+  Source Clock:         clkdv rising at 0.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga1/char_vpos_2_1 to vga1/alt_next
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R14C19.S1.YQ     Tcko                  1.292   vga1/char_vpos_2_2
+                                                       vga1/char_vpos_2_1
+    CLB_R15C21.S1.F3     net (fanout=4)        2.296   vga1/char_vpos_2_1
+    CLB_R15C21.S1.X      Tilo                  0.653   N207
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_SW0
+    CLB_R16C21.S1.F4     net (fanout=2)        0.700   N207
+    CLB_R16C21.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>1
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>11
+    CLB_R16C22.S0.G2     net (fanout=1)        0.597   vga1/Msub_alt_next_addsub0001_xor<1>1
+    CLB_R16C22.S0.Y      Topgy                 1.035   vga1/Mmult_alt_next_mult0001_Madd_1
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_rt
+                                                       vga1/Mmult_alt_next_mult0001_Madd_xor<1>
+    CLB_R16C23.S0.G1     net (fanout=1)        0.626   vga1/Mmult_alt_next_mult0001_Madd_1
+    CLB_R16C23.S0.Y      Topgy                 1.035   vga1/alt_next_mult0001<1>
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_lut<1>_INV_0
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_xor<1>
+    CLB_R16C23.S1.G1     net (fanout=2)        1.171   vga1/alt_next_mult0001<1>
+    CLB_R16C23.S1.Y      Tilo                  0.653   vga1/Mmult_alt_next_mult0001_Madd_0
+                                                       vga1/Madd__COND_16_Madd_xor<2>121
+    CLB_R15C24.S0.F3     net (fanout=4)        0.925   vga1/N84
+    CLB_R15C24.S0.X      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
+                                                       vga1/Madd__COND_16_Madd_cy<2>11
+    CLB_R15C24.S0.G4     net (fanout=2)        0.221   vga1/Madd__COND_16_Madd_cy<2>
+    CLB_R15C24.S0.Y      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
+                                                       vga1/Madd__COND_16_Madd_xor<4>11
+    CLB_R18C26.S0.F2     net (fanout=16)       2.084   vga1/_COND_16<4>
+    CLB_R18C26.S0.F5     Tif5                  0.816   vga1/Mmux__varindex0002_12_f5
+                                                       vga1/Mmux__varindex0002_132
+                                                       vga1/Mmux__varindex0002_12_f5
+    CLB_R18C26.S1.F5IN   net (fanout=1)        0.000   vga1/Mmux__varindex0002_12_f5
+    CLB_R18C26.S1.Y      Tf5iny                0.376   vga1/Mmux__varindex0002_10_f6
+                                                       vga1/Mmux__varindex0002_10_f6
+    CLB_R16C24.S0.F4     net (fanout=1)        1.424   vga1/Mmux__varindex0002_10_f6
+    CLB_R16C24.S0.X      Tif5x                 1.016   vga1/Mmux__varindex0002_5_f5
+                                                       vga1/Mmux__varindex0002_6
+                                                       vga1/Mmux__varindex0002_5_f5
+    CLB_R16C24.S1.G1     net (fanout=2)        0.434   vga1/Mmux__varindex0002_5_f5
+    CLB_R16C24.S1.Y      Tilo                  0.653   vga1/N275
+                                                       vga1/alt_next_mux0000170_SW0
+    CLB_R14C24.S0.G3     net (fanout=1)        0.942   N246
+    CLB_R14C24.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000117/O
+                                                       vga1/alt_next_mux0000178
+    CLB_R13C21.S0.F4     net (fanout=1)        1.181   vga1/alt_next_mux0000178
+    CLB_R13C21.S0.X      Tilo                  0.653   vga1/alt_next
+                                                       vga1/alt_next_mux0000374_SW0
+    CLB_R13C21.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000374_SW0/O
+    CLB_R13C21.S0.CLK    Tick                  1.352   vga1/alt_next
+                                                       vga1/alt_next_mux0000385
+                                                       vga1/alt_next
+    -------------------------------------------------  ---------------------------
+    Total                                     24.969ns (12.146ns logic, 12.823ns route)
+                                                       (48.6% logic, 51.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  5.052ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga1/char_vpos_2_1 (FF)
+  Destination:          vga1/alt_next (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      24.940ns (Levels of Logic = 14)
+  Clock Path Skew:      -0.008ns (0.077 - 0.085)
+  Source Clock:         clkdv rising at 0.000ns
+  Destination Clock:    clkdv rising at 30.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: vga1/char_vpos_2_1 to vga1/alt_next
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    CLB_R14C19.S1.YQ     Tcko                  1.292   vga1/char_vpos_2_2
+                                                       vga1/char_vpos_2_1
+    CLB_R15C21.S1.F3     net (fanout=4)        2.296   vga1/char_vpos_2_1
+    CLB_R15C21.S1.X      Tilo                  0.653   N207
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_SW0
+    CLB_R16C21.S1.F4     net (fanout=2)        0.700   N207
+    CLB_R16C21.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>1
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>11
+    CLB_R16C22.S0.G2     net (fanout=1)        0.597   vga1/Msub_alt_next_addsub0001_xor<1>1
+    CLB_R16C22.S0.Y      Topgy                 1.035   vga1/Mmult_alt_next_mult0001_Madd_1
+                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_rt
+                                                       vga1/Mmult_alt_next_mult0001_Madd_xor<1>
+    CLB_R16C23.S0.G1     net (fanout=1)        0.626   vga1/Mmult_alt_next_mult0001_Madd_1
+    CLB_R16C23.S0.Y      Topgy                 1.035   vga1/alt_next_mult0001<1>
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_lut<1>_INV_0
+                                                       vga1/Mmult_alt_next_mult0001_Madd1_xor<1>
+    CLB_R16C23.S1.G1     net (fanout=2)        1.171   vga1/alt_next_mult0001<1>
+    CLB_R16C23.S1.Y      Tilo                  0.653   vga1/Mmult_alt_next_mult0001_Madd_0
+                                                       vga1/Madd__COND_16_Madd_xor<2>121
+    CLB_R15C24.S0.F3     net (fanout=4)        0.925   vga1/N84
+    CLB_R15C24.S0.X      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
+                                                       vga1/Madd__COND_16_Madd_cy<2>11
+    CLB_R15C24.S0.G4     net (fanout=2)        0.221   vga1/Madd__COND_16_Madd_cy<2>
+    CLB_R15C24.S0.Y      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
+                                                       vga1/Madd__COND_16_Madd_xor<4>11
+    CLB_R18C26.S0.G2     net (fanout=16)       2.107   vga1/_COND_16<4>
+    CLB_R18C26.S0.F5     Tif5                  0.828   vga1/Mmux__varindex0002_12_f5
+                                                       vga1/Mmux__varindex0002_14
+                                                       vga1/Mmux__varindex0002_12_f5
+    CLB_R18C26.S1.F5IN   net (fanout=1)        0.000   vga1/Mmux__varindex0002_12_f5
+    CLB_R18C26.S1.Y      Tf5iny                0.376   vga1/Mmux__varindex0002_10_f6
+                                                       vga1/Mmux__varindex0002_10_f6
+    CLB_R16C24.S0.F4     net (fanout=1)        1.424   vga1/Mmux__varindex0002_10_f6
+    CLB_R16C24.S0.X      Tif5x                 1.016   vga1/Mmux__varindex0002_5_f5
+                                                       vga1/Mmux__varindex0002_6
+                                                       vga1/Mmux__varindex0002_5_f5
+    CLB_R14C24.S0.F2     net (fanout=2)        1.090   vga1/Mmux__varindex0002_5_f5
+    CLB_R14C24.S0.X      Tilo                  0.653   vga1/alt_next_mux0000117/O
+                                                       vga1/alt_next_mux0000117
+    CLB_R14C24.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000117/O
+    CLB_R14C24.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000117/O
+                                                       vga1/alt_next_mux0000178
+    CLB_R13C21.S0.F4     net (fanout=1)        1.181   vga1/alt_next_mux0000178
+    CLB_R13C21.S0.X      Tilo                  0.653   vga1/alt_next
+                                                       vga1/alt_next_mux0000374_SW0
+    CLB_R13C21.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000374_SW0/O
+    CLB_R13C21.S0.CLK    Tick                  1.352   vga1/alt_next
+                                                       vga1/alt_next_mux0000385
+                                                       vga1/alt_next
+    -------------------------------------------------  ---------------------------
+    Total                                     24.940ns (12.158ns logic, 12.782ns route)
+                                                       (48.7% logic, 51.3% route)
+
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_system_clk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_system_clk                  |     20.000ns|          N/A|     16.675ns|            0|            0|            0|        55564|
+| TS_sdramburst1_int_clk0       |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv      |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_1     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_1    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_0     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_0    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_2     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_2    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_3     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clkdv_3    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
+| TS_sdramburst1_int_clk0_4     |     20.000ns|     12.280ns|          N/A|            0|            0|         3518|            0|
+| TS_sdramburst1_int_clkdv_4    |     30.000ns|     25.012ns|          N/A|            0|            0|        52046|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock system_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+system_clk     |   25.012|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover 55564 paths, 0 nets, and 4351 connections
+
+Design statistics:
+   Minimum period:  25.012ns{1}   (Maximum frequency:  39.981MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Feb 23 00:24:25 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 75 MB
+
+
+

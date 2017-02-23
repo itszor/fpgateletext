@@ -1,0 +1,266 @@
+MDF Database:  version 1.0
+MDF_INFO | dwnldpar | XC9572XL-10-VQ64
+MACROCELL | 0 | 1 | config_data<0>
+ATTRIBUTES | 8652578 | 0
+INPUTS | 3 | pp_d<2>  | pp_d<0>  | fpga_done
+INPUTP | 3 | 31 | 43 | 90
+EQ | 3 | 
+   fpga_d<4>.D = pp_d<2>;
+   fpga_d<4>.CLK = !pp_d<0>;
+   fpga_d<4>.OE = !fpga_done;
+
+MACROCELL | 0 | 4 | config_data<1>
+ATTRIBUTES | 8652578 | 0
+INPUTS | 3 | pp_d<3>  | pp_d<0>  | fpga_done
+INPUTP | 3 | 30 | 43 | 90
+EQ | 3 | 
+   fpga_d<5>.D = pp_d<3>;
+   fpga_d<5>.CLK = !pp_d<0>;
+   fpga_d<5>.OE = !fpga_done;
+
+MACROCELL | 0 | 5 | config_data<2>
+ATTRIBUTES | 8652578 | 0
+INPUTS | 3 | pp_d<4>  | pp_d<0>  | fpga_done
+INPUTP | 3 | 29 | 43 | 90
+EQ | 3 | 
+   fpga_d<6>.D = pp_d<4>;
+   fpga_d<6>.CLK = !pp_d<0>;
+   fpga_d<6>.OE = !fpga_done;
+
+MACROCELL | 0 | 7 | config_data<3>
+ATTRIBUTES | 8652578 | 0
+INPUTS | 3 | pp_d<5>  | pp_d<0>  | fpga_done
+INPUTP | 3 | 27 | 43 | 90
+EQ | 3 | 
+   fpga_d<7>.D = pp_d<5>;
+   fpga_d<7>.CLK = !pp_d<0>;
+   fpga_d<7>.OE = !fpga_done;
+
+MACROCELL | 1 | 13 | fpga_d_1_mux0000
+ATTRIBUTES | 265986 | 0
+INPUTS | 3 | fpga_done  | pp_d<3>  | flash_ce_n
+INPUTP | 3 | 90 | 30 | 1
+EQ | 2 | 
+   !fpga_d<1> = !fpga_done & !pp_d<3>;
+   !fpga_d<1>.OE = fpga_done & !flash_ce_n;
+
+MACROCELL | 1 | 1 | clk_divider<1>
+ATTRIBUTES | 4489986 | 0
+INPUTS | 1 | clk_divider<0>
+INPUTMC | 1 | 3 | 17
+EQ | 2 | 
+   clka.T = clk_divider<0>;
+   clka.CLK = master_clk;	// GCK
+GLOBALS | 1 | 2 | master_clk
+
+MACROCELL | 2 | 11 | cclk
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<0>  | flash_ce_n
+INPUTP | 2 | 43 | 1
+EQ | 2 | 
+   fpga_pp_d<0> = !pp_d<0>;
+   fpga_pp_d<0>.OE = flash_ce_n;
+
+MACROCELL | 2 | 9 | fpga_pp_d_1_OBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<1>  | flash_ce_n
+INPUTP | 2 | 33 | 1
+EQ | 2 | 
+   fpga_pp_d<1> = !pp_d<1>;
+   fpga_pp_d<1>.OE = flash_ce_n;
+
+MACROCELL | 2 | 16 | pp_d_2_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<2>  | flash_ce_n
+INPUTP | 2 | 31 | 1
+EQ | 2 | 
+   fpga_pp_d<2> = pp_d<2>;
+   fpga_pp_d<2>.OE = flash_ce_n;
+
+MACROCELL | 1 | 11 | pp_d_2_IBUF$BUF1
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<2>  | fpga_done
+INPUTP | 2 | 31 | 90
+EQ | 2 | 
+   fpga_d<0> = pp_d<2>;
+   fpga_d<0>.OE = !fpga_done;
+
+MACROCELL | 2 | 14 | pp_d_3_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<3>  | flash_ce_n
+INPUTP | 2 | 30 | 1
+EQ | 2 | 
+   fpga_pp_d<3> = pp_d<3>;
+   fpga_pp_d<3>.OE = flash_ce_n;
+
+MACROCELL | 2 | 13 | pp_d_4_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<4>  | flash_ce_n
+INPUTP | 2 | 29 | 1
+EQ | 2 | 
+   fpga_pp_d<4> = pp_d<4>;
+   fpga_pp_d<4>.OE = flash_ce_n;
+
+MACROCELL | 1 | 14 | pp_d_4_IBUF$BUF1
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<4>  | fpga_done
+INPUTP | 2 | 29 | 90
+EQ | 2 | 
+   fpga_d<2> = pp_d<4>;
+   fpga_d<2>.OE = !fpga_done;
+
+MACROCELL | 2 | 5 | pp_d_5_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<5>  | flash_ce_n
+INPUTP | 2 | 27 | 1
+EQ | 2 | 
+   fpga_pp_d<5> = pp_d<5>;
+   fpga_pp_d<5>.OE = flash_ce_n;
+
+MACROCELL | 1 | 16 | pp_d_5_IBUF$BUF1
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<5>  | fpga_done
+INPUTP | 2 | 27 | 90
+EQ | 2 | 
+   fpga_d<3> = pp_d<5>;
+   fpga_d<3>.OE = !fpga_done;
+
+MACROCELL | 2 | 10 | pp_d_6_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<6>  | flash_ce_n
+INPUTP | 2 | 26 | 1
+EQ | 2 | 
+   fpga_pp_d<6> = pp_d<6>;
+   fpga_pp_d<6>.OE = flash_ce_n;
+
+MACROCELL | 2 | 3 | pp_d_7_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | pp_d<7>  | flash_ce_n
+INPUTP | 2 | 25 | 1
+EQ | 2 | 
+   fpga_pp_d<7> = pp_d<7>;
+   fpga_pp_d<7>.OE = flash_ce_n;
+
+MACROCELL | 3 | 17 | clk_divider<0>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   clk_divider<0>.T = Vcc;
+   clk_divider<0>.CLK = master_clk;	// GCK
+GLOBALS | 1 | 2 | master_clk
+
+MACROCELL | 2 | 8 | pp_s_0
+ATTRIBUTES | 8651698 | 0
+INPUTS | 2 | flash_ce_n  | fpga_pp_s<3>
+INPUTP | 2 | 1 | 92
+EQ | 4 | 
+   pp_s<3>.D = Gnd;
+   pp_s<3>.CLK = Gnd;
+   pp_s<3>.AP = flash_ce_n & fpga_pp_s<3>;
+   pp_s<3>.AR = flash_ce_n & !fpga_pp_s<3>;
+
+MACROCELL | 0 | 10 | pp_s_1
+ATTRIBUTES | 8651698 | 0
+INPUTS | 2 | flash_ce_n  | fpga_pp_s<4>
+INPUTP | 2 | 1 | 72
+EQ | 4 | 
+   pp_s<4>.D = Gnd;
+   pp_s<4>.CLK = Gnd;
+   pp_s<4>.AP = flash_ce_n & fpga_pp_s<4>;
+   pp_s<4>.AR = flash_ce_n & !fpga_pp_s<4>;
+
+MACROCELL | 0 | 8 | pp_s_2
+ATTRIBUTES | 8651698 | 0
+INPUTS | 2 | flash_ce_n  | fpga_pp_s<5>
+INPUTP | 2 | 1 | 70
+EQ | 4 | 
+   pp_s<5>.D = Gnd;
+   pp_s<5>.CLK = Gnd;
+   pp_s<5>.AP = flash_ce_n & fpga_pp_s<5>;
+   pp_s<5>.AR = flash_ce_n & !fpga_pp_s<5>;
+
+MACROCELL | 3 | 14 | fpga_tck_OBUF
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | fpga_done
+INPUTP | 1 | 90
+EQ | 2 | 
+   fpga_wr_n = Gnd;
+   fpga_wr_n.OE = !fpga_done;
+
+MACROCELL | 1 | 5 | fpga_tck_OBUF$BUF1
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | pp_d<7>
+INPUTP | 1 | 25
+EQ | 2 | 
+   fpga_prog_n = Gnd;
+   fpga_prog_n.OE = !pp_d<7>;
+
+MACROCELL | 3 | 11 | fpga_tck_OBUF$BUF2
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | fpga_done
+INPUTP | 1 | 90
+EQ | 2 | 
+   fpga_cs_n = Gnd;
+   fpga_cs_n.OE = !fpga_done;
+
+MACROCELL | 3 | 16 | clkb_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | master_clk
+INPUTP | 1 | 24
+EQ | 1 | 
+   clkb = master_clk;
+
+MACROCELL | 1 | 3 | fpga_cclk_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | pp_d<0>
+INPUTP | 1 | 43
+EQ | 1 | 
+   fpga_cclk = pp_d<0>;
+
+MACROCELL | 1 | 2 | fpga_tck_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   fpga_tck = Gnd;
+
+PIN | pp_d<2> | 64 | 0 | N/A | 31 | 3 | 0 | 1 | 2 | 16 | 1 | 11
+PIN | fpga_done | 64 | 0 | N/A | 90 | 10 | 0 | 1 | 0 | 4 | 0 | 5 | 0 | 7 | 1 | 13 | 1 | 11 | 1 | 14 | 1 | 16 | 3 | 14 | 3 | 11
+PIN | pp_d<0> | 64 | 0 | N/A | 43 | 6 | 0 | 1 | 0 | 4 | 0 | 5 | 0 | 7 | 2 | 11 | 1 | 3
+PIN | pp_d<3> | 64 | 0 | N/A | 30 | 3 | 0 | 4 | 1 | 13 | 2 | 14
+PIN | pp_d<4> | 64 | 0 | N/A | 29 | 3 | 0 | 5 | 2 | 13 | 1 | 14
+PIN | pp_d<5> | 64 | 0 | N/A | 27 | 3 | 0 | 7 | 2 | 5 | 1 | 16
+PIN | flash_ce_n | 64 | 0 | N/A | 1 | 12 | 1 | 13 | 2 | 11 | 2 | 9 | 2 | 16 | 2 | 14 | 2 | 13 | 2 | 5 | 2 | 10 | 2 | 3 | 2 | 8 | 0 | 10 | 0 | 8
+PIN | master_clk | 16448 | 0 | N/A | 24 | 3 | 3 | 16 | 1 | 1 | 3 | 17
+PIN | pp_d<1> | 64 | 0 | N/A | 33 | 1 | 2 | 9
+PIN | pp_d<6> | 64 | 0 | N/A | 26 | 1 | 2 | 10
+PIN | pp_d<7> | 64 | 0 | N/A | 25 | 2 | 2 | 3 | 1 | 5
+PIN | fpga_pp_s<3> | 64 | 0 | N/A | 92 | 1 | 2 | 8
+PIN | fpga_pp_s<4> | 64 | 0 | N/A | 72 | 1 | 0 | 10
+PIN | fpga_pp_s<5> | 64 | 0 | N/A | 70 | 1 | 0 | 8
+PIN | fpga_d<4> | 536871040 | 0 | N/A | 11
+PIN | fpga_d<5> | 536871040 | 0 | N/A | 12
+PIN | fpga_d<6> | 536871040 | 0 | N/A | 13
+PIN | fpga_d<7> | 536871040 | 0 | N/A | 15
+PIN | fpga_d<1> | 536871040 | 0 | N/A | 7
+PIN | clka | 536871040 | 0 | N/A | 87
+PIN | fpga_pp_d<0> | 536871040 | 0 | N/A | 55
+PIN | fpga_pp_d<1> | 536871040 | 0 | N/A | 54
+PIN | fpga_pp_d<2> | 536871040 | 0 | N/A | 52
+PIN | fpga_d<0> | 536871040 | 0 | N/A | 5
+PIN | fpga_pp_d<3> | 536871040 | 0 | N/A | 50
+PIN | fpga_pp_d<4> | 536871040 | 0 | N/A | 49
+PIN | fpga_d<2> | 536871040 | 0 | N/A | 9
+PIN | fpga_pp_d<5> | 536871040 | 0 | N/A | 47
+PIN | fpga_d<3> | 536871040 | 0 | N/A | 10
+PIN | fpga_pp_d<6> | 536871040 | 0 | N/A | 46
+PIN | fpga_pp_d<7> | 536871040 | 0 | N/A | 44
+PIN | pp_s<3> | 536871040 | 0 | N/A | 38
+PIN | pp_s<4> | 536871040 | 0 | N/A | 21
+PIN | pp_s<5> | 536871040 | 0 | N/A | 20
+PIN | fpga_wr_n | 536871040 | 0 | N/A | 82
+PIN | fpga_prog_n | 536871040 | 0 | N/A | 89
+PIN | fpga_cs_n | 536871040 | 0 | N/A | 75
+PIN | clkb | 536871040 | 0 | N/A | 83
+PIN | fpga_cclk | 536871040 | 0 | N/A | 86
+PIN | fpga_tck | 536871040 | 0 | N/A | 84

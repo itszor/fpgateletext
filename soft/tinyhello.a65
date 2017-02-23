@@ -1,0 +1,90 @@
+	*= $200
+
+hello
+	.(
+	ldx #255
+	txs
+
+	; function set; 8 bit, etc.
+	lda #32+16+8
+	sta $fd00
+	ldx $70
+	jsr wait
+
+	ldx $71
+
+	; display on, cursor on
+	lda #14
+	sta $fd00
+	jsr wait
+
+	; entry mode set
+	lda #6
+	sta $fd00
+	jsr wait
+
+	; clear+home
+	lda #1
+	sta $fd00
+	jsr wait
+
+	lda #0
+	sta line
+
+do_lines
+	ldx line
+	cpx #4
+	beq done
+	lda lines,x
+	ora #128
+	sta $fd00
+	jsr wait
+	inc line
+
+	ldx #0
+loop
+	lda hellow,x
+	cmp #0
+	beq done
+	sta $fd01
+	jsr wait
+	inx
+	jmp loop
+done
+	jmp do_lines
+
+stop
+	jmp stop
+	.)
+
+wait
+	.(
+;	phx
+;	ldx #20
+;little_delay
+;	nop
+;	dex
+;	bne little_delay
+waitforlcd
+	bit $fd00
+	bmi waitforlcd
+;	plx
+	rts
+	.)
+
+hellow
+	.asc "Hello world!!", 0
+
+line
+	.byte 0
+
+lines
+	.byte $00
+	.byte $40
+	.byte $10
+	.byte $50
+	
+	.dsb $3fc - *, 0
+reset
+	.word hello
+	.word 0
