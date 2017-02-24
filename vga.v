@@ -157,7 +157,7 @@ module vga(
 
 	reg current_doubleheight;
 	reg sticky_doubleheight;
-	reg prev_doubleheight;
+	reg prev_doubleheight, prev_doubleheight_1;
 	
 	reg flash_display;
 
@@ -343,7 +343,7 @@ module vga(
 			end else if (border_out[3]) begin
 				red <= rh[5] ^ rv[5];
 				green <= gh[4] ^ gv[4];
-				blue <= bh[6:5] ^ bv[6:5];
+				blue <= bh[6] ^ bv[6];
 			end else begin
 				red <= 0;
 				green <= 0;
@@ -397,6 +397,7 @@ module vga(
 			current_doubleheight <= 0;
 			sticky_doubleheight <= 0;
 			prev_doubleheight <= 0;
+			prev_doubleheight_1 <= 0;
 		end else begin
 			char_out[3:1] <= char_out[2:0];
 			border_out[3:1] <= border_out[2:0];
@@ -482,7 +483,11 @@ module vga(
 						/* Change of foreground colour affects the *next*
 							character.  */
 						foreground <= next_foreground;
-						hold_graphics <= next_hold_graphics;
+						/* A little hack to do "set-at" for hold graphics.  */
+						if (current_char[6:0] == 7'b0011110)
+							hold_graphics <= 1;
+						else
+							hold_graphics <= next_hold_graphics;
 						held_char <= next_held_char;
 					end
 
@@ -494,16 +499,21 @@ module vga(
 
 					if (char_hpos == 1) begin
 						if (col_num == 39) begin
-							if ((!sticky_doubleheight && char_vpos == 18)
-								 || (sticky_doubleheight && char_vpos == 19)) begin
+							if (char_vpos == 19) begin
 								tt_cur_row_addr <= tt_cur_row_addr + 40;
 								tt_prev_row_addr <= tt_cur_row_addr;
 							end
 
-							if (prev_doubleheight) begin
-								tt_fetch_addr <= tt_prev_row_addr;
+							if ((prev_doubleheight && char_vpos != 19) || (char_vpos == 19 && sticky_doubleheight)) begin
+								if (char_vpos == 19)
+									tt_fetch_addr <= tt_cur_row_addr;
+								else
+									tt_fetch_addr <= tt_prev_row_addr;
 							end else begin
-								tt_fetch_addr <= tt_cur_row_addr;
+								if (char_vpos == 19)
+									tt_fetch_addr <= tt_cur_row_addr + 40;
+								else
+									tt_fetch_addr <= tt_cur_row_addr;
 							end
 						end else begin
 							tt_fetch_addr <= tt_fetch_addr + 1;
@@ -525,6 +535,8 @@ module vga(
 								current_doubleheight <= 0;
 							end else
 								char_vpos <= char_vpos + 1;
+							
+							prev_doubleheight_1 <= prev_doubleheight;
 						end else begin
 							col_num <= col_num + 1;
 						end
@@ -543,6 +555,7 @@ module vga(
 						current_doubleheight <= 0;
 						sticky_doubleheight <= 0;
 						prev_doubleheight <= 0;
+						prev_doubleheight_1 <= 0;
 						if (frame_counter < 72)
 							flash_display <= 1;
 						else

@@ -180,11 +180,11 @@ module bbc2(
 
 	always @(posedge clk1x) begin
 		if (reset) begin
-			//pagenum <= 229;
+			//pagenum <= 153;
 			pagenum <= 0;
 			timecounter <= 0;
 		end else begin
-			if (timecounter == 32'h3ffffff) begin
+			if (timecounter == 32'hfffffff) begin
 				timecounter <= 0;
 				if (pagenum < 485)
 					pagenum <= pagenum + 1;

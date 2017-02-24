@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map K.31 on Thu Feb 23 00:24:16 2017
+// Written by: Map K.31 on Fri Feb 24 13:21:30 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -513,17 +513,17 @@ TIMEGRP sdramburst1_int_clkdv = BEL "vga1/frame_counter_6" BEL
         "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/col_num_5" BEL
         "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
         "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/blue_2" BEL
-        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2" BEL "vga1/red_1"
-        BEL "vga1/new_frame" BEL "vga1/alt_next" BEL "vga1/htimer_9" BEL
-        "vga1/htimer_4" BEL "vga1/blue_1" BEL "vga1/blue_0" BEL "vga1/green_0"
-        BEL "vga1/red_0" BEL "vga1/row_next" BEL "vga1/char_vpos_2_1" BEL
-        "vga1/char_vpos_1_1" BEL "vga1/current_doubleheight_1" BEL
-        "vga1/char_vpos_2_2" BEL "vga1/char_vpos_3_1" BEL
-        "vga1/prev_doubleheight_1" BEL "vga1/current_doubleheight_2" BEL
-        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_1_2" BEL
-        "vga1/char_vpos_3_2" BEL "vga1/char_vpos_2_3" BEL
-        "vga1/current_doubleheight_3" BEL "vga1/current_char_0_1" BEL
-        "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/blue_1" BEL "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2"
+        BEL "vga1/red_1" BEL "vga1/new_frame" BEL "vga1/alt_next" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_4" BEL "vga1/blue_0" BEL
+        "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_1_1" BEL
+        "vga1/current_doubleheight_1" BEL "vga1/prev_doubleheight_1" BEL
+        "vga1/char_vpos_4_1" BEL "vga1/current_doubleheight_2" BEL
+        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_2_2" BEL
+        "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_2" BEL
+        "vga1/current_char_0_1" BEL "vga1/current_char_11_1" BEL
+        "vga1/current_char_2_1" BEL "vga1/current_char_2_2" BEL
         "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
         "vga1/Mshreg_char_hpos_2_1" BEL "vga1/char_hpos_2_1" BEL
         "vga1/Mshreg_char_hpos_2_3" BEL "vga1/char_hpos_2_3" BEL
@@ -637,17 +637,17 @@ TIMEGRP sdramburst1_int_clkdv_1 = BEL "vga1/frame_counter_6" BEL
         "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/col_num_5" BEL
         "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
         "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/blue_2" BEL
-        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2" BEL "vga1/red_1"
-        BEL "vga1/new_frame" BEL "vga1/alt_next" BEL "vga1/htimer_9" BEL
-        "vga1/htimer_4" BEL "vga1/blue_1" BEL "vga1/blue_0" BEL "vga1/green_0"
-        BEL "vga1/red_0" BEL "vga1/row_next" BEL "vga1/char_vpos_2_1" BEL
-        "vga1/char_vpos_1_1" BEL "vga1/current_doubleheight_1" BEL
-        "vga1/char_vpos_2_2" BEL "vga1/char_vpos_3_1" BEL
-        "vga1/prev_doubleheight_1" BEL "vga1/current_doubleheight_2" BEL
-        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_1_2" BEL
-        "vga1/char_vpos_3_2" BEL "vga1/char_vpos_2_3" BEL
-        "vga1/current_doubleheight_3" BEL "vga1/current_char_0_1" BEL
-        "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/blue_1" BEL "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2"
+        BEL "vga1/red_1" BEL "vga1/new_frame" BEL "vga1/alt_next" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_4" BEL "vga1/blue_0" BEL
+        "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_1_1" BEL
+        "vga1/current_doubleheight_1" BEL "vga1/prev_doubleheight_1" BEL
+        "vga1/char_vpos_4_1" BEL "vga1/current_doubleheight_2" BEL
+        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_2_2" BEL
+        "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_2" BEL
+        "vga1/current_char_0_1" BEL "vga1/current_char_11_1" BEL
+        "vga1/current_char_2_1" BEL "vga1/current_char_2_2" BEL
         "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
         "vga1/Mshreg_char_hpos_2_1" BEL "vga1/char_hpos_2_1" BEL
         "vga1/Mshreg_char_hpos_2_3" BEL "vga1/char_hpos_2_3" BEL
@@ -761,17 +761,17 @@ TIMEGRP sdramburst1_int_clkdv_0 = BEL "vga1/frame_counter_6" BEL
         "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/col_num_5" BEL
         "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
         "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/blue_2" BEL
-        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2" BEL "vga1/red_1"
-        BEL "vga1/new_frame" BEL "vga1/alt_next" BEL "vga1/htimer_9" BEL
-        "vga1/htimer_4" BEL "vga1/blue_1" BEL "vga1/blue_0" BEL "vga1/green_0"
-        BEL "vga1/red_0" BEL "vga1/row_next" BEL "vga1/char_vpos_2_1" BEL
-        "vga1/char_vpos_1_1" BEL "vga1/current_doubleheight_1" BEL
-        "vga1/char_vpos_2_2" BEL "vga1/char_vpos_3_1" BEL
-        "vga1/prev_doubleheight_1" BEL "vga1/current_doubleheight_2" BEL
-        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_1_2" BEL
-        "vga1/char_vpos_3_2" BEL "vga1/char_vpos_2_3" BEL
-        "vga1/current_doubleheight_3" BEL "vga1/current_char_0_1" BEL
-        "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/blue_1" BEL "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2"
+        BEL "vga1/red_1" BEL "vga1/new_frame" BEL "vga1/alt_next" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_4" BEL "vga1/blue_0" BEL
+        "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_1_1" BEL
+        "vga1/current_doubleheight_1" BEL "vga1/prev_doubleheight_1" BEL
+        "vga1/char_vpos_4_1" BEL "vga1/current_doubleheight_2" BEL
+        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_2_2" BEL
+        "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_2" BEL
+        "vga1/current_char_0_1" BEL "vga1/current_char_11_1" BEL
+        "vga1/current_char_2_1" BEL "vga1/current_char_2_2" BEL
         "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
         "vga1/Mshreg_char_hpos_2_1" BEL "vga1/char_hpos_2_1" BEL
         "vga1/Mshreg_char_hpos_2_3" BEL "vga1/char_hpos_2_3" BEL
@@ -885,17 +885,17 @@ TIMEGRP sdramburst1_int_clkdv_2 = BEL "vga1/frame_counter_6" BEL
         "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/col_num_5" BEL
         "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
         "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/blue_2" BEL
-        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2" BEL "vga1/red_1"
-        BEL "vga1/new_frame" BEL "vga1/alt_next" BEL "vga1/htimer_9" BEL
-        "vga1/htimer_4" BEL "vga1/blue_1" BEL "vga1/blue_0" BEL "vga1/green_0"
-        BEL "vga1/red_0" BEL "vga1/row_next" BEL "vga1/char_vpos_2_1" BEL
-        "vga1/char_vpos_1_1" BEL "vga1/current_doubleheight_1" BEL
-        "vga1/char_vpos_2_2" BEL "vga1/char_vpos_3_1" BEL
-        "vga1/prev_doubleheight_1" BEL "vga1/current_doubleheight_2" BEL
-        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_1_2" BEL
-        "vga1/char_vpos_3_2" BEL "vga1/char_vpos_2_3" BEL
-        "vga1/current_doubleheight_3" BEL "vga1/current_char_0_1" BEL
-        "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/blue_1" BEL "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2"
+        BEL "vga1/red_1" BEL "vga1/new_frame" BEL "vga1/alt_next" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_4" BEL "vga1/blue_0" BEL
+        "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_1_1" BEL
+        "vga1/current_doubleheight_1" BEL "vga1/prev_doubleheight_1" BEL
+        "vga1/char_vpos_4_1" BEL "vga1/current_doubleheight_2" BEL
+        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_2_2" BEL
+        "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_2" BEL
+        "vga1/current_char_0_1" BEL "vga1/current_char_11_1" BEL
+        "vga1/current_char_2_1" BEL "vga1/current_char_2_2" BEL
         "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
         "vga1/Mshreg_char_hpos_2_1" BEL "vga1/char_hpos_2_1" BEL
         "vga1/Mshreg_char_hpos_2_3" BEL "vga1/char_hpos_2_3" BEL
@@ -1009,17 +1009,17 @@ TIMEGRP sdramburst1_int_clkdv_3 = BEL "vga1/frame_counter_6" BEL
         "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/col_num_5" BEL
         "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
         "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/blue_2" BEL
-        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2" BEL "vga1/red_1"
-        BEL "vga1/new_frame" BEL "vga1/alt_next" BEL "vga1/htimer_9" BEL
-        "vga1/htimer_4" BEL "vga1/blue_1" BEL "vga1/blue_0" BEL "vga1/green_0"
-        BEL "vga1/red_0" BEL "vga1/row_next" BEL "vga1/char_vpos_2_1" BEL
-        "vga1/char_vpos_1_1" BEL "vga1/current_doubleheight_1" BEL
-        "vga1/char_vpos_2_2" BEL "vga1/char_vpos_3_1" BEL
-        "vga1/prev_doubleheight_1" BEL "vga1/current_doubleheight_2" BEL
-        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_1_2" BEL
-        "vga1/char_vpos_3_2" BEL "vga1/char_vpos_2_3" BEL
-        "vga1/current_doubleheight_3" BEL "vga1/current_char_0_1" BEL
-        "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/blue_1" BEL "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2"
+        BEL "vga1/red_1" BEL "vga1/new_frame" BEL "vga1/alt_next" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_4" BEL "vga1/blue_0" BEL
+        "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_1_1" BEL
+        "vga1/current_doubleheight_1" BEL "vga1/prev_doubleheight_1" BEL
+        "vga1/char_vpos_4_1" BEL "vga1/current_doubleheight_2" BEL
+        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_2_2" BEL
+        "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_2" BEL
+        "vga1/current_char_0_1" BEL "vga1/current_char_11_1" BEL
+        "vga1/current_char_2_1" BEL "vga1/current_char_2_2" BEL
         "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
         "vga1/Mshreg_char_hpos_2_1" BEL "vga1/char_hpos_2_1" BEL
         "vga1/Mshreg_char_hpos_2_3" BEL "vga1/char_hpos_2_3" BEL
@@ -1133,17 +1133,17 @@ TIMEGRP sdramburst1_int_clkdv_4 = BEL "vga1/frame_counter_6" BEL
         "vga1/char_hpos_11" BEL "vga1/char_hpos_0" BEL "vga1/col_num_5" BEL
         "vga1/col_num_4" BEL "vga1/col_num_3" BEL "vga1/col_num_2" BEL
         "vga1/col_num_1" BEL "vga1/col_num_0" BEL "vga1/blue_2" BEL
-        "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2" BEL "vga1/red_1"
-        BEL "vga1/new_frame" BEL "vga1/alt_next" BEL "vga1/htimer_9" BEL
-        "vga1/htimer_4" BEL "vga1/blue_1" BEL "vga1/blue_0" BEL "vga1/green_0"
-        BEL "vga1/red_0" BEL "vga1/row_next" BEL "vga1/char_vpos_2_1" BEL
-        "vga1/char_vpos_1_1" BEL "vga1/current_doubleheight_1" BEL
-        "vga1/char_vpos_2_2" BEL "vga1/char_vpos_3_1" BEL
-        "vga1/prev_doubleheight_1" BEL "vga1/current_doubleheight_2" BEL
-        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_1_2" BEL
-        "vga1/char_vpos_3_2" BEL "vga1/char_vpos_2_3" BEL
-        "vga1/current_doubleheight_3" BEL "vga1/current_char_0_1" BEL
-        "vga1/current_char_11_1" BEL "vga1/current_char_2_1" BEL
+        "vga1/blue_1" BEL "vga1/green_2" BEL "vga1/green_1" BEL "vga1/red_2"
+        BEL "vga1/red_1" BEL "vga1/new_frame" BEL "vga1/alt_next" BEL
+        "vga1/htimer_9" BEL "vga1/htimer_4" BEL "vga1/blue_0" BEL
+        "vga1/green_0" BEL "vga1/red_0" BEL "vga1/row_next" BEL
+        "vga1/char_vpos_2_1" BEL "vga1/char_vpos_1_1" BEL
+        "vga1/current_doubleheight_1" BEL "vga1/prev_doubleheight_1" BEL
+        "vga1/char_vpos_4_1" BEL "vga1/current_doubleheight_2" BEL
+        "vga1/prev_doubleheight_2" BEL "vga1/char_vpos_2_2" BEL
+        "vga1/char_vpos_3_1" BEL "vga1/char_vpos_1_2" BEL
+        "vga1/current_char_0_1" BEL "vga1/current_char_11_1" BEL
+        "vga1/current_char_2_1" BEL "vga1/current_char_2_2" BEL
         "vga1/current_char_3_1" BEL "vga1/current_char_4_1" BEL
         "vga1/Mshreg_char_hpos_2_1" BEL "vga1/char_hpos_2_1" BEL
         "vga1/Mshreg_char_hpos_2_3" BEL "vga1/char_hpos_2_3" BEL

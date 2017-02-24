@@ -114,128 +114,104 @@ Timing constraint: TS_sdramburst1_int_clkdv_3 = PERIOD TIMEGRP
 Timing constraint: TS_sdramburst1_int_clk0_4 = PERIOD TIMEGRP 
 "sdramburst1_int_clk0_4"         TS_system_clk HIGH 50%;
 
- 3518 paths analyzed, 370 endpoints analyzed, 0 failing endpoints
+ 3518 paths analyzed, 366 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is  12.280ns.
+ Minimum period is  11.895ns.
 --------------------------------------------------------------------------------
-Slack:                  7.720ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sdramburst1/delay_0 (FF)
-  Destination:          sdramburst1/delay_7 (FF)
+Slack:                  8.105ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               timecounter_1 (FF)
+  Destination:          timecounter_1 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.190ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.090ns (0.108 - 0.198)
+  Data Path Delay:      11.895ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
   Source Clock:         clk1x rising at 0.000ns
   Destination Clock:    clk1x rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: sdramburst1/delay_0 to sdramburst1/delay_7
+  Maximum Data Path: timecounter_1 to timecounter_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    CLB_R4C12.S0.XQ      Tcko                  1.292   sdramburst1/delay<0>
-                                                       sdramburst1/delay_0
-    CLB_R2C16.S0.F4      net (fanout=10)       1.998   sdramburst1/delay<0>
-    CLB_R2C16.S0.X       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>19
-                                                       sdramburst1/Msub_delay_addsub0000_cy<7>19
-    CLB_R2C16.S1.G1      net (fanout=3)        0.433   sdramburst1/Msub_delay_addsub0000_cy<7>19
-    CLB_R2C16.S1.Y       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
-                                                       sdramburst1/delay_mux0000<9>53
-    CLB_R2C13.S0.F1      net (fanout=9)        1.512   sdramburst1/delay_mux0000<9>53
-    CLB_R2C13.S0.X       Tilo                  0.653   sdramburst1/N33
-                                                       sdramburst1/delay_mux0000<1>24
-    CLB_R2C13.S0.G4      net (fanout=4)        0.222   sdramburst1/N33
-    CLB_R2C13.S0.Y       Tilo                  0.653   sdramburst1/N33
-                                                       sdramburst1/delay_mux0000<3>11
-    CLB_R3C16.S0.F3      net (fanout=4)        1.184   sdramburst1/N19
-    CLB_R3C16.S0.X       Tilo                  0.653   sdramburst1/delay<7>
-                                                       sdramburst1/delay_mux0000<7>521_SW0
-    CLB_R3C16.S0.G1      net (fanout=1)        0.932   sdramburst1/delay_mux0000<7>521_SW0/O
-    CLB_R3C16.S0.CLK     Tick                  1.352   sdramburst1/delay<7>
-                                                       sdramburst1/delay_mux0000<7>521
-                                                       sdramburst1/delay_7
+    CLB_R16C34.S0.YQ     Tcko                  1.292   timecounter<0>
+                                                       timecounter_1
+    CLB_R3C34.S1.F2      net (fanout=2)        2.721   timecounter<1>
+    CLB_R3C34.S1.COUT    Topcyf                1.487   pagenum_cmp_eq0000
+                                                       pagenum_cmp_eq0000_wg_lut<6>
+                                                       pagenum_cmp_eq0000_wg_cy<6>
+                                                       pagenum_cmp_eq0000_wg_cy<7>
+    CLB_R3C36.S1.G1      net (fanout=7)        1.689   pagenum_cmp_eq0000
+    CLB_R3C36.S1.Y       Tilo                  0.653   pagenum_or0000
+                                                       timecounter_or00001
+    CLB_R16C34.S0.SR     net (fanout=16)       3.270   timecounter_or0000
+    CLB_R16C34.S0.CLK    Tsrck                 0.783   timecounter<0>
+                                                       timecounter_1
     -------------------------------------------------  ---------------------------
-    Total                                     12.190ns (5.909ns logic, 6.281ns route)
-                                                       (48.5% logic, 51.5% route)
+    Total                                     11.895ns (4.215ns logic, 7.680ns route)
+                                                       (35.4% logic, 64.6% route)
 
 --------------------------------------------------------------------------------
-Slack:                  8.039ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sdramburst1/delay_1 (FF)
-  Destination:          sdramburst1/delay_7 (FF)
+Slack:                  8.105ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               timecounter_1 (FF)
+  Destination:          timecounter_0 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      11.956ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.005ns (0.108 - 0.113)
+  Data Path Delay:      11.895ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
   Source Clock:         clk1x rising at 0.000ns
   Destination Clock:    clk1x rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: sdramburst1/delay_1 to sdramburst1/delay_7
+  Maximum Data Path: timecounter_1 to timecounter_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    CLB_R1C13.S1.YQ      Tcko                  1.292   sdramburst1/delay<1>
-                                                       sdramburst1/delay_1
-    CLB_R2C16.S0.F2      net (fanout=8)        1.764   sdramburst1/delay<1>
-    CLB_R2C16.S0.X       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>19
-                                                       sdramburst1/Msub_delay_addsub0000_cy<7>19
-    CLB_R2C16.S1.G1      net (fanout=3)        0.433   sdramburst1/Msub_delay_addsub0000_cy<7>19
-    CLB_R2C16.S1.Y       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
-                                                       sdramburst1/delay_mux0000<9>53
-    CLB_R2C13.S0.F1      net (fanout=9)        1.512   sdramburst1/delay_mux0000<9>53
-    CLB_R2C13.S0.X       Tilo                  0.653   sdramburst1/N33
-                                                       sdramburst1/delay_mux0000<1>24
-    CLB_R2C13.S0.G4      net (fanout=4)        0.222   sdramburst1/N33
-    CLB_R2C13.S0.Y       Tilo                  0.653   sdramburst1/N33
-                                                       sdramburst1/delay_mux0000<3>11
-    CLB_R3C16.S0.F3      net (fanout=4)        1.184   sdramburst1/N19
-    CLB_R3C16.S0.X       Tilo                  0.653   sdramburst1/delay<7>
-                                                       sdramburst1/delay_mux0000<7>521_SW0
-    CLB_R3C16.S0.G1      net (fanout=1)        0.932   sdramburst1/delay_mux0000<7>521_SW0/O
-    CLB_R3C16.S0.CLK     Tick                  1.352   sdramburst1/delay<7>
-                                                       sdramburst1/delay_mux0000<7>521
-                                                       sdramburst1/delay_7
+    CLB_R16C34.S0.YQ     Tcko                  1.292   timecounter<0>
+                                                       timecounter_1
+    CLB_R3C34.S1.F2      net (fanout=2)        2.721   timecounter<1>
+    CLB_R3C34.S1.COUT    Topcyf                1.487   pagenum_cmp_eq0000
+                                                       pagenum_cmp_eq0000_wg_lut<6>
+                                                       pagenum_cmp_eq0000_wg_cy<6>
+                                                       pagenum_cmp_eq0000_wg_cy<7>
+    CLB_R3C36.S1.G1      net (fanout=7)        1.689   pagenum_cmp_eq0000
+    CLB_R3C36.S1.Y       Tilo                  0.653   pagenum_or0000
+                                                       timecounter_or00001
+    CLB_R16C34.S0.SR     net (fanout=16)       3.270   timecounter_or0000
+    CLB_R16C34.S0.CLK    Tsrck                 0.783   timecounter<0>
+                                                       timecounter_0
     -------------------------------------------------  ---------------------------
-    Total                                     11.956ns (5.909ns logic, 6.047ns route)
-                                                       (49.4% logic, 50.6% route)
+    Total                                     11.895ns (4.215ns logic, 7.680ns route)
+                                                       (35.4% logic, 64.6% route)
 
 --------------------------------------------------------------------------------
-Slack:                  8.119ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sdramburst1/delay_3 (FF)
-  Destination:          sdramburst1/delay_7 (FF)
+Slack:                  8.220ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               timecounter_1 (FF)
+  Destination:          timecounter_5 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      11.876ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.005ns (0.108 - 0.113)
+  Data Path Delay:      11.780ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
   Source Clock:         clk1x rising at 0.000ns
   Destination Clock:    clk1x rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: sdramburst1/delay_3 to sdramburst1/delay_7
+  Maximum Data Path: timecounter_1 to timecounter_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    CLB_R3C14.S1.XQ      Tcko                  1.292   sdramburst1/delay<3>
-                                                       sdramburst1/delay_3
-    CLB_R2C16.S1.F1      net (fanout=10)       1.896   sdramburst1/delay<3>
-    CLB_R2C16.S1.X       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
-                                                       sdramburst1/Msub_delay_addsub0000_cy<7>14
-    CLB_R2C16.S1.G4      net (fanout=3)        0.221   sdramburst1/Msub_delay_addsub0000_cy<7>14
-    CLB_R2C16.S1.Y       Tilo                  0.653   sdramburst1/Msub_delay_addsub0000_cy<7>14
-                                                       sdramburst1/delay_mux0000<9>53
-    CLB_R2C13.S0.F1      net (fanout=9)        1.512   sdramburst1/delay_mux0000<9>53
-    CLB_R2C13.S0.X       Tilo                  0.653   sdramburst1/N33
-                                                       sdramburst1/delay_mux0000<1>24
-    CLB_R2C13.S0.G4      net (fanout=4)        0.222   sdramburst1/N33
-    CLB_R2C13.S0.Y       Tilo                  0.653   sdramburst1/N33
-                                                       sdramburst1/delay_mux0000<3>11
-    CLB_R3C16.S0.F3      net (fanout=4)        1.184   sdramburst1/N19
-    CLB_R3C16.S0.X       Tilo                  0.653   sdramburst1/delay<7>
-                                                       sdramburst1/delay_mux0000<7>521_SW0
-    CLB_R3C16.S0.G1      net (fanout=1)        0.932   sdramburst1/delay_mux0000<7>521_SW0/O
-    CLB_R3C16.S0.CLK     Tick                  1.352   sdramburst1/delay<7>
-                                                       sdramburst1/delay_mux0000<7>521
-                                                       sdramburst1/delay_7
+    CLB_R16C34.S0.YQ     Tcko                  1.292   timecounter<0>
+                                                       timecounter_1
+    CLB_R3C34.S1.F2      net (fanout=2)        2.721   timecounter<1>
+    CLB_R3C34.S1.COUT    Topcyf                1.487   pagenum_cmp_eq0000
+                                                       pagenum_cmp_eq0000_wg_lut<6>
+                                                       pagenum_cmp_eq0000_wg_cy<6>
+                                                       pagenum_cmp_eq0000_wg_cy<7>
+    CLB_R3C36.S1.G1      net (fanout=7)        1.689   pagenum_cmp_eq0000
+    CLB_R3C36.S1.Y       Tilo                  0.653   pagenum_or0000
+                                                       timecounter_or00001
+    CLB_R14C34.S0.SR     net (fanout=16)       3.155   timecounter_or0000
+    CLB_R14C34.S0.CLK    Tsrck                 0.783   timecounter<4>
+                                                       timecounter_5
     -------------------------------------------------  ---------------------------
-    Total                                     11.876ns (5.909ns logic, 5.967ns route)
-                                                       (49.8% logic, 50.2% route)
+    Total                                     11.780ns (4.215ns logic, 7.565ns route)
+                                                       (35.8% logic, 64.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -243,212 +219,193 @@ Slack:                  8.119ns (requirement - (data path - clock path skew + un
 Timing constraint: TS_sdramburst1_int_clkdv_4 = PERIOD TIMEGRP 
 "sdramburst1_int_clkdv_4"         TS_system_clk * 1.5 HIGH 50%;
 
- 52046 paths analyzed, 1020 endpoints analyzed, 0 failing endpoints
+ 62451 paths analyzed, 1003 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is  25.012ns.
+ Minimum period is  28.380ns.
 --------------------------------------------------------------------------------
-Slack:                  4.988ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga1/char_vpos_2_1 (FF)
+Slack:                  1.620ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga1/char_vpos_1_1 (FF)
   Destination:          vga1/alt_next (FF)
   Requirement:          30.000ns
-  Data Path Delay:      25.004ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.008ns (0.077 - 0.085)
+  Data Path Delay:      28.380ns (Levels of Logic = 11)
+  Clock Path Skew:      0.000ns
   Source Clock:         clkdv rising at 0.000ns
   Destination Clock:    clkdv rising at 30.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga1/char_vpos_2_1 to vga1/alt_next
+  Maximum Data Path: vga1/char_vpos_1_1 to vga1/alt_next
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    CLB_R14C19.S1.YQ     Tcko                  1.292   vga1/char_vpos_2_2
-                                                       vga1/char_vpos_2_1
-    CLB_R15C21.S1.F3     net (fanout=4)        2.296   vga1/char_vpos_2_1
-    CLB_R15C21.S1.X      Tilo                  0.653   N207
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_SW0
-    CLB_R16C21.S1.F4     net (fanout=2)        0.700   N207
-    CLB_R16C21.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>1
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>11
-    CLB_R16C22.S0.G2     net (fanout=1)        0.597   vga1/Msub_alt_next_addsub0001_xor<1>1
-    CLB_R16C22.S0.Y      Topgy                 1.035   vga1/Mmult_alt_next_mult0001_Madd_1
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_rt
-                                                       vga1/Mmult_alt_next_mult0001_Madd_xor<1>
-    CLB_R16C23.S0.G1     net (fanout=1)        0.626   vga1/Mmult_alt_next_mult0001_Madd_1
-    CLB_R16C23.S0.Y      Topgy                 1.035   vga1/alt_next_mult0001<1>
-                                                       vga1/Mmult_alt_next_mult0001_Madd1_lut<1>_INV_0
-                                                       vga1/Mmult_alt_next_mult0001_Madd1_xor<1>
-    CLB_R16C23.S1.G1     net (fanout=2)        1.171   vga1/alt_next_mult0001<1>
-    CLB_R16C23.S1.Y      Tilo                  0.653   vga1/Mmult_alt_next_mult0001_Madd_0
-                                                       vga1/Madd__COND_16_Madd_xor<2>121
-    CLB_R15C24.S0.F3     net (fanout=4)        0.925   vga1/N84
-    CLB_R15C24.S0.X      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
-                                                       vga1/Madd__COND_16_Madd_cy<2>11
-    CLB_R15C24.S0.G4     net (fanout=2)        0.221   vga1/Madd__COND_16_Madd_cy<2>
-    CLB_R15C24.S0.Y      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
-                                                       vga1/Madd__COND_16_Madd_xor<4>11
-    CLB_R18C26.S0.G2     net (fanout=16)       2.107   vga1/_COND_16<4>
-    CLB_R18C26.S0.F5     Tif5                  0.828   vga1/Mmux__varindex0002_12_f5
-                                                       vga1/Mmux__varindex0002_14
-                                                       vga1/Mmux__varindex0002_12_f5
-    CLB_R18C26.S1.F5IN   net (fanout=1)        0.000   vga1/Mmux__varindex0002_12_f5
-    CLB_R18C26.S1.Y      Tf5iny                0.376   vga1/Mmux__varindex0002_10_f6
-                                                       vga1/Mmux__varindex0002_10_f6
-    CLB_R16C24.S0.F4     net (fanout=1)        1.424   vga1/Mmux__varindex0002_10_f6
-    CLB_R16C24.S0.X      Tif5x                 1.016   vga1/Mmux__varindex0002_5_f5
-                                                       vga1/Mmux__varindex0002_6
-                                                       vga1/Mmux__varindex0002_5_f5
-    CLB_R16C24.S1.G1     net (fanout=2)        0.434   vga1/Mmux__varindex0002_5_f5
-    CLB_R16C24.S1.Y      Tilo                  0.653   vga1/N275
-                                                       vga1/alt_next_mux0000170_SW0
-    CLB_R14C24.S0.G3     net (fanout=1)        0.942   N246
-    CLB_R14C24.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000117/O
-                                                       vga1/alt_next_mux0000178
-    CLB_R13C21.S0.F4     net (fanout=1)        1.181   vga1/alt_next_mux0000178
-    CLB_R13C21.S0.X      Tilo                  0.653   vga1/alt_next
-                                                       vga1/alt_next_mux0000374_SW0
-    CLB_R13C21.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000374_SW0/O
-    CLB_R13C21.S0.CLK    Tick                  1.352   vga1/alt_next
+    CLB_R17C18.S1.YQ     Tcko                  1.292   vga1/char_vpos_1_2
+                                                       vga1/char_vpos_1_1
+    CLB_R15C22.S1.F2     net (fanout=7)        3.996   vga1/char_vpos_1_1
+    CLB_R15C22.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>146_SW0
+    CLB_R15C22.S1.G1     net (fanout=1)        1.025   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+    CLB_R15C22.S1.Y      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>146
+    CLB_R14C22.S1.G3     net (fanout=2)        0.782   vga1/Msub_alt_next_addsub0000_xor<2>146
+    CLB_R14C22.S1.Y      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>128
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>192
+    CLB_R15C22.S0.F1     net (fanout=1)        1.008   vga1/alt_next_addsub0000<2>
+    CLB_R15C22.S0.Y      Topy                  1.937   vga1/Mmult_alt_next_mult0000_Madd_2
+                                                       vga1/Mmult_alt_next_mult0000_Madd_lut<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd_cy<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd_xor<3>
+    CLB_R15C24.S0.G4     net (fanout=1)        0.921   vga1/Mmult_alt_next_mult0000_Madd_3
+    CLB_R15C24.S0.Y      Topgy                 1.035   vga1/alt_next_mult0000<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd1_lut<3>_INV_0
+                                                       vga1/Mmult_alt_next_mult0000_Madd1_xor<3>
+    CLB_R16C25.S1.G3     net (fanout=3)        0.950   vga1/Madd__COND_15_Madd6
+    CLB_R16C25.S1.Y      Tilo                  0.653   vga1/N84
+                                                       vga1/Madd__COND_15_Madd_xor<4>111
+    CLB_R20C27.S1.G1     net (fanout=18)       2.190   vga1/N289
+    CLB_R20C27.S1.Y      Tif6y                 1.105   vga1/Mmux__varindex0001_10_f61
+                                                       vga1/Mmux__varindex0001_133
+                                                       vga1/Mmux__varindex0001_11_f5_1
+                                                       vga1/Mmux__varindex0001_10_f6_0
+    CLB_R16C28.S0.G4     net (fanout=1)        1.502   vga1/Mmux__varindex0001_10_f61
+    CLB_R16C28.S0.X      Tif5x                 1.028   vga1/Mmux__varindex0001_5_f5
+                                                       vga1/Mmux__varindex0001_7
+                                                       vga1/Mmux__varindex0001_5_f5
+    CLB_R16C25.S0.F1     net (fanout=2)        1.420   vga1/Mmux__varindex0001_5_f5
+    CLB_R16C25.S0.X      Tilo                  0.653   vga1/alt_next_mux0000297_SW0/O
+                                                       vga1/alt_next_mux0000297_SW0
+    CLB_R16C25.S0.G1     net (fanout=1)        1.000   vga1/alt_next_mux0000297_SW0/O
+    CLB_R16C25.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000297_SW0/O
+                                                       vga1/alt_next_mux0000305
+    CLB_R19C18.S1.G2     net (fanout=1)        1.919   vga1/alt_next_mux0000305
+    CLB_R19C18.S1.CLK    Tick                  1.352   vga1/alt_next
                                                        vga1/alt_next_mux0000385
                                                        vga1/alt_next
     -------------------------------------------------  ---------------------------
-    Total                                     25.004ns (12.158ns logic, 12.846ns route)
-                                                       (48.6% logic, 51.4% route)
+    Total                                     28.380ns (11.667ns logic, 16.713ns route)
+                                                       (41.1% logic, 58.9% route)
 
 --------------------------------------------------------------------------------
-Slack:                  5.023ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga1/char_vpos_2_1 (FF)
+Slack:                  1.630ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga1/char_vpos_1_1 (FF)
   Destination:          vga1/alt_next (FF)
   Requirement:          30.000ns
-  Data Path Delay:      24.969ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.008ns (0.077 - 0.085)
+  Data Path Delay:      28.370ns (Levels of Logic = 11)
+  Clock Path Skew:      0.000ns
   Source Clock:         clkdv rising at 0.000ns
   Destination Clock:    clkdv rising at 30.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga1/char_vpos_2_1 to vga1/alt_next
+  Maximum Data Path: vga1/char_vpos_1_1 to vga1/alt_next
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    CLB_R14C19.S1.YQ     Tcko                  1.292   vga1/char_vpos_2_2
-                                                       vga1/char_vpos_2_1
-    CLB_R15C21.S1.F3     net (fanout=4)        2.296   vga1/char_vpos_2_1
-    CLB_R15C21.S1.X      Tilo                  0.653   N207
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_SW0
-    CLB_R16C21.S1.F4     net (fanout=2)        0.700   N207
-    CLB_R16C21.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>1
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>11
-    CLB_R16C22.S0.G2     net (fanout=1)        0.597   vga1/Msub_alt_next_addsub0001_xor<1>1
-    CLB_R16C22.S0.Y      Topgy                 1.035   vga1/Mmult_alt_next_mult0001_Madd_1
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_rt
-                                                       vga1/Mmult_alt_next_mult0001_Madd_xor<1>
-    CLB_R16C23.S0.G1     net (fanout=1)        0.626   vga1/Mmult_alt_next_mult0001_Madd_1
-    CLB_R16C23.S0.Y      Topgy                 1.035   vga1/alt_next_mult0001<1>
-                                                       vga1/Mmult_alt_next_mult0001_Madd1_lut<1>_INV_0
-                                                       vga1/Mmult_alt_next_mult0001_Madd1_xor<1>
-    CLB_R16C23.S1.G1     net (fanout=2)        1.171   vga1/alt_next_mult0001<1>
-    CLB_R16C23.S1.Y      Tilo                  0.653   vga1/Mmult_alt_next_mult0001_Madd_0
-                                                       vga1/Madd__COND_16_Madd_xor<2>121
-    CLB_R15C24.S0.F3     net (fanout=4)        0.925   vga1/N84
-    CLB_R15C24.S0.X      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
-                                                       vga1/Madd__COND_16_Madd_cy<2>11
-    CLB_R15C24.S0.G4     net (fanout=2)        0.221   vga1/Madd__COND_16_Madd_cy<2>
-    CLB_R15C24.S0.Y      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
-                                                       vga1/Madd__COND_16_Madd_xor<4>11
-    CLB_R18C26.S0.F2     net (fanout=16)       2.084   vga1/_COND_16<4>
-    CLB_R18C26.S0.F5     Tif5                  0.816   vga1/Mmux__varindex0002_12_f5
-                                                       vga1/Mmux__varindex0002_132
-                                                       vga1/Mmux__varindex0002_12_f5
-    CLB_R18C26.S1.F5IN   net (fanout=1)        0.000   vga1/Mmux__varindex0002_12_f5
-    CLB_R18C26.S1.Y      Tf5iny                0.376   vga1/Mmux__varindex0002_10_f6
-                                                       vga1/Mmux__varindex0002_10_f6
-    CLB_R16C24.S0.F4     net (fanout=1)        1.424   vga1/Mmux__varindex0002_10_f6
-    CLB_R16C24.S0.X      Tif5x                 1.016   vga1/Mmux__varindex0002_5_f5
-                                                       vga1/Mmux__varindex0002_6
-                                                       vga1/Mmux__varindex0002_5_f5
-    CLB_R16C24.S1.G1     net (fanout=2)        0.434   vga1/Mmux__varindex0002_5_f5
-    CLB_R16C24.S1.Y      Tilo                  0.653   vga1/N275
-                                                       vga1/alt_next_mux0000170_SW0
-    CLB_R14C24.S0.G3     net (fanout=1)        0.942   N246
-    CLB_R14C24.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000117/O
-                                                       vga1/alt_next_mux0000178
-    CLB_R13C21.S0.F4     net (fanout=1)        1.181   vga1/alt_next_mux0000178
-    CLB_R13C21.S0.X      Tilo                  0.653   vga1/alt_next
-                                                       vga1/alt_next_mux0000374_SW0
-    CLB_R13C21.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000374_SW0/O
-    CLB_R13C21.S0.CLK    Tick                  1.352   vga1/alt_next
+    CLB_R17C18.S1.YQ     Tcko                  1.292   vga1/char_vpos_1_2
+                                                       vga1/char_vpos_1_1
+    CLB_R15C22.S1.F2     net (fanout=7)        3.996   vga1/char_vpos_1_1
+    CLB_R15C22.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>146_SW0
+    CLB_R15C22.S1.G1     net (fanout=1)        1.025   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+    CLB_R15C22.S1.Y      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>146
+    CLB_R14C22.S1.G3     net (fanout=2)        0.782   vga1/Msub_alt_next_addsub0000_xor<2>146
+    CLB_R14C22.S1.Y      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>128
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>192
+    CLB_R15C22.S0.F1     net (fanout=1)        1.008   vga1/alt_next_addsub0000<2>
+    CLB_R15C22.S0.Y      Topy                  1.937   vga1/Mmult_alt_next_mult0000_Madd_2
+                                                       vga1/Mmult_alt_next_mult0000_Madd_lut<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd_cy<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd_xor<3>
+    CLB_R15C24.S0.G4     net (fanout=1)        0.921   vga1/Mmult_alt_next_mult0000_Madd_3
+    CLB_R15C24.S0.Y      Topgy                 1.035   vga1/alt_next_mult0000<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd1_lut<3>_INV_0
+                                                       vga1/Mmult_alt_next_mult0000_Madd1_xor<3>
+    CLB_R16C25.S1.G3     net (fanout=3)        0.950   vga1/Madd__COND_15_Madd6
+    CLB_R16C25.S1.Y      Tilo                  0.653   vga1/N84
+                                                       vga1/Madd__COND_15_Madd_xor<4>111
+    CLB_R20C27.S1.F1     net (fanout=18)       2.192   vga1/N289
+    CLB_R20C27.S1.Y      Tif6y                 1.093   vga1/Mmux__varindex0001_10_f61
+                                                       vga1/Mmux__varindex0001_123
+                                                       vga1/Mmux__varindex0001_11_f5_1
+                                                       vga1/Mmux__varindex0001_10_f6_0
+    CLB_R16C28.S0.G4     net (fanout=1)        1.502   vga1/Mmux__varindex0001_10_f61
+    CLB_R16C28.S0.X      Tif5x                 1.028   vga1/Mmux__varindex0001_5_f5
+                                                       vga1/Mmux__varindex0001_7
+                                                       vga1/Mmux__varindex0001_5_f5
+    CLB_R16C25.S0.F1     net (fanout=2)        1.420   vga1/Mmux__varindex0001_5_f5
+    CLB_R16C25.S0.X      Tilo                  0.653   vga1/alt_next_mux0000297_SW0/O
+                                                       vga1/alt_next_mux0000297_SW0
+    CLB_R16C25.S0.G1     net (fanout=1)        1.000   vga1/alt_next_mux0000297_SW0/O
+    CLB_R16C25.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000297_SW0/O
+                                                       vga1/alt_next_mux0000305
+    CLB_R19C18.S1.G2     net (fanout=1)        1.919   vga1/alt_next_mux0000305
+    CLB_R19C18.S1.CLK    Tick                  1.352   vga1/alt_next
                                                        vga1/alt_next_mux0000385
                                                        vga1/alt_next
     -------------------------------------------------  ---------------------------
-    Total                                     24.969ns (12.146ns logic, 12.823ns route)
-                                                       (48.6% logic, 51.4% route)
+    Total                                     28.370ns (11.655ns logic, 16.715ns route)
+                                                       (41.1% logic, 58.9% route)
 
 --------------------------------------------------------------------------------
-Slack:                  5.052ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               vga1/char_vpos_2_1 (FF)
+Slack:                  1.691ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               vga1/char_vpos_1_1 (FF)
   Destination:          vga1/alt_next (FF)
   Requirement:          30.000ns
-  Data Path Delay:      24.940ns (Levels of Logic = 14)
-  Clock Path Skew:      -0.008ns (0.077 - 0.085)
+  Data Path Delay:      28.309ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
   Source Clock:         clkdv rising at 0.000ns
   Destination Clock:    clkdv rising at 30.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: vga1/char_vpos_2_1 to vga1/alt_next
+  Maximum Data Path: vga1/char_vpos_1_1 to vga1/alt_next
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    CLB_R14C19.S1.YQ     Tcko                  1.292   vga1/char_vpos_2_2
-                                                       vga1/char_vpos_2_1
-    CLB_R15C21.S1.F3     net (fanout=4)        2.296   vga1/char_vpos_2_1
-    CLB_R15C21.S1.X      Tilo                  0.653   N207
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_SW0
-    CLB_R16C21.S1.F4     net (fanout=2)        0.700   N207
-    CLB_R16C21.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0001_xor<1>1
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>11
-    CLB_R16C22.S0.G2     net (fanout=1)        0.597   vga1/Msub_alt_next_addsub0001_xor<1>1
-    CLB_R16C22.S0.Y      Topgy                 1.035   vga1/Mmult_alt_next_mult0001_Madd_1
-                                                       vga1/Msub_alt_next_addsub0001_xor<1>1_rt
-                                                       vga1/Mmult_alt_next_mult0001_Madd_xor<1>
-    CLB_R16C23.S0.G1     net (fanout=1)        0.626   vga1/Mmult_alt_next_mult0001_Madd_1
-    CLB_R16C23.S0.Y      Topgy                 1.035   vga1/alt_next_mult0001<1>
-                                                       vga1/Mmult_alt_next_mult0001_Madd1_lut<1>_INV_0
-                                                       vga1/Mmult_alt_next_mult0001_Madd1_xor<1>
-    CLB_R16C23.S1.G1     net (fanout=2)        1.171   vga1/alt_next_mult0001<1>
-    CLB_R16C23.S1.Y      Tilo                  0.653   vga1/Mmult_alt_next_mult0001_Madd_0
-                                                       vga1/Madd__COND_16_Madd_xor<2>121
-    CLB_R15C24.S0.F3     net (fanout=4)        0.925   vga1/N84
-    CLB_R15C24.S0.X      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
-                                                       vga1/Madd__COND_16_Madd_cy<2>11
-    CLB_R15C24.S0.G4     net (fanout=2)        0.221   vga1/Madd__COND_16_Madd_cy<2>
-    CLB_R15C24.S0.Y      Tilo                  0.653   vga1/Madd__COND_16_Madd_cy<2>
-                                                       vga1/Madd__COND_16_Madd_xor<4>11
-    CLB_R18C26.S0.G2     net (fanout=16)       2.107   vga1/_COND_16<4>
-    CLB_R18C26.S0.F5     Tif5                  0.828   vga1/Mmux__varindex0002_12_f5
-                                                       vga1/Mmux__varindex0002_14
-                                                       vga1/Mmux__varindex0002_12_f5
-    CLB_R18C26.S1.F5IN   net (fanout=1)        0.000   vga1/Mmux__varindex0002_12_f5
-    CLB_R18C26.S1.Y      Tf5iny                0.376   vga1/Mmux__varindex0002_10_f6
-                                                       vga1/Mmux__varindex0002_10_f6
-    CLB_R16C24.S0.F4     net (fanout=1)        1.424   vga1/Mmux__varindex0002_10_f6
-    CLB_R16C24.S0.X      Tif5x                 1.016   vga1/Mmux__varindex0002_5_f5
-                                                       vga1/Mmux__varindex0002_6
-                                                       vga1/Mmux__varindex0002_5_f5
-    CLB_R14C24.S0.F2     net (fanout=2)        1.090   vga1/Mmux__varindex0002_5_f5
-    CLB_R14C24.S0.X      Tilo                  0.653   vga1/alt_next_mux0000117/O
-                                                       vga1/alt_next_mux0000117
-    CLB_R14C24.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000117/O
-    CLB_R14C24.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000117/O
-                                                       vga1/alt_next_mux0000178
-    CLB_R13C21.S0.F4     net (fanout=1)        1.181   vga1/alt_next_mux0000178
-    CLB_R13C21.S0.X      Tilo                  0.653   vga1/alt_next
-                                                       vga1/alt_next_mux0000374_SW0
-    CLB_R13C21.S0.G4     net (fanout=1)        0.222   vga1/alt_next_mux0000374_SW0/O
-    CLB_R13C21.S0.CLK    Tick                  1.352   vga1/alt_next
+    CLB_R17C18.S1.YQ     Tcko                  1.292   vga1/char_vpos_1_2
+                                                       vga1/char_vpos_1_1
+    CLB_R15C22.S1.F2     net (fanout=7)        3.996   vga1/char_vpos_1_1
+    CLB_R15C22.S1.X      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>146_SW0
+    CLB_R15C22.S1.G1     net (fanout=1)        1.025   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+    CLB_R15C22.S1.Y      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>146_SW0/O
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>146
+    CLB_R14C22.S1.G3     net (fanout=2)        0.782   vga1/Msub_alt_next_addsub0000_xor<2>146
+    CLB_R14C22.S1.Y      Tilo                  0.653   vga1/Msub_alt_next_addsub0000_xor<2>128
+                                                       vga1/Msub_alt_next_addsub0000_xor<2>192
+    CLB_R15C22.S0.F1     net (fanout=1)        1.008   vga1/alt_next_addsub0000<2>
+    CLB_R15C22.S0.Y      Topy                  1.937   vga1/Mmult_alt_next_mult0000_Madd_2
+                                                       vga1/Mmult_alt_next_mult0000_Madd_lut<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd_cy<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd_xor<3>
+    CLB_R15C24.S0.G4     net (fanout=1)        0.921   vga1/Mmult_alt_next_mult0000_Madd_3
+    CLB_R15C24.S0.Y      Topgy                 1.035   vga1/alt_next_mult0000<2>
+                                                       vga1/Mmult_alt_next_mult0000_Madd1_lut<3>_INV_0
+                                                       vga1/Mmult_alt_next_mult0000_Madd1_xor<3>
+    CLB_R16C25.S1.G3     net (fanout=3)        0.950   vga1/Madd__COND_15_Madd6
+    CLB_R16C25.S1.Y      Tilo                  0.653   vga1/N84
+                                                       vga1/Madd__COND_15_Madd_xor<4>111
+    CLB_R20C27.S0.F1     net (fanout=18)       2.032   vga1/N289
+    CLB_R20C27.S0.F5     Tif5                  0.816   vga1/Mmux__varindex0001_12_f51
+                                                       vga1/Mmux__varindex0001_134
+                                                       vga1/Mmux__varindex0001_12_f5_0
+    CLB_R20C27.S1.F5IN   net (fanout=1)        0.000   vga1/Mmux__varindex0001_12_f51
+    CLB_R20C27.S1.Y      Tf5iny                0.376   vga1/Mmux__varindex0001_10_f61
+                                                       vga1/Mmux__varindex0001_10_f6_0
+    CLB_R16C28.S0.G4     net (fanout=1)        1.502   vga1/Mmux__varindex0001_10_f61
+    CLB_R16C28.S0.X      Tif5x                 1.028   vga1/Mmux__varindex0001_5_f5
+                                                       vga1/Mmux__varindex0001_7
+                                                       vga1/Mmux__varindex0001_5_f5
+    CLB_R16C25.S0.F1     net (fanout=2)        1.420   vga1/Mmux__varindex0001_5_f5
+    CLB_R16C25.S0.X      Tilo                  0.653   vga1/alt_next_mux0000297_SW0/O
+                                                       vga1/alt_next_mux0000297_SW0
+    CLB_R16C25.S0.G1     net (fanout=1)        1.000   vga1/alt_next_mux0000297_SW0/O
+    CLB_R16C25.S0.Y      Tilo                  0.653   vga1/alt_next_mux0000297_SW0/O
+                                                       vga1/alt_next_mux0000305
+    CLB_R19C18.S1.G2     net (fanout=1)        1.919   vga1/alt_next_mux0000305
+    CLB_R19C18.S1.CLK    Tick                  1.352   vga1/alt_next
                                                        vga1/alt_next_mux0000385
                                                        vga1/alt_next
     -------------------------------------------------  ---------------------------
-    Total                                     24.940ns (12.158ns logic, 12.782ns route)
-                                                       (48.7% logic, 51.3% route)
+    Total                                     28.309ns (11.754ns logic, 16.555ns route)
+                                                       (41.5% logic, 58.5% route)
 
 --------------------------------------------------------------------------------
 
@@ -460,7 +417,7 @@ Derived Constraints for TS_system_clk
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_system_clk                  |     20.000ns|          N/A|     16.675ns|            0|            0|            0|        55564|
+|TS_system_clk                  |     20.000ns|          N/A|     18.920ns|            0|            0|            0|        65969|
 | TS_sdramburst1_int_clk0       |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_sdramburst1_int_clkdv      |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_sdramburst1_int_clk0_1     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
@@ -471,8 +428,8 @@ Derived Constraints for TS_system_clk
 | TS_sdramburst1_int_clkdv_2    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_sdramburst1_int_clk0_3     |     20.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_sdramburst1_int_clkdv_3    |     30.000ns|          N/A|          N/A|            0|            0|            0|            0|
-| TS_sdramburst1_int_clk0_4     |     20.000ns|     12.280ns|          N/A|            0|            0|         3518|            0|
-| TS_sdramburst1_int_clkdv_4    |     30.000ns|     25.012ns|          N/A|            0|            0|        52046|            0|
+| TS_sdramburst1_int_clk0_4     |     20.000ns|     11.895ns|          N/A|            0|            0|         3518|            0|
+| TS_sdramburst1_int_clkdv_4    |     30.000ns|     28.380ns|          N/A|            0|            0|        62451|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -487,7 +444,7 @@ Clock to Setup on destination clock system_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-system_clk     |   25.012|         |         |         |
+system_clk     |   28.380|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -496,23 +453,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0
 
-Constraints cover 55564 paths, 0 nets, and 4351 connections
+Constraints cover 65969 paths, 0 nets, and 4485 connections
 
 Design statistics:
-   Minimum period:  25.012ns{1}   (Maximum frequency:  39.981MHz)
+   Minimum period:  28.380ns{1}   (Maximum frequency:  35.236MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Thu Feb 23 00:24:25 2017 
+Analysis completed Fri Feb 24 13:21:39 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 75 MB
+Peak Memory Usage: 76 MB
 
 
 

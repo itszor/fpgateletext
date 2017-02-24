@@ -10,30 +10,30 @@ Target Device  : xc2s200
 Target Package : fg256
 Target Speed   : -5
 Mapper Version : spartan2 -- $Revision: 1.46 $
-Mapped Date    : Thu Feb 23 00:24:15 2017
+Mapped Date    : Fri Feb 24 13:21:29 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   21
+Number of warnings:   23
 Logic Utilization:
-  Number of Slice Flip Flops:       390 out of  4,704    8%
-  Number of 4 input LUTs:         1,015 out of  4,704   21%
+  Number of Slice Flip Flops:       389 out of  4,704    8%
+  Number of 4 input LUTs:         1,029 out of  4,704   21%
 Logic Distribution:
-    Number of occupied Slices:                         647 out of  2,352   27%
-    Number of Slices containing only related logic:    647 out of    647  100%
-    Number of Slices containing unrelated logic:         0 out of    647    0%
+    Number of occupied Slices:                         658 out of  2,352   27%
+    Number of Slices containing only related logic:    658 out of    658  100%
+    Number of Slices containing unrelated logic:         0 out of    658    0%
         *See NOTES below for an explanation of the effects of unrelated logic
-Total Number of 4 input LUTs:        1,101 out of  4,704   23%
-      Number used as logic:                     1,015
-      Number used as a route-thru:                 83
+Total Number of 4 input LUTs:        1,121 out of  4,704   23%
+      Number used as logic:                     1,029
+      Number used as a route-thru:                 89
       Number used as Shift registers:               3
    Number of bonded IOBs:           125 out of    176   71%
    Number of GCLKs:                   2 out of      4   50%
    Number of GCLKIOBs:                2 out of      4   50%
    Number of DLLs:                    2 out of      4   50%
 
-Peak Memory Usage:  145 MB
+Peak Memory Usage:  146 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -86,6 +86,14 @@ WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 19
    pcpu_data<4>_IBUF,
    pcpu_data<5>_IBUF
    To see the details of these warning messages, please use the -detail switch.
+WARNING:Pack:266 - The function generator vga1/next_foreground_mux0000<0>21
+   failed to merge with F5 multiplexer vga1/tt_fetch_addr_mux0000<3>87_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator vga1/next_foreground_mux0000<0>21
+   failed to merge with F5 multiplexer vga1/tt_fetch_addr_mux0000<6>126_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
 WARNING:PhysDesignRules:367 - The signal <pcpu_address<20>_IBUF> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <pcpu_address<21>_IBUF> is incomplete.

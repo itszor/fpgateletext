@@ -5,14 +5,14 @@ Parameter TMPDIR set to /home/jules/code/tube/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to /home/jules/code/tube/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: bbc2.prj
@@ -207,6 +207,7 @@ WARNING:Xst:646 - Signal <rv<4:0>> is assigned but never used. This unconnected 
 WARNING:Xst:1780 - Signal <rowrefresh> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rh<7:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rh<4:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <prev_doubleheight_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1872 - Variable <i> is used but never assigned.
 WARNING:Xst:646 - Signal <held_char_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <gv<7:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -218,14 +219,14 @@ WARNING:Xst:646 - Signal <current_char_1<7>> is assigned but never used. This un
 WARNING:Xst:646 - Signal <current_char_1<5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <char_hpos_2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <bv<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <bv<4:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bv<5:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <bh<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <bh<4:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-INFO:Xst:2117 - HDL ADVISOR - Mux Selector <vstate> of Case statement line 632 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+WARNING:Xst:646 - Signal <bh<5:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <vstate> of Case statement line 645 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
    	- add an 'INIT' attribute on signal <vstate> (optimization is then done without any risk)
    	- use the attribute 'signal_encoding user' to avoid onehot optimization
    	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
-INFO:Xst:2117 - HDL ADVISOR - Mux Selector <hstate> of Case statement line 612 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <hstate> of Case statement line 625 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
    	- add an 'INIT' attribute on signal <hstate> (optimization is then done without any risk)
    	- use the attribute 'signal_encoding user' to avoid onehot optimization
    	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
@@ -257,7 +258,7 @@ INFO:Xst:2117 - HDL ADVISOR - Mux Selector <hstate> of Case statement line 612 w
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 96x45-bit ROM for signal <$varindex0003> created at line 426.
+    Found 96x45-bit ROM for signal <$varindex0003> created at line 427.
     Found 3-bit register for signal <blue>.
     Found 3-bit register for signal <green>.
     Found 10-bit register for signal <tt_fetch_addr>.
@@ -279,16 +280,16 @@ INFO:Xst:2117 - HDL ADVISOR - Mux Selector <hstate> of Case statement line 612 w
     Found 9-bit register for signal <background_1>.
     Found 9-bit register for signal <background_2>.
     Found 8-bit subtractor for signal <bh>.
-    Found 2-bit xor2 for signal <blue$xor0000> created at line 346.
+    Found 1-bit xor2 for signal <blue$xor0000> created at line 346.
     Found 4-bit register for signal <border_out>.
     Found 8-bit adder for signal <bv>.
     Found 4-bit register for signal <char_hpos>.
-    Found 4-bit adder for signal <char_hpos$addsub0000> created at line 532.
+    Found 4-bit adder for signal <char_hpos$addsub0000> created at line 544.
     Found 4-bit register for signal <char_hpos_1>.
     Found 4-bit register for signal <char_hpos_2>.
     Found 4-bit register for signal <char_out>.
     Found 5-bit register for signal <char_vpos>.
-    Found 5-bit adder for signal <char_vpos$addsub0000> created at line 527.
+    Found 5-bit adder for signal <char_vpos$addsub0000> created at line 537.
     Found 4-bit adder for signal <char_vpos_lo$addsub0000> created at line 166.
     Found 5-bit adder for signal <char_vpos_lo_n$add0000> created at line 170.
     Found 4-bit adder carry out for signal <char_vpos_lo_n$addsub0000> created at line 170.
@@ -296,21 +297,21 @@ INFO:Xst:2117 - HDL ADVISOR - Mux Selector <hstate> of Case statement line 612 w
     Found 7-bit subtractor for signal <char_vpos_lo_p$sub0000> created at line 173.
     Found 6-bit subtractor for signal <char_vpos_lo_p$sub0001> created at line 173.
     Found 6-bit register for signal <col_num>.
-    Found 6-bit adder for signal <col_num$addsub0000> created at line 529.
-    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0000> created at line 413.
-    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0001> created at line 413.
-    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0002> created at line 413.
-    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0003> created at line 413.
-    Found 10-bit comparator less for signal <col_num$cmp_lt0000> created at line 413.
-    Found 10-bit comparator less for signal <col_num$cmp_lt0001> created at line 413.
-    Found 10-bit comparator less for signal <col_num$cmp_lt0002> created at line 413.
-    Found 10-bit comparator less for signal <col_num$cmp_lt0003> created at line 413.
+    Found 6-bit adder for signal <col_num$addsub0000> created at line 541.
+    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0000> created at line 414.
+    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0001> created at line 414.
+    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0002> created at line 414.
+    Found 10-bit comparator greatequal for signal <col_num$cmp_ge0003> created at line 414.
+    Found 10-bit comparator less for signal <col_num$cmp_lt0000> created at line 414.
+    Found 10-bit comparator less for signal <col_num$cmp_lt0001> created at line 414.
+    Found 10-bit comparator less for signal <col_num$cmp_lt0002> created at line 414.
+    Found 10-bit comparator less for signal <col_num$cmp_lt0003> created at line 414.
     Found 1-bit register for signal <control_char>.
     Found 8-bit register for signal <current_char>.
     Found 8-bit register for signal <current_char_1>.
     Found 1-bit register for signal <current_doubleheight>.
     Found 1-bit register for signal <flash_display>.
-    Found 7-bit comparator less for signal <flash_display$cmp_lt0000> created at line 546.
+    Found 7-bit comparator less for signal <flash_display$cmp_lt0000> created at line 559.
     Found 1-bit register for signal <flash_enabled>.
     Found 1-bit register for signal <flash_enabled_1>.
     Found 1-bit register for signal <flash_enabled_2>.
@@ -321,21 +322,21 @@ INFO:Xst:2117 - HDL ADVISOR - Mux Selector <hstate> of Case statement line 612 w
     Found 12-bit up accumulator for signal <g_offset>.
     Found 8-bit adder for signal <gh>.
     Found 45-bit register for signal <glyph_bits>.
-    Found 7-bit comparator greatequal for signal <glyph_bits$cmp_ge0000> created at line 422.
+    Found 7-bit comparator greatequal for signal <glyph_bits$cmp_ge0000> created at line 423.
     Found 45-bit 4-to-1 multiplexer for signal <glyph_bits$mux0000>.
     Found 1-bit register for signal <graphics_char>.
-    Found 7-bit comparator greatequal for signal <graphics_char$cmp_ge0000> created at line 423.
-    Found 7-bit comparator less for signal <graphics_char$cmp_lt0000> created at line 423.
+    Found 7-bit comparator greatequal for signal <graphics_char$cmp_ge0000> created at line 424.
+    Found 7-bit comparator less for signal <graphics_char$cmp_lt0000> created at line 424.
     Found 1-bit register for signal <graphics_mode>.
-    Found 7-bit comparator greater for signal <graphics_mode$cmp_gt0000> created at line 479.
-    Found 7-bit comparator greater for signal <graphics_mode$cmp_gt0001> created at line 475.
-    Found 7-bit comparator lessequal for signal <graphics_mode$cmp_le0000> created at line 475.
-    Found 7-bit comparator less for signal <graphics_mode$cmp_lt0000> created at line 479.
+    Found 7-bit comparator greater for signal <graphics_mode$cmp_gt0000> created at line 480.
+    Found 7-bit comparator greater for signal <graphics_mode$cmp_gt0001> created at line 476.
+    Found 7-bit comparator lessequal for signal <graphics_mode$cmp_le0000> created at line 476.
+    Found 7-bit comparator less for signal <graphics_mode$cmp_lt0000> created at line 480.
     Found 1-bit xor2 for signal <green$xor0000> created at line 345.
     Found 8-bit subtractor for signal <gv>.
     Found 8-bit register for signal <held_char>.
     Found 1-bit register for signal <held_sep_graphics>.
-    Found 7-bit comparator less for signal <held_sep_graphics$cmp_lt0000> created at line 422.
+    Found 7-bit comparator less for signal <held_sep_graphics$cmp_lt0000> created at line 423.
     Found 1-bit register for signal <hold_graphics>.
     Found 4-bit register for signal <hsync_delay>.
     Found 10-bit down counter for signal <htimer>.
@@ -358,14 +359,14 @@ INFO:Xst:2117 - HDL ADVISOR - Mux Selector <hstate> of Case statement line 612 w
     Found 3-bit comparator lessequal for signal <row_next$cmp_le0004> created at line 260.
     Found 5x4-bit multiplier for signal <row_next$mult0000> created at line 260.
     Found 5-bit register for signal <row_num>.
-    Found 5-bit adder for signal <row_num$addsub0000> created at line 522.
+    Found 5-bit adder for signal <row_num$addsub0000> created at line 532.
     Found 1-bit register for signal <row_prev>.
     Found 8-bit adder for signal <rv>.
     Found 1-bit register for signal <sep_graphics>.
     Found 1-bit register for signal <sticky_doubleheight>.
     Found 10-bit register for signal <tt_cur_row_addr>.
-    Found 10-bit adder for signal <tt_cur_row_addr$addsub0000> created at line 499.
-    Found 10-bit adder for signal <tt_fetch_addr$addsub0000> created at line 509.
+    Found 10-bit adder for signal <tt_cur_row_addr$add0000> created at line 503.
+    Found 10-bit adder for signal <tt_fetch_addr$addsub0000> created at line 519.
     Found 10-bit register for signal <tt_prev_row_addr>.
     Found 4-bit register for signal <vsync_delay>.
     Found 10-bit down counter for signal <vtimer>.
@@ -549,8 +550,7 @@ Macro Statistics
 # Tristates                                            : 1
  16-bit tristate buffer                                : 1
 # Xors                                                 : 3
- 1-bit xor2                                            : 2
- 2-bit xor2                                            : 1
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
@@ -739,8 +739,7 @@ Macro Statistics
  1-bit 45-to-1 multiplexer                             : 3
  45-bit 4-to-1 multiplexer                             : 1
 # Xors                                                 : 3
- 1-bit xor2                                            : 2
- 2-bit xor2                                            : 1
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
@@ -859,19 +858,20 @@ INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_2 connected to a primar
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_3 connected to a primary input has been replicated
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_4 connected to a primary input has been replicated
 FlipFlop vga1/char_vpos_1 has been replicated 2 time(s)
-FlipFlop vga1/char_vpos_2 has been replicated 3 time(s)
-FlipFlop vga1/char_vpos_3 has been replicated 2 time(s)
+FlipFlop vga1/char_vpos_2 has been replicated 2 time(s)
+FlipFlop vga1/char_vpos_3 has been replicated 1 time(s)
+FlipFlop vga1/char_vpos_4 has been replicated 1 time(s)
 FlipFlop vga1/current_char_0 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_0 connected to a primary input has been replicated
 FlipFlop vga1/current_char_11 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_11 connected to a primary input has been replicated
-FlipFlop vga1/current_char_2 has been replicated 1 time(s)
+FlipFlop vga1/current_char_2 has been replicated 2 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_2 connected to a primary input has been replicated
 FlipFlop vga1/current_char_3 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_3 connected to a primary input has been replicated
 FlipFlop vga1/current_char_4 has been replicated 1 time(s)
 INFO:Xst:1843 - HDL ADVISOR - FlipFlop vga1/current_char_4 connected to a primary input has been replicated
-FlipFlop vga1/current_doubleheight has been replicated 3 time(s)
+FlipFlop vga1/current_doubleheight has been replicated 2 time(s)
 FlipFlop vga1/prev_doubleheight has been replicated 2 time(s)
 
 Final Macro Processing ...
@@ -886,8 +886,8 @@ Unit <bbc2> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 387
- Flip-Flops                                            : 387
+# Registers                                            : 386
+ Flip-Flops                                            : 386
 # Shift Registers                                      : 3
  2-bit shift register                                  : 3
 
@@ -918,30 +918,29 @@ Design Statistics
 # IOs                              : 127
 
 Cell Usage :
-# BELS                             : 1543
+# BELS                             : 1571
 #      GND                         : 1
-#      INV                         : 51
-#      LUT1                        : 75
-#      LUT2                        : 115
-#      LUT2_D                      : 4
-#      LUT2_L                      : 1
-#      LUT3                        : 223
-#      LUT3_D                      : 12
-#      LUT3_L                      : 4
-#      LUT4                        : 579
-#      LUT4_D                      : 21
-#      LUT4_L                      : 18
+#      INV                         : 53
+#      LUT1                        : 77
+#      LUT2                        : 108
+#      LUT2_D                      : 2
+#      LUT3                        : 174
+#      LUT3_D                      : 9
+#      LUT3_L                      : 6
+#      LUT4                        : 647
+#      LUT4_D                      : 25
+#      LUT4_L                      : 17
 #      MUXCY                       : 159
-#      MUXF5                       : 131
-#      MUXF6                       : 17
+#      MUXF5                       : 145
+#      MUXF6                       : 18
 #      VCC                         : 1
-#      XORCY                       : 131
-# FlipFlops/Latches                : 390
+#      XORCY                       : 129
+# FlipFlops/Latches                : 389
 #      FD                          : 2
 #      FDE                         : 42
-#      FDR                         : 100
-#      FDRE                        : 176
-#      FDRS                        : 30
+#      FDR                         : 101
+#      FDRE                        : 175
+#      FDRS                        : 29
 #      FDRSE                       : 1
 #      FDS                         : 27
 #      FDSE                        : 12
@@ -964,10 +963,10 @@ Device utilization summary:
 
 Selected Device : 2s200fg256-5 
 
- Number of Slices:                      585  out of   2352    24%  
- Number of Slice Flip Flops:            390  out of   4704     8%  
- Number of 4 input LUTs:               1107  out of   4704    23%  
-    Number used as logic:              1103
+ Number of Slices:                      596  out of   2352    25%  
+ Number of Slice Flip Flops:            389  out of   4704     8%  
+ Number of 4 input LUTs:               1122  out of   4704    23%  
+    Number used as logic:              1118
     Number used as Shift registers:       4
  Number of IOs:                         127
  Number of bonded IOBs:                 108  out of    176    61%  
@@ -995,7 +994,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)       | Load  |
 -----------------------------------+-----------------------------+-------+
 system_clk                         | sdramburst1/clk_intdll:CLK0 | 98    |
-system_clk                         | sdramburst1/clk_intdll:CLKDV| 296   |
+system_clk                         | sdramburst1/clk_intdll:CLKDV| 295   |
 -----------------------------------+-----------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1006,10 +1005,10 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 18.802ns (Maximum Frequency: 53.186MHz)
-   Minimum input arrival time before clock: 13.087ns
+   Minimum period: 18.518ns (Maximum Frequency: 54.002MHz)
+   Minimum input arrival time before clock: 12.987ns
    Maximum output required time after clock: 9.815ns
-   Maximum combinational path delay: 14.234ns
+   Maximum combinational path delay: 14.134ns
 
 Timing Detail:
 --------------
@@ -1017,48 +1016,46 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'system_clk'
-  Clock period: 18.802ns (frequency: 53.186MHz)
-  Total number of paths / destination ports: 55610 / 710
+  Clock period: 18.518ns (frequency: 54.002MHz)
+  Total number of paths / destination ports: 66012 / 706
 -------------------------------------------------------------------------
-Delay:               28.203ns (Levels of Logic = 18)
-  Source:            vga1/char_vpos_1_1 (FF)
+Delay:               27.777ns (Levels of Logic = 16)
+  Source:            vga1/char_vpos_4 (FF)
   Destination:       vga1/alt_next (FF)
   Source Clock:      system_clk rising 0.7X
   Destination Clock: system_clk rising 0.7X
 
-  Data Path: vga1/char_vpos_1_1 to vga1/alt_next
+  Data Path: vga1/char_vpos_4 to vga1/alt_next
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   1.292   1.600  vga1/char_vpos_1_1 (vga1/char_vpos_1_1)
-     LUT4_D:I1->O          8   0.653   2.050  vga1/Msub_alt_next_addsub0001_xor<0>11 (vga1/alt_next_addsub0001<0>)
-     INV:I->O              2   0.653   0.000  vga1/Mmult_alt_next_mult0001_Madd_lut<0>_INV_0 (vga1/Mmult_alt_next_mult0001_Madd_0)
-     MUXCY:S->O            1   0.784   0.000  vga1/Mmult_alt_next_mult0001_Madd_cy<0> (vga1/Mmult_alt_next_mult0001_Madd_cy<0>)
-     XORCY:CI->O           1   0.500   1.150  vga1/Mmult_alt_next_mult0001_Madd_xor<1> (vga1/Mmult_alt_next_mult0001_Madd_1)
-     INV:I->O              1   0.653   0.000  vga1/Mmult_alt_next_mult0001_Madd1_lut<1>_INV_0 (vga1/Mmult_alt_next_mult0001_Madd1_lut<1>)
-     XORCY:LI->O           2   0.382   1.340  vga1/Mmult_alt_next_mult0001_Madd1_xor<1> (vga1/alt_next_mult0001<1>)
-     LUT4:I0->O            4   0.653   1.600  vga1/Madd__COND_16_Madd_xor<2>121 (vga1/N84)
-     LUT3_D:I2->LO         1   0.653   0.100  vga1/Madd__COND_16_Madd_cy<2>11 (N651)
-     LUT3:I2->O           16   0.653   2.800  vga1/Madd__COND_16_Madd_xor<4>11 (vga1/_COND_16<4>)
-     LUT3:I0->O            1   0.653   0.000  vga1/Mmux__varindex0002_141 (vga1/Mmux__varindex0002_141)
-     MUXF5:I0->O           1   0.375   0.000  vga1/Mmux__varindex0002_12_f5_0 (vga1/Mmux__varindex0002_12_f51)
-     MUXF6:I0->O           1   0.376   1.150  vga1/Mmux__varindex0002_10_f6_0 (vga1/Mmux__varindex0002_10_f61)
-     LUT3:I1->O            1   0.653   0.000  vga1/Mmux__varindex0002_7 (vga1/Mmux__varindex0002_7)
-     MUXF5:I0->O           2   0.375   1.340  vga1/Mmux__varindex0002_5_f5 (vga1/Mmux__varindex0002_5_f5)
-     LUT4:I1->O            1   0.653   1.150  vga1/alt_next_mux0000170_SW0 (N246)
-     LUT4:I1->O            1   0.653   1.150  vga1/alt_next_mux0000178 (vga1/alt_next_mux0000178)
-     LUT4_L:I0->LO         1   0.653   0.100  vga1/alt_next_mux0000374_SW0 (N242)
-     LUT4:I3->O            1   0.653   0.000  vga1/alt_next_mux0000385 (vga1/alt_next_mux0000)
+     FDRE:C->Q            26   1.292   3.500  vga1/char_vpos_4 (vga1/char_vpos_4)
+     LUT2:I1->O            2   0.653   1.340  vga1/Msub_alt_next_addsub0000_xor<2>181 (vga1/Msub_alt_next_addsub0000_xor<2>181)
+     LUT4:I2->O            1   0.653   1.150  vga1/Msub_alt_next_addsub0000_xor<2>192 (vga1/alt_next_addsub0000<2>)
+     LUT2:I0->O            1   0.653   0.000  vga1/Mmult_alt_next_mult0000_Madd_lut<2> (vga1/Mmult_alt_next_mult0000_Madd_lut<2>)
+     MUXCY:S->O            1   0.784   0.000  vga1/Mmult_alt_next_mult0000_Madd_cy<2> (vga1/Mmult_alt_next_mult0000_Madd_cy<2>)
+     XORCY:CI->O           1   0.500   1.150  vga1/Mmult_alt_next_mult0000_Madd_xor<3> (vga1/Mmult_alt_next_mult0000_Madd_3)
+     INV:I->O              1   0.653   0.000  vga1/Mmult_alt_next_mult0000_Madd1_lut<3>_INV_0 (vga1/Mmult_alt_next_mult0000_Madd1_lut<3>)
+     XORCY:LI->O           3   0.382   1.480  vga1/Mmult_alt_next_mult0000_Madd1_xor<3> (vga1/Madd__COND_15_Madd6)
+     LUT4:I3->O           18   0.653   3.000  vga1/Madd__COND_15_Madd_xor<4>111 (vga1/N289)
+     LUT4:I1->O            1   0.653   0.000  vga1/Mmux__varindex0001_141 (vga1/Mmux__varindex0001_141)
+     MUXF5:I0->O           1   0.375   0.000  vga1/Mmux__varindex0001_12_f5_0 (vga1/Mmux__varindex0001_12_f51)
+     MUXF6:I0->O           1   0.376   1.150  vga1/Mmux__varindex0001_10_f6_0 (vga1/Mmux__varindex0001_10_f61)
+     LUT3:I1->O            1   0.653   0.000  vga1/Mmux__varindex0001_7 (vga1/Mmux__varindex0001_7)
+     MUXF5:I0->O           2   0.375   1.340  vga1/Mmux__varindex0001_5_f5 (vga1/Mmux__varindex0001_5_f5)
+     LUT4:I3->O            1   0.653   1.150  vga1/alt_next_mux0000245 (vga1/alt_next_mux0000245)
+     LUT4:I2->O            1   0.653   1.150  vga1/alt_next_mux0000305 (vga1/alt_next_mux0000305)
+     LUT4:I0->O            1   0.653   0.000  vga1/alt_next_mux0000385 (vga1/alt_next_mux0000)
      FDR:D                     0.753          vga1/alt_next
     ----------------------------------------
-    Total                     28.203ns (12.673ns logic, 15.530ns route)
-                                       (44.9% logic, 55.1% route)
+    Total                     27.777ns (11.367ns logic, 16.410ns route)
+                                       (40.9% logic, 59.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'system_clk'
-  Total number of paths / destination ports: 429 / 409
+  Total number of paths / destination ports: 419 / 409
 -------------------------------------------------------------------------
-Offset:              13.087ns (Levels of Logic = 6)
+Offset:              12.987ns (Levels of Logic = 6)
   Source:            button_nrst (PAD)
   Destination:       sdramburst1/command_15 (FF)
   Destination Clock: system_clk rising
@@ -1067,7 +1064,7 @@ Offset:              13.087ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   0.924   2.700  button_nrst_IBUF (button_nrst_IBUF)
+     IBUF:I->O            14   0.924   2.600  button_nrst_IBUF (button_nrst_IBUF)
      LUT3:I2->O           44   0.653   4.400  reset1 (pcpu_rst_OBUF)
      LUT3:I2->O            4   0.653   1.600  sdramburst1/command_mux0000<3>131 (sdramburst1/N20)
      LUT4:I3->O            1   0.653   0.000  sdramburst1/command_mux0000<3>13 (sdramburst1/command_mux0000<3>13)
@@ -1075,8 +1072,8 @@ Offset:              13.087ns (Levels of Logic = 6)
      MUXF6:I0->O           1   0.376   0.000  sdramburst1/command_mux0000<3>1_f6 (sdramburst1/command_mux0000<3>1)
      FD:D                      0.753          sdramburst1/command_15
     ----------------------------------------
-    Total                     13.087ns (4.387ns logic, 8.700ns route)
-                                       (33.5% logic, 66.5% route)
+    Total                     12.987ns (4.387ns logic, 8.600ns route)
+                                       (33.8% logic, 66.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'system_clk'
@@ -1101,7 +1098,7 @@ Offset:              9.815ns (Levels of Logic = 1)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 16 / 2
 -------------------------------------------------------------------------
-Delay:               14.234ns (Levels of Logic = 3)
+Delay:               14.134ns (Levels of Logic = 3)
   Source:            button_nrst (PAD)
   Destination:       pcpu_rst (PAD)
 
@@ -1109,25 +1106,25 @@ Delay:               14.234ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   0.924   2.700  button_nrst_IBUF (button_nrst_IBUF)
+     IBUF:I->O            14   0.924   2.600  button_nrst_IBUF (button_nrst_IBUF)
      LUT3:I2->O           44   0.653   4.400  reset1 (pcpu_rst_OBUF)
      OBUF:I->O                 5.557          pcpu_rst_OBUF (pcpu_rst)
     ----------------------------------------
-    Total                     14.234ns (7.134ns logic, 7.100ns route)
-                                       (50.1% logic, 49.9% route)
+    Total                     14.134ns (7.134ns logic, 7.000ns route)
+                                       (50.5% logic, 49.5% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
+Total REAL time to Xst completion: 13.00 secs
 Total CPU time to Xst completion: 13.02 secs
  
 --> 
 
 
-Total memory usage is 161980 kilobytes
+Total memory usage is 163136 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  248 (   0 filtered)
+Number of warnings :  249 (   0 filtered)
 Number of infos    :   69 (   0 filtered)
 
